@@ -14,3 +14,7 @@ A collection of short stories for English learners, organized by CEFR level.
 | [C2](./C2) | Proficiency |
 
 Each level has its own directory containing stories written for that level.
+
+See [SPECIFICATIONS.md](./SPECIFICATIONS.md) for the writing guidelines
+(language variant, audience, vocabulary constraints, and how vocabulary
+repetition across stories is controlled).
