@@ -1,0 +1,11 @@
+# Built by tools/site.py and published by the pages workflow.
+_site/
+
+__pycache__/
+*.pyc
+.DS_Store
+
+# Only used ad hoc for browser-checking the site; not part of the build.
+node_modules/
+package.json
+package-lock.json

@@ -137,7 +137,19 @@ are, so attention goes to the language instead of to a new set of names. New
 characters must be registered in `wordlists/names.txt` — an unregistered
 capitalized word is reported as above level.
 
-## 10. Adding a story
+## 10. The published site
+
+`tools/site.py` builds a static reading site into `_site/`, deployed to GitHub
+Pages by `.github/workflows/pages.yml` on every push to `main`. The workflow
+runs the validator first, so a story that breaks the level contract is never
+published.
+
+The site exists because it can do one thing the Markdown cannot: mark each word
+a story teaches directly in the prose and show its definition where the reader
+meets it, instead of in a list at the bottom. Everything on it is generated from
+the story files — there is no separate content to keep in sync.
+
+## 11. Adding a story
 
 1. Read `PROMPT.md` and the level's `VOCABULARY.md`.
 2. Write the story to `<LEVEL>/NN-title.md` in the format above.

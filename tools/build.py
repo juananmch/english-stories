@@ -134,6 +134,13 @@ def root_readme(config: dict, all_stories: dict) -> str:
 
     lines += [
         "",
+        "## Read them on the web",
+        "",
+        "The stories are published as a static site at",
+        "**https://juananmch.github.io/english-stories/**, where the words each story",
+        "teaches are marked in the text and show their meaning when you tap them.",
+        "The site is rebuilt and deployed on every push to `main`.",
+        "",
         "## How this works",
         "",
         "- [`SPECIFICATIONS.md`](./SPECIFICATIONS.md) — the rules every story follows.",
@@ -148,10 +155,15 @@ def root_readme(config: dict, all_stories: dict) -> str:
         "python3 tools/validate.py -v     # check every story against its level",
         "python3 tools/build.py           # regenerate VOCABULARY.md and the indexes",
         "python3 tools/build.py --check   # fail if generated files are stale",
+        "python3 tools/site.py            # build the web version into _site/",
         "```",
         "",
-        "Both run on a plain Python 3 install with no dependencies, and both run in",
-        "CI on every push.",
+        "Everything runs on a plain Python 3 install with no dependencies, and runs in",
+        "CI on every push. To preview the site locally:",
+        "",
+        "```sh",
+        "python3 tools/site.py && python3 -m http.server --directory _site",
+        "```",
         "",
     ]
     return "\n".join(lines)
