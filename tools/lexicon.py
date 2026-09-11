@@ -35,6 +35,16 @@ IRREGULAR_LEMMAS = {
     "am": "be", "is": "be", "are": "be", "was": "be", "were": "be", "been": "be", "being": "be",
     "has": "have", "had": "have", "having": "have",
     "does": "do", "did": "do", "done": "do", "doing": "do",
+    # negative contractions: the apostrophe-split rule below would otherwise
+    # cut "didn't" into "didn" + "t", since "t" reads as a contraction tail —
+    # these need the whole surface form mapped to its auxiliary directly.
+    "isn't": "be", "aren't": "be", "wasn't": "be", "weren't": "be",
+    "don't": "do", "doesn't": "do", "didn't": "do",
+    "haven't": "have", "hasn't": "have", "hadn't": "have",
+    "can't": "can", "cannot": "can", "couldn't": "could",
+    "won't": "will", "wouldn't": "would",
+    "shouldn't": "should", "mustn't": "must", "shan't": "shall",
+    "ain't": "be",
     "went": "go", "gone": "go", "goes": "go",
     "said": "say", "saw": "see", "seen": "see", "made": "make", "took": "take", "taken": "take",
     "came": "come", "knew": "know", "known": "know", "got": "get", "gotten": "get",
@@ -53,6 +63,12 @@ IRREGULAR_LEMMAS = {
     "taught": "teach", "tore": "tear", "torn": "tear", "threw": "throw", "thrown": "throw",
     "understood": "understand", "woke": "wake", "woken": "wake", "wore": "wear", "worn": "wear",
     "won": "win", "put": "put", "cut": "cut", "let": "let", "set": "set", "cost": "cost",
+    # spelling quirk: an adjective already ending in a doubled consonant adds
+    # only "-y" for its adverb, not "-ly" (full -> fully, dull -> dully), so the
+    # generic "-ly" suffix rule strips the wrong number of letters.
+    "fully": "full", "dully": "dull",
+    "misunderstood": "misunderstand",
+    "loaves": "loaf",
     "drank": "drink", "drunk": "drink", "flew": "fly", "flown": "fly", "hung": "hang",
     "rang": "ring", "rung": "ring", "swum": "swim", "blew": "blow", "blown": "blow",
     "drew": "draw", "drawn": "draw", "threw": "throw", "wrote": "write", "rode": "ride",
@@ -80,6 +96,8 @@ SUFFIX_RULES = (
     ("ied", "y"),
     ("iest", "y"),
     ("ier", "y"),
+    ("ily", "y"),
+    ("ally", ""),  # basically -> basic, dramatically -> dramatic
     ("sses", "ss"),
     ("shes", "sh"),
     ("ches", "ch"),
@@ -195,6 +213,21 @@ def load_cumulative_wordlist(level: str, order: list) -> set:
 
 def load_names() -> set:
     return _read_wordfile(os.path.join(WORDLIST_DIR, "names.txt"))
+
+
+def glossary_key(word: str, vocab: set) -> str:
+    """Identity used to track one glossary entry across stories and levels.
+
+    A single word uses its lemma, so 'stopped' and 'stop' are the same entry.
+    A multi-word entry uses the whole lowercased phrase, not the lemma of its
+    first word alone — 'take' out of 'take for granted' is ordinary A1
+    vocabulary on its own, and keying on it produced false "already known"
+    and false "already taught" findings for every idiom or phrasal verb.
+    """
+    parts = word.lower().split()
+    if len(parts) == 1:
+        return lemma(parts[0], vocab)
+    return " ".join(parts)
 
 
 FRONT_MATTER_RE = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)

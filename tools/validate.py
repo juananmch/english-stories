@@ -87,7 +87,7 @@ def check_level(level: str, config: dict, verbose: bool = False):
         for path in lx.story_files(lower):
             lower_story = lx.load_story(path)
             for word in lower_story["glossary_words"]:
-                lower_taught_raw.setdefault(word.split()[0].lower(), lower_story["rel"])
+                lower_taught_raw.setdefault(word.lower(), lower_story["rel"])
 
     vocab = set(known) | names | set(lower_taught_raw)
     for story in stories:
@@ -95,14 +95,14 @@ def check_level(level: str, config: dict, verbose: bool = False):
             vocab.update(word.lower().split())
 
     # Words taught at lower levels, so a level never re-teaches what came before.
-    taught_below = {lx.lemma(word, vocab): rel for word, rel in lower_taught_raw.items()}
+    taught_below = {lx.glossary_key(word, vocab): rel for word, rel in lower_taught_raw.items()}
 
     for index, story in enumerate(stories, start=1):
         rel = story["rel"]
         meta = story["meta"]
         prose = story["prose"]
         glossary = story["glossary"]
-        declared = {lx.lemma(w.split()[0], vocab): w for w, _ in glossary}
+        declared = {lx.glossary_key(w, vocab): w for w, _ in glossary}
 
         def add(check, message):
             findings.append(Finding(rel, check, message))
@@ -149,7 +149,7 @@ def check_level(level: str, config: dict, verbose: bool = False):
         prose_lemmas = {lx.lemma(t, vocab) for t in lx.tokenize(prose)}
         prose_lower = prose.lower()
         for word, definition in glossary:
-            head = lx.lemma(word.split()[0], vocab)
+            head = lx.glossary_key(word, vocab)
             phrase_present = word.lower() in prose_lower
             if head not in prose_lemmas and not phrase_present:
                 add("glossary", f"declared word {word!r} does not appear in the prose")
@@ -207,7 +207,7 @@ def check_level(level: str, config: dict, verbose: bool = False):
 
         # record state for later stories
         for word, _ in glossary:
-            taught_so_far.setdefault(lx.lemma(word.split()[0], vocab), rel)
+            taught_so_far.setdefault(lx.glossary_key(word, vocab), rel)
         for token in lx.tokenize(prose):
             seen_so_far.setdefault(lx.lemma(token, vocab), rel)
 

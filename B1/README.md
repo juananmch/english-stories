@@ -8,4 +8,26 @@ A wider range of tenses, opinions and topics involving work, travel and personal
 - **New words per story:** up to 15
 - **Vocabulary ceiling:** `wordlists/` up to and including `B1.txt`
 
-No stories yet at this level.
+## Stories
+
+| # | Story | Words | New | Topic |
+|---|-------|-------|-----|-------|
+| 01 | [A Difficult Decision](./01-a-difficult-decision.md) | 370 | 7 | career and change |
+| 02 | [Lost in Translation](./02-lost-in-translation.md) | 392 | 9 | travel and misunderstanding |
+| 03 | [The Job Offer](./03-the-job-offer.md) | 391 | 8 | work and relocation |
+| 04 | [A Family Argument](./04-a-family-argument.md) | 387 | 5 | family and conflict |
+| 05 | [Starting a Business](./05-starting-a-business.md) | 368 | 11 | work and risk |
+| 06 | [The Reunion](./06-the-reunion.md) | 369 | 8 | friendship and time |
+| 07 | [A Health Scare](./07-a-health-scare.md) | 357 | 7 | health and perspective |
+| 08 | [Moving Abroad](./08-moving-abroad.md) | 364 | 6 | travel and identity |
+| 09 | [The Promotion](./09-the-promotion.md) | 367 | 12 | work and ambition |
+| 10 | [An Unexpected Guest](./10-an-unexpected-guest.md) | 383 | 9 | family and forgiveness |
+
+## Recurring cast
+
+Stories at this level share characters, so the reader builds context
+instead of meeting a new set of names in every text.
+
+Sophie, Marcus, Rachel, Owen, Grace, Daniel.
+
+Vocabulary taught at this level: [VOCABULARY.md](./VOCABULARY.md).

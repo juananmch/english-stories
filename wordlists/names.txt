@@ -9,10 +9,13 @@ laura carlos ana diego sofia david elena tom max
 # --- A2 cast ---
 jennifer robert nadia kevin patricia claire sam mark
 
+# --- B1 cast ---
+sophie marcus rachel owen grace daniel
+
 # --- minor characters ---
 maria pablo isabel carla antonio rosa beatriz jack carmen fatima yuki
 brown adams lee chen patel sandra mr mrs ms
 
 # --- places and nationalities ---
 england canada brazil china poland spain mexico france germany italy japan
-english spanish french german italian japanese
+english spanish french german italian japanese portugal portuguese

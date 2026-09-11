@@ -1,8 +1,18 @@
 # B1 headwords — words that become assumed-known at B1 (in addition to A1 + A2).
 #
-# STATUS: starter list. Expand this before authoring B1 stories — the validator
-# treats anything absent here as above level, so an incomplete list will produce
-# a large number of out-of-level findings on the first B1 story.
+# The block below is everyday narrative vocabulary added while authoring the
+# first 10 B1 stories — concrete words a B1 adult-fiction narrative needs that
+# the original academic-register list (further down) does not cover.
+
+accidentally accounting actual afterward apology bakery barely chapter chest
+circle divorce downhill emotional everyday expression fade fear figure firm
+firmly frustration god groceries ground heating inbox invitation loaf loosen
+memory misunderstand once partner physiotherapist pretend professor proper
+research retire round rub saving scroll sixth somehow strike tone translate
+unexpectedly unit unkindly unsure vocabulary within level erase
+blindly edge beard
+
+# --- below: broader academic/analytical register, curated separately ---
 
 accommodation accuracy acknowledge adapt adequate adjust administration
 adopt advance advertise afford agency aggressive agriculture alternative

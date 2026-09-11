@@ -118,7 +118,8 @@
       "grammar_banned": [
         {
           "id": "third-conditional",
-          "pattern": "\\bif\\b[^.!?]{0,60}\\bhad\\s+{PART}\\b",
+          "_note": "Requires both an 'if ... had participle' clause AND a nearby 'would have' consequence (either order), so a stray past perfect elsewhere in a long sentence — or an unrelated 'as if ... had' — doesn't false-positive.",
+          "pattern": "\\bif\\b(?:\\s+\\S+){0,6}\\s+had\\s+{PART}\\b[^.!?]{0,80}\\bwould(?:'ve| have)\\b|\\bwould(?:'ve| have)\\b[^.!?]{0,80}\\bif\\b(?:\\s+\\S+){0,6}\\s+had\\s+{PART}\\b",
           "message": "Third conditional is B2+."
         }
       ]
