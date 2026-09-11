@@ -143,6 +143,7 @@ def root_readme(config: dict, all_stories: dict) -> str:
         "",
         "## How this works",
         "",
+        "- [`CLAUDE.md`](./CLAUDE.md) — the working instructions, loaded automatically by Claude Code.",
         "- [`SPECIFICATIONS.md`](./SPECIFICATIONS.md) — the rules every story follows.",
         "- [`PROMPT.md`](./PROMPT.md) — the canonical prompt for generating a new story.",
         "- [`config/levels.json`](./config/levels.json) — word ranges, new-word budgets and grammar inventory per level.",
