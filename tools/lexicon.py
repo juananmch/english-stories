@@ -69,6 +69,9 @@ IRREGULAR_LEMMAS = {
     "fully": "full", "dully": "dull",
     "misunderstood": "misunderstand",
     "loaves": "loaf",
+    "stung": "sting",
+    "rewrote": "rewrite", "rewritten": "rewrite",
+    "repaid": "repay", "forgiven": "forgive", "forgave": "forgive",
     "drank": "drink", "drunk": "drink", "flew": "fly", "flown": "fly", "hung": "hang",
     "rang": "ring", "rung": "ring", "swum": "swim", "blew": "blow", "blown": "blow",
     "drew": "draw", "drawn": "draw", "threw": "throw", "wrote": "write", "rode": "ride",
@@ -98,6 +101,12 @@ SUFFIX_RULES = (
     ("ier", "y"),
     ("ily", "y"),
     ("ally", ""),  # basically -> basic, dramatically -> dramatic
+    ("ably", "able"),  # reasonably -> reasonable, comfortably -> comfortable
+    ("ibly", "ible"),
+    ("ation", ""),  # invitation -> invite (via the silent-e branch below),
+                     # expectation -> expect; irregular ones (explanation,
+                     # investigation) still need a direct wordlist entry
+    ("ment", ""),    # investment -> invest, argument -> argue (silent-e branch)
     ("sses", "ss"),
     ("shes", "sh"),
     ("ches", "ch"),
@@ -274,7 +283,7 @@ def split_sections(body: str) -> dict:
     return sections
 
 
-GLOSSARY_ENTRY_RE = re.compile(r"^-\s+\*\*(.+?)\*\*\s*[—-]\s*(.+?)\s*$", re.MULTILINE)
+GLOSSARY_ENTRY_RE = re.compile(r"^-\s+\*\*(.+?)\*\*\s*(?:\([^)]*\)\s*)?[—-]\s*(.+?)\s*$", re.MULTILINE)
 
 
 def parse_glossary(section: str):

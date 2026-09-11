@@ -60,6 +60,7 @@ def check_level(level: str, config: dict, verbose: bool = False):
     findings = []
 
     known = lx.load_cumulative_wordlist(level, order)
+    own_wordlist = lx.load_wordlist(level)
     lower_levels = order[: order.index(level)]
     known_below = lx.load_cumulative_wordlist(lower_levels[-1], order) if lower_levels else set()
     names = lx.load_names()
@@ -163,6 +164,9 @@ def check_level(level: str, config: dict, verbose: bool = False):
                 add("teach-late", f"{word!r} is taught here but already appeared in {seen_so_far[head]}")
             if head in known_below:
                 add("known", f"{word!r} is already assumed known below {level}; it should not be taught")
+            if head in own_wordlist:
+                add("known", f"{word!r} is in wordlists/{level}.txt itself — a reader is assumed to "
+                              f"know it from the start of the level, so it cannot also be 'taught' here")
 
         # --- vocabulary ceiling ---
         # A word is legal here if the reader is assumed to know it at this level,

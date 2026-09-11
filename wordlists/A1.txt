@@ -24,60 +24,60 @@ number half quarter
 monday tuesday wednesday thursday friday saturday sunday
 january february march april may june july august september october november december
 day week month year today tomorrow yesterday morning afternoon evening night
-time hour minute o'clock early late now soon before after during weekend
+time hour minute o'clock early now soon before after during
 spring summer fall winter season holiday birthday
 
 # --- people, family, relationships ---
 man woman boy girl child children people person friend family mother father
-mom dad parent brother sister son daughter husband wife baby grandmother
-grandfather aunt uncle cousin neighbor boyfriend girlfriend name age adult
+mom dad parent brother sister husband baby grandmother
+aunt uncle cousin neighbor boyfriend girlfriend name age adult
 group team everyone someone nobody everybody
 
 # --- home and daily life ---
 house home apartment room bedroom kitchen bathroom living door window wall floor
-garden yard table chair sofa bed desk lamp light key phone television radio
-computer clock picture box bag book newspaper letter card paper pen pencil
-clothes shirt dress shoe sock hat coat jacket pants skirt bag glasses watch
+yard table chair bed lamp light key phone television radio
+clock picture box book newspaper letter card paper pen pencil
+clothes shirt dress shoe sock hat coat jacket pants skirt glasses watch
 wash clean dirty tidy cook eat drink sleep wake rest sit stand walk run open
 close start stop finish begin end use need want like love hate hope try help
-make become seem bring send break win jump climb wear
-give take put keep hold carry buy sell pay cost find lose look see watch
-hear listen say tell talk speak ask answer call read write learn study know
+make become seem bring send break jump climb wear
+give take put keep hold carry buy sell cost find lose look see watch
+hear listen say tell talk speak ask answer call read write know
 think remember forget understand mean feel play work live stay leave arrive
 come go move travel drive ride visit meet wait stop turn show wear change
-send receive share choose decide happen smile laugh cry sing dance draw paint
+send receive share choose decide happen laugh cry draw paint
 
 # --- food and drink ---
-food drink water coffee tea milk juice beer wine bread cheese butter egg meat
-chicken fish rice pasta soup salad vegetable fruit apple banana orange tomato
+food drink water coffee tea milk juice beer bread cheese butter egg meat
+chicken fish rice pasta soup salad vegetable apple banana orange tomato
 potato onion carrot sugar salt chocolate cake cookie sandwich pizza breakfast
-lunch dinner meal menu restaurant café bar cup glass plate bottle hungry
-thirsty delicious sweet hot cold fresh
+dinner meal menu café bar cup bottle hungry
+thirsty sweet hot cold
 
 # --- work, study, money ---
-job work office company boss manager worker business shop store market money
-price expensive cheap free card cash bank pay salary customer client meeting
-school teacher student class lesson homework test exam university course
-english language word question problem answer idea plan list note report
+job work company boss worker business shop store market money
+price expensive cheap free card cash bank salary customer client meeting
+school teacher class lesson homework test exam university course
+english language word question problem answer idea plan note report
 project email message internet website app
 
 # --- places and travel ---
-city town village country street road park beach mountain river lake sea
-building center station airport hotel museum library hospital church bus train
-car taxi plane bike ticket map trip vacation tourist camera photo bag suitcase
+city town village country street road mountain river lake
+building center station airport hotel museum library hospital church bus
+car taxi plane bike ticket map trip vacation camera photo suitcase
 place way address far near left right north south east west
 
 # --- body and health ---
 body head face eye ear nose mouth tooth hair hand arm leg foot back heart
-doctor nurse medicine sick ill pain hurt tired well healthy strong weak
+nurse medicine sick ill pain hurt tired well strong weak
 
 # --- adjectives and adverbs ---
 good bad big small large long short tall high low new old young nice beautiful
-pretty ugly happy sad angry afraid nervous quiet loud busy free easy difficult
+pretty ugly happy angry afraid loud busy free easy
 hard simple important different same right wrong true real sure ready open
-closed full empty clean dirty warm cool dry wet sunny rainy cloudy windy
-black white red blue green yellow brown gray pink orange
-slowly quickly carefully together alone almost really probably maybe perhaps
+closed full empty clean dirty warm cool rainy cloudy windy
+black white red blue green yellow brown pink orange
+slowly quickly carefully almost really probably maybe perhaps
 well better best worse worst
 
 # --- weather, nature, animals ---
@@ -91,9 +91,11 @@ excuse hall spoon video fast seat fly drink ring hang blow draw throw catch
 university history market clinic online full each both
 quite space set anybody somebody whatever noisy lunchtime cafe
 great against area ah whom quick anyone
+along among whether self act match deal slow sense response trouble unable
+apart pattern style
 dollar euro pan cream corn wax metal alcohol liquid plant knife stone voice
 noise nose knowledge middle
 thing something anything nothing everything part piece side end top bottom
-color size shape story life world music film movie game sport soccer tennis
-party gift present news fun joke luck chance kind type example reason result
+color size shape story life world music sport soccer
+gift news fun joke luck chance kind type example reason result
 sorry please thank hello goodbye yes okay

@@ -17,7 +17,7 @@ A wider range of tenses, opinions and topics involving work, travel and personal
 | 03 | [The Job Offer](./03-the-job-offer.md) | 391 | 8 | work and relocation |
 | 04 | [A Family Argument](./04-a-family-argument.md) | 387 | 5 | family and conflict |
 | 05 | [Starting a Business](./05-starting-a-business.md) | 368 | 11 | work and risk |
-| 06 | [The Reunion](./06-the-reunion.md) | 369 | 8 | friendship and time |
+| 06 | [The Reunion](./06-the-reunion.md) | 369 | 9 | friendship and time |
 | 07 | [A Health Scare](./07-a-health-scare.md) | 357 | 7 | health and perspective |
 | 08 | [Moving Abroad](./08-moving-abroad.md) | 364 | 6 | travel and identity |
 | 09 | [The Promotion](./09-the-promotion.md) | 367 | 12 | work and ambition |

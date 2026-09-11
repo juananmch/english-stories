@@ -13,8 +13,8 @@ inventory, and US English throughout.
 |-------|-------------|---------|--------------|
 | [A1](./A1) | Beginner | 10 | 80 |
 | [A2](./A2) | Elementary | 10 | 100 |
-| [B1](./B1) | Intermediate | 10 | 82 |
-| [B2](./B2) | Upper Intermediate | 0 | 0 |
+| [B1](./B1) | Intermediate | 10 | 83 |
+| [B2](./B2) | Upper Intermediate | 10 | 84 |
 | [C1](./C1) | Advanced | 0 | 0 |
 | [C2](./C2) | Proficiency | 0 | 0 |
 

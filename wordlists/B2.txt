@@ -1,6 +1,30 @@
 # B2 headwords — words that become assumed-known at B2 (in addition to A1-B1).
 #
-# STATUS: starter list. Expand this before authoring B2 stories.
+# The block below is everyday-abstract narrative vocabulary added while
+# authoring the first 10 B2 stories, in the same spirit as the equivalent
+# block in B1.txt — the academic/AWL-style list further down doesn't cover it.
+
+access acquisition admission alarm alarmed ambitious anymore arose ashamed
+bore burnout certainty chaotic chip circulate citing clip communications
+controversy dared date dealing defensive dismiss distracted drift
+disappointment expectation explanation exhaustion factory fold forcefully
+forgetfulness funding furious grief guilt gymnasium handedly harsh headline
+independence indifferent industry instinct intentioned investigate investment
+invest judge junior keen land lawyered loyal meaningful navigate negotiator
+non notably noticeably optimism overthinking pace paperwork persuasive
+petition photograph phrase pile political poorly productivity profit propose
+rearrange reassurance rebuild recognition recognizable record recovery
+regarding rehearse remark rescue resistance sensing sentiment shaken shy
+sincere split startup statement straightforward strip studio sting substantial
+subtly surrounding technically temperament tension terrify thoughtless
+troubled unconvinced understandably uneasy unfold universally unmentioned
+unmet unrealistic unrepaired unspoken untrue unused upfront weakness
+faintly finalize imperfect lawyer maintenance repaint slip overnight ruin
+investigation reputation gently interruption unfamiliar retention goodnight
+imperfectly teenager apologetic episode generosity repay gloat unsurprised
+celebrate contribution reconsider considerate rewrite debt forgive
+
+# --- below: broader academic/analytical register, curated separately ---
 
 abolish abrupt absorb abstract accelerate accompany accumulate accuse acute
 adhere adjacent advocate aesthetic affluent aggregate alienate allocate allude

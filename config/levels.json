@@ -131,8 +131,9 @@
       "new_word_budget": 18,
       "grammar_allowed": [
         "all B1 structures",
-        "third conditional and mixed conditionals",
-        "full passive range",
+        "third conditional",
+        "mixed conditionals",
+        "passive voice",
         "wish / if only",
         "participle clauses",
         "cleft sentences"

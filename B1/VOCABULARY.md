@@ -14,13 +14,13 @@ checklist to maintain by hand.
 | 03 | [The Job Offer](./03-the-job-offer.md) | regional, significantly, incredible, respected, secondary school, relocate, promising, overhear | 24 |
 | 04 | [A Family Argument](./04-a-family-argument.md) | unreasonable, presumably, convinced, pause, erase | 29 |
 | 05 | [Starting a Business](./05-starting-a-business.md) | hobby, exaggerate, spreadsheet, registered, loan, regulation, intimidating, commercial, resign, glamorous, anticipate | 40 |
-| 06 | [The Reunion](./06-the-reunion.md) | reunion, graduate, charm, scan, surface, comforting, distant, gratitude | 48 |
-| 07 | [A Health Scare](./07-a-health-scare.md) | gradually, series, strain, oddly, relief, rush, take for granted | 55 |
-| 08 | [Moving Abroad](./08-moving-abroad.md) | automatic, misunderstand, isolation, barrier, foreigner, shortcut | 61 |
-| 09 | [The Promotion](./09-the-promotion.md) | hesitation, panel, brilliant, deserve, casual, second-guess, feedback, consistently, struggle, discomfort, resentment, leadership | 73 |
-| 10 | [An Unexpected Guest](./10-an-unexpected-guest.md) | disagreement, resolve, hesitate, suspect, outcome, tense, irritation, temporary, settled | 82 |
+| 06 | [The Reunion](./06-the-reunion.md) | reunion, graduate, charm, scan, strike, surface, comforting, distant, gratitude | 49 |
+| 07 | [A Health Scare](./07-a-health-scare.md) | gradually, series, strain, oddly, relief, rush, take for granted | 56 |
+| 08 | [Moving Abroad](./08-moving-abroad.md) | automatic, misunderstand, isolation, barrier, foreigner, shortcut | 62 |
+| 09 | [The Promotion](./09-the-promotion.md) | hesitation, panel, brilliant, deserve, casual, second-guess, feedback, consistently, struggle, discomfort, resentment, leadership | 74 |
+| 10 | [An Unexpected Guest](./10-an-unexpected-guest.md) | disagreement, resolve, hesitate, suspect, outcome, tense, irritation, temporary, settled | 83 |
 
-**82 words taught across 10 stories.**
+**83 words taught across 10 stories.**
 
 ## Glossary
 
@@ -100,6 +100,7 @@ checklist to maintain by hand.
 | significantly | in a way that is large enough to be important | [The Job Offer](./03-the-job-offer.md) |
 | spreadsheet | a document used for organizing numbers and lists | [Starting a Business](./05-starting-a-business.md) |
 | strain | an injury caused by using a muscle too much | [A Health Scare](./07-a-health-scare.md) |
+| strike | to make somebody suddenly notice or think of | [The Reunion](./06-the-reunion.md) |
 | struggle | to have a lot of difficulty doing something | [The Promotion](./09-the-promotion.md) |
 | surface | to appear or come into view | [The Reunion](./06-the-reunion.md) |
 | suspect | to think something is likely, without being certain | [An Unexpected Guest](./10-an-unexpected-guest.md) |

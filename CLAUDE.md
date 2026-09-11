@@ -57,9 +57,13 @@ Everything is plain Python 3 with no dependencies. There is nothing to install.
 
 Vocabulary ceiling, new-word budget, glossary coverage and definitions,
 re-teaching a word, teaching a word after it already appeared, teaching a word a
-lower level already assumes known, prose length, declared and banned grammar,
-US English spelling, and front-matter consistency. `SPECIFICATIONS.md` explains
-each one and why it exists.
+lower level already assumes known, **teaching a word that is already in the
+level's own base wordlist** (a level's `wordlists/<LEVEL>.txt` is what a reader
+knows *before* any story at that level — declaring one of those words as a
+story's own "New Word" is a contradiction, not a level-appropriate choice),
+prose length, declared and banned grammar, US English spelling, and
+front-matter consistency. `SPECIFICATIONS.md` explains each one and why it
+exists.
 
 ## Conventions
 

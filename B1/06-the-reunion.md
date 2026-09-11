@@ -5,7 +5,7 @@ topic: friendship and time
 grammar: [past simple, past perfect, present perfect for experience, relative clauses]
 characters: [Rachel, Daniel, Sophie]
 word_count: 369
-new_words: 8
+new_words: 9
 ---
 
 # The Reunion

@@ -8,4 +8,26 @@ Complex sentence structures, idiomatic expressions, and abstract or specialized 
 - **New words per story:** up to 18
 - **Vocabulary ceiling:** `wordlists/` up to and including `B2.txt`
 
-No stories yet at this level.
+## Stories
+
+| # | Story | Words | New | Topic |
+|---|-------|-------|-----|-------|
+| 01 | [The Inheritance](./01-the-inheritance.md) | 554 | 10 | family and money |
+| 02 | [A Change of Heart](./02-a-change-of-heart.md) | 488 | 6 | belief and persuasion |
+| 03 | [The Whistleblower](./03-the-whistleblower.md) | 487 | 11 | ethics at work |
+| 04 | [Burnout](./04-burnout.md) | 499 | 8 | work and wellbeing |
+| 05 | [The Negotiation](./05-the-negotiation.md) | 462 | 10 | business and compromise |
+| 06 | [Estranged](./06-estranged.md) | 465 | 9 | family and reconciliation |
+| 07 | [The Investment](./07-the-investment.md) | 521 | 5 | money and risk |
+| 08 | [A Public Apology](./08-a-public-apology.md) | 451 | 8 | accountability |
+| 09 | [The Mentor](./09-the-mentor.md) | 468 | 9 | growth and humility |
+| 10 | [Rebuilding Trust](./10-rebuilding-trust.md) | 451 | 8 | relationships and repair |
+
+## Recurring cast
+
+Stories at this level share characters, so the reader builds context
+instead of meeting a new set of names in every text.
+
+Isabel, Thomas, Nora, Felix, Diane, Henry.
+
+Vocabulary taught at this level: [VOCABULARY.md](./VOCABULARY.md).
