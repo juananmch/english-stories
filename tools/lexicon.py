@@ -72,6 +72,7 @@ IRREGULAR_LEMMAS = {
     "stung": "sting",
     "rewrote": "rewrite", "rewritten": "rewrite",
     "repaid": "repay", "forgiven": "forgive", "forgave": "forgive",
+    "clung": "cling", "sought": "seek",
     "drank": "drink", "drunk": "drink", "flew": "fly", "flown": "fly", "hung": "hang",
     "rang": "ring", "rung": "ring", "swum": "swim", "blew": "blow", "blown": "blow",
     "drew": "draw", "drawn": "draw", "threw": "throw", "wrote": "write", "rode": "ride",

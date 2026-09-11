@@ -8,4 +8,26 @@ Nuanced language, implicit meaning, and complex narrative structures on a wide r
 - **New words per story:** up to 20
 - **Vocabulary ceiling:** `wordlists/` up to and including `C1.txt`
 
-No stories yet at this level.
+## Stories
+
+| # | Story | Words | New | Topic |
+|---|-------|-------|-----|-------|
+| 01 | [The Resignation Letter](./01-the-resignation-letter.md) | 572 | 4 | work and integrity |
+| 02 | [A Question of Loyalty](./02-a-question-of-loyalty.md) | 542 | 7 | friendship and competing obligations |
+| 03 | [The Long Silence](./03-the-long-silence.md) | 553 | 11 | creativity and self-doubt |
+| 04 | [The Understudy](./04-the-understudy.md) | 560 | 8 | ambition and resentment |
+| 05 | [A Matter of Principle](./05-a-matter-of-principle.md) | 584 | 8 | ethics and pragmatism |
+| 06 | [The Last Deal](./06-the-last-deal.md) | 541 | 7 | aging and legacy |
+| 07 | [Recalibration](./07-recalibration.md) | 550 | 8 | identity and career change |
+| 08 | [The Apprentice](./08-the-apprentice.md) | 524 | 8 | mentorship and succession |
+| 09 | [What Remains Unsaid](./09-what-remains-unsaid.md) | 547 | 9 | grief and communication |
+| 10 | [The Inheritance of Doubt](./10-the-inheritance-of-doubt.md) | 558 | 7 | family patterns and change |
+
+## Recurring cast
+
+Stories at this level share characters, so the reader builds context
+instead of meeting a new set of names in every text.
+
+Eleanor, Julian, Priya, Simon, Adrian, Camille, Lucy.
+
+Vocabulary taught at this level: [VOCABULARY.md](./VOCABULARY.md).

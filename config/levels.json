@@ -183,7 +183,6 @@
     "defence": "defense",
     "cheque": "check",
     "flat": "apartment",
-    "lift": "elevator",
     "rubbish": "trash",
     "trousers": "pants",
     "biscuit": "cookie",
@@ -195,7 +194,6 @@
     "mum": "mom",
     "football": "soccer",
     "pavement": "sidewalk",
-    "underground": "subway",
     "chemist": "pharmacy",
     "torch": "flashlight",
     "jumper": "sweater"

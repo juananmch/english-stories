@@ -1,6 +1,50 @@
 # C1 headwords — words that become assumed-known at C1 (in addition to A1-B2).
 #
-# STATUS: starter list. Expand this before authoring C1 stories.
+# The block below is everyday-abstract narrative vocabulary added while
+# authoring the first 10 C1 stories, in the same spirit as the equivalent
+# blocks in B1.txt/B2.txt — the academic/AWL-style list further down doesn't
+# cover it.
+
+absence abundance account accurate actively advisor ahead altogether amid
+apprentice architectural assumption attention audience avoidance backdrop
+backstage bear beyond blocked bluntly board born bout bred brilliance
+calculation carelessness case cast channel chaos chief childhood churn
+civility coached comfort comparable competence competent competently
+compliment conclusion conference confession consequential contrast
+conviction convincingly correctness correspondingly count countless
+cowardice critic criticism critique crouch cruel cruelty cushion dead
+deliberation directness discard distinguished ensue erect estimation
+evident evidently exception execute explicit fairness familiarity flow
+forbidden formality forthcoming frankly frantic freshness frighten funded
+gathering graver handful honesty identity ignorance implication inadequate
+incompetence inconvenient indefinitely insofar instinctive institution
+institutional intention interaction intervention intuitive investor irony
+irrelevance itemize lack lapse laryngitis lay length lifelessness
+limitation literary longstanding loyalty manual markedly massage master
+material merit midway minimize misleading mismanagement misrepresent
+modest modification naive negotiable nerve nonetheless nonexecutive nor
+notwithstanding novel objection observance obstacle occasion openness
+operation opposite ought outlast outright outstrip overextension owe page
+painless patience peace peculiarly perceptive periodic periodically permit
+persistent piano plainly plead pleasantry pleasure possess possessor
+praise preceding precision prestige pride prior prioritize production
+professional profitability prompt proven publishable pursuit quantity
+readiness reality reassert reception recital recklessly reconstruction
+recur reference reshape resident respect restless rework sacrifice scale
+scaling scalpel section sector seldom seniority sentence seriousness
+shorthand significance suffice suppress surgeon surgical talent talented
+technical tend term tighten toward trait tremor triumph truth tuck
+unbearable uncomplicated unconsciously undeniable underlying undermine
+unemployment unhurried unnoticed unpleasantly unprompted unpublishable
+unremarked unreserved untutored verge volunteer wedding willingness
+witness workaround workshop
+advise allegation bound clash clinical cling co conscience denial developer
+grieve hone refusal regardless remarkable resemblance resemble retrospect
+soften sort seek species specificity stability stake startle state steady
+stubborn such thereafter thoroughness tolerable underground upon peer
+understate
+
+# --- below: broader academic/analytical register, curated separately ---
 
 aberration abhor abridge abstruse accolade acquiesce acrimonious adamant
 admonish adroit adulation adversarial affable affinity aggrandize alacrity
