@@ -16,7 +16,7 @@ inventory, and US English throughout.
 | [B1](./B1) | Intermediate | 10 | 83 |
 | [B2](./B2) | Upper Intermediate | 10 | 84 |
 | [C1](./C1) | Advanced | 10 | 77 |
-| [C2](./C2) | Proficiency | 0 | 0 |
+| [C2](./C2) | Proficiency | 10 | 76 |
 
 ## Read them on the web
 

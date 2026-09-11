@@ -8,4 +8,26 @@ Near-native fluency, subtle stylistic and cultural nuance, and sophisticated voc
 - **New words per story:** up to 20
 - **Vocabulary ceiling:** `wordlists/` up to and including `C2.txt`
 
-No stories yet at this level.
+## Stories
+
+| # | Story | Words | New | Topic |
+|---|-------|-------|-----|-------|
+| 01 | [The Eulogy](./01-the-eulogy.md) | 558 | 9 | grief and honesty |
+| 02 | [A Question of Style](./02-a-question-of-style.md) | 582 | 7 | art and honesty |
+| 03 | [Between Languages](./03-between-languages.md) | 546 | 10 | identity and belonging |
+| 04 | [The Retrospective](./04-the-retrospective.md) | 556 | 6 | art and self-perception |
+| 05 | [The Last Correction](./05-the-last-correction.md) | 576 | 7 | obsolescence and craft |
+| 06 | [A Necessary Fiction](./06-a-necessary-fiction.md) | 567 | 9 | medicine and truth |
+| 07 | [The Understory](./07-the-understory.md) | 543 | 8 | nature and renewal |
+| 08 | [Fault Lines](./08-fault-lines.md) | 512 | 9 | institutions and slow failure |
+| 09 | [The Weight of Small Things](./09-the-weight-of-small-things.md) | 570 | 4 | memory and material life |
+| 10 | [Cassandra's Complaint](./10-cassandras-complaint.md) | 566 | 7 | expertise and vindication |
+
+## Recurring cast
+
+Stories at this level share characters, so the reader builds context
+instead of meeting a new set of names in every text.
+
+Miriam, Desmond, Rosalind, Theo, Nathaniel, Beatrice.
+
+Vocabulary taught at this level: [VOCABULARY.md](./VOCABULARY.md).
