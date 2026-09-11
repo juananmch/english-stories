@@ -19,3 +19,7 @@ On my birthday, I always want chocolate cake. My sister makes a chocolate cake f
 I think food is not just about eating. Food is about family, memories, and love. When I cook my grandmother's soup, I remember her kitchen and her smile.
 
 What is your favorite food?
+
+## New Words
+
+soup, noodle, sandwich, lettuce, spicy, sauce, birthday cake, memory, tasty

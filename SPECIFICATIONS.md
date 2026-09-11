@@ -91,3 +91,7 @@ Recommended method:
 This turns vocabulary tracking into a simple, auditable file (the log)
 instead of relying on memory, so it scales correctly as more stories and
 levels are added over time.
+
+Each level directory has its own log (e.g. `A1/VOCABULARY.md`,
+`A2/VOCABULARY.md`). Before adding a new story to a level, check that
+level's log first.

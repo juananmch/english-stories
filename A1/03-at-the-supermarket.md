@@ -29,3 +29,7 @@ Elena pays with her card. The total is forty dollars. She puts all the food in t
 She walks home with her bags. The supermarket is only ten minutes from her apartment. Now she has food for the whole week.
 
 Shopping is not her favorite activity, but she does it every Saturday. It is part of her routine.
+
+## New Words
+
+shopping cart, list, section, fruit, vegetable, cashier, checkout, pay, healthy

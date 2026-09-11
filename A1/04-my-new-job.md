@@ -2,9 +2,9 @@
 
 Today is Monday. It is my first day at a new job. My name is Miguel and I am 31 years old.
 
-I am nervous, but also happy. I wake up early, at six o'clock. I have a shower and eat breakfast. I don't eat much because I am nervous.
+I am nervous, but also happy. I wake up early, at six o'clock. I take a shower and eat breakfast. I don't eat much because I am nervous.
 
-I put on my new shirt and my black trousers. I look in the mirror. "You can do this," I say to myself.
+I put on my new shirt and my black pants. I look in the mirror. "You can do this," I say to myself.
 
 I leave home at seven thirty. The office is in the city center. I take the train because it is fast.
 
@@ -29,3 +29,7 @@ At lunch, Rita invites me to eat with her. We talk about our lives. She has work
 My first day is long, but not bad. I learn a lot of new things. I am tired at the end of the day, but I feel good.
 
 I think I am going to like this job.
+
+## New Words
+
+nervous, manager, welcome, desk, computer, introduce, questions, pants, mirror

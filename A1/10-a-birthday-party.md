@@ -33,3 +33,7 @@ By midnight, most guests go home. Rosa and Antonio are tired, but very happy.
 "This was a perfect birthday," says Rosa. "Thank you for organizing all of this."
 
 Antonio smiles. "You deserve it. Happy birthday, my love."
+
+## New Words
+
+decorate, balloon, guest, present, candle, wish, bakery, laughter, deserve

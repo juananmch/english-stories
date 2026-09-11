@@ -12,7 +12,7 @@ At eleven, his friend Jack calls him. "Do you want to play tennis?" asks Jack.
 
 They meet at the sports center at twelve o'clock. They play tennis for one hour. David is not very good at tennis, but he has fun. Jack wins the game, but David doesn't mind.
 
-After tennis, they are hungry. They go to a pizza restaurant. They order a big pizza with cheese and vegetables. They also drink cold beer.
+After tennis, they are hungry. They go to a pizza restaurant. They order a big pizza with cheese and vegetables. They also drink cold soda.
 
 "This is a perfect Saturday," says David.
 
@@ -27,3 +27,7 @@ After the movie, they cook dinner together. They make pasta with tomato sauce. I
 On Sunday, David relaxes at home. He doesn't do very much. He listens to music and calls his mother.
 
 He knows that on Monday, he will work again. But today, the weekend is still here, and he wants to enjoy every minute of it.
+
+## New Words
+
+weekend, tennis, sports center, order, clean, relax, popcorn, movie, enjoy

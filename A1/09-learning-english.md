@@ -21,3 +21,7 @@ Learning a new language is not easy. Sometimes I make mistakes, and sometimes I 
 My goal is to speak English very well next year. I want to travel to other countries and talk to people from all over the world.
 
 Learning English is difficult, but it is also fun. Every new word is like a small gift.
+
+## New Words
+
+patient, practice, subtitle, grammar, mistake, proud, goal, culture, concentrate
