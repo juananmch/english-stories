@@ -1,35 +1,87 @@
+---
+level: A2
+title: A Problem at Work
+topic: work
+grammar: [past simple, past continuous, should / have to / must, adverbs of manner and frequency]
+characters: [Patricia, Jennifer]
+word_count: 272
+new_words: 10
+---
+
 # A Problem at Work
 
-On Tuesday morning, Angela noticed a serious problem at work. An important file was missing from the shared computer system, and she needed it for a meeting that afternoon.
+On Tuesday morning Patricia found a serious problem. An important file was
+missing from the company computer system, and she needed it for a meeting at two
+o'clock.
 
-She searched everywhere: her email, her folders, and the shared drive. Nothing. She started to feel anxious because the meeting was with an important client.
+She searched everywhere: her email, her folders, the shared drive. Nothing. The
+meeting was with a new client, and she started to feel the panic in her stomach.
 
-She decided to talk to her supervisor, Mr. Chen, immediately. "I'm sorry to interrupt," she said, "but I have a problem with the client's file. I can't find it anywhere."
+She went straight to her supervisor, Mr. Chen.
 
-Mr. Chen stayed calm. "Don't worry," he said. "Let's figure this out together."
+"I am sorry to interrupt," she said, "but the client file is gone. I cannot find
+it anywhere."
 
-They checked the system logs and discovered that another employee had accidentally deleted the file the day before. Fortunately, the company had a backup system.
+Mr. Chen did not look worried. "Show me," he said.
 
-"We can restore it from the backup," Mr. Chen explained. "It might take about thirty minutes."
+They checked the system together. While they were looking at the history, they
+saw what happened: another employee deleted the file by accident on Monday
+evening.
 
-Angela felt relieved, but also worried about the time. The meeting was in one hour. She used that time to prepare the rest of her presentation while the file was restored.
+"That is annoying, but it is not a disaster," Mr. Chen said. "We have a backup.
+It takes about thirty minutes to restore it."
 
-Twenty-five minutes later, the file was back. Angela quickly reviewed it to make sure everything was correct.
+Patricia was relieved, but thirty minutes was a lot. She used the time to
+prepare the rest of her presentation.
 
-At two o'clock, the meeting started. Angela presented the information clearly and confidently, even though her morning had been stressful.
+Twenty-five minutes later the file was back. She checked it quickly and found
+everything was there.
 
-The client seemed satisfied with the presentation and didn't notice anything unusual. After the meeting, Angela thanked Mr. Chen for his help.
+At two o'clock the meeting started. Patricia presented the information clearly
+and answered every question. The client was happy and noticed nothing.
 
-"Thank you for staying calm," she said. "I was really stressed this morning."
+Afterwards she thanked Mr. Chen.
 
-"These things happen sometimes," Mr. Chen replied. "The important thing is how we solve the problem."
+"You were very calm," she said. "I was not."
 
-That evening, Angela told her roommate about the stressful day. "I learned that it's important to stay calm, even in difficult situations," she said.
+"These things happen every month," he answered. "What matters is what you do
+next. You came to me immediately instead of losing an hour alone. That was
+exactly right."
 
-Her roommate smiled. "It sounds like you handled it really well."
+That evening Patricia told Jennifer about her day.
 
-Angela agreed. Even though the day started badly, she felt proud of how she handled the problem.
+"So the system saved you," Jennifer said.
+
+"The backup saved me," Patricia said. "But asking for help saved me first."
 
 ## New Words
 
-missing, supervisor, interrupt, employee, accidentally, delete, backup, restore, confidently, handle
+- **missing** — not in the place where it should be
+- **shared** — used by more than one person
+- **panic** — a sudden strong feeling of fear
+- **supervisor** — the person at work who checks what you do
+- **interrupt** — to stop somebody while they are speaking or working
+- **employee** — a person who works for a company
+- **delete** — to remove something from a computer
+- **annoying** — making you a little angry
+- **backup** — a second copy you keep in case you lose the first one
+- **restore** — to bring something back after you lose it
+
+## Questions
+
+1. What did Patricia need for the two o'clock meeting?
+2. What did she do when she could not find the file?
+3. What had happened to the file?
+4. How long did it take to restore it?
+5. What did Mr. Chen say she did exactly right?
+
+<details>
+<summary>Answers</summary>
+
+1. She needed an important client file.
+2. She went straight to her supervisor, Mr. Chen.
+3. Another employee deleted it by accident on Monday evening.
+4. It took twenty-five minutes.
+5. She came to him immediately instead of losing an hour alone.
+
+</details>

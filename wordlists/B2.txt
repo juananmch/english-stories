@@ -1,0 +1,40 @@
+# B2 headwords — words that become assumed-known at B2 (in addition to A1-B1).
+#
+# STATUS: starter list. Expand this before authoring B2 stories.
+
+abolish abrupt absorb abstract accelerate accompany accumulate accuse acute
+adhere adjacent advocate aesthetic affluent aggregate alienate allocate allude
+ambiguous amend amplify analogy anomaly apparatus arbitrary articulate
+ascertain aspire assert assimilate attribute augment authentic autonomy
+bewilder bolster bureaucracy candid capitalize cascade catalyst cautious
+coherent coincide collapse collateral commodity compel compensate compile
+complement comply comprehensive comprise conceal concede conceive condemn
+confer configure confine conform confront conjunction consecutive consensus
+console conspicuous constitute constrain contemplate contend contingent
+contradict converge convey corroborate counteract credible culminate curtail
+deceive decisive deduce defer deficit degrade delegate delicate deplete
+deploy depict deprive deteriorate deviate devise differentiate diffuse
+dilemma diligent discern discrepancy discretion disperse disproportionate
+disrupt dissolve distort diverge divert doctrine drastic dubious elicit
+eloquent elusive embark embody empirical emulate enact encompass endeavor
+endorse entail entrench envisage erode erratic escalate exacerbate exemplify
+exert exhaustive exploit extract fabricate facet feasible fluctuate
+formulate fragment frivolous fusion galvanize grievance hamper hierarchy
+hinder homogeneous hypothesis illicit immerse imminent impartial impede
+imperative implicit inadvertent incentive incorporate incremental indigenous
+induce indulge inert inhibit innate innovative insulate intact integral
+intricate intrinsic invoke irrespective jeopardize juxtapose lament latent
+legacy leverage lucrative magnitude mandate manifest manipulate meticulous
+mitigate mobilize momentum mundane negligible nominal nuance obscure
+offset optimal orchestrate ostensibly outweigh paradigm paradox paramount
+parameter partake pending perpetuate pertinent pervasive plausible plight
+pragmatic precedent precipitate preclude predominant prevalent proficient profound
+proliferate prone propagate provisional provoke prudent qualitative
+quantitative rationale reciprocal reconcile rectify redundant refute
+reiterate relinquish remedy render replicate reproach repudiate resilient
+resonate restrain retain retrieve rhetoric rigorous robust salient sanction
+saturate scrutiny sever skeptical solicit sporadic stagnant stipulate
+subdue subordinate subsidize substantiate subtle succinct supersede
+surpass susceptible synthesize tangible tedious tentative threshold
+trajectory transcend transient turbulent unanimous underpin unprecedented
+unravel vague validate versatile viable vigorous vindicate volatile warrant

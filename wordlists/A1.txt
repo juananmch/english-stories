@@ -1,0 +1,98 @@
+# A1 headwords — assumed known at A1.
+# One lemma per entry; entries separated by whitespace or commas. '#' starts a comment.
+# Inflected forms (plurals, -ed, -ing, -s, common irregulars) are resolved by the
+# lemmatizer in tools/lexicon.py, so only the base form belongs here.
+
+# --- function words, determiners, pronouns, question words ---
+a an the this that these those some any no none all both each every other another
+i you he she it we they me him her us them my your his its our their mine yours
+myself yourself himself herself itself ourselves themselves
+who what which when where why how whose
+and but or so because if then than as also too either neither
+in on at to from by for with without of off out up down over under above below
+into onto near next beside between behind front back inside outside through around
+here there again very much many more most less few little lot
+not never always sometimes often usually already still yet just only even
+am is are was were be been being do does did done have has had
+can could will would shall may must let get got
+
+# --- numbers, time, calendar ---
+one two three four five six seven eight nine ten eleven twelve thirteen fourteen
+fifteen sixteen seventeen eighteen nineteen twenty thirty forty fifty sixty
+seventy eighty ninety hundred thousand million first second third last next
+number half quarter
+monday tuesday wednesday thursday friday saturday sunday
+january february march april may june july august september october november december
+day week month year today tomorrow yesterday morning afternoon evening night
+time hour minute o'clock early late now soon before after during weekend
+spring summer fall winter season holiday birthday
+
+# --- people, family, relationships ---
+man woman boy girl child children people person friend family mother father
+mom dad parent brother sister son daughter husband wife baby grandmother
+grandfather aunt uncle cousin neighbor boyfriend girlfriend name age adult
+group team everyone someone nobody everybody
+
+# --- home and daily life ---
+house home apartment room bedroom kitchen bathroom living door window wall floor
+garden yard table chair sofa bed desk lamp light key phone television radio
+computer clock picture box bag book newspaper letter card paper pen pencil
+clothes shirt dress shoe sock hat coat jacket pants skirt bag glasses watch
+wash clean dirty tidy cook eat drink sleep wake rest sit stand walk run open
+close start stop finish begin end use need want like love hate hope try help
+make become seem bring send break win jump climb wear
+give take put keep hold carry buy sell pay cost find lose look see watch
+hear listen say tell talk speak ask answer call read write learn study know
+think remember forget understand mean feel play work live stay leave arrive
+come go move travel drive ride visit meet wait stop turn show wear change
+send receive share choose decide happen smile laugh cry sing dance draw paint
+
+# --- food and drink ---
+food drink water coffee tea milk juice beer wine bread cheese butter egg meat
+chicken fish rice pasta soup salad vegetable fruit apple banana orange tomato
+potato onion carrot sugar salt chocolate cake cookie sandwich pizza breakfast
+lunch dinner meal menu restaurant café bar cup glass plate bottle hungry
+thirsty delicious sweet hot cold fresh
+
+# --- work, study, money ---
+job work office company boss manager worker business shop store market money
+price expensive cheap free card cash bank pay salary customer client meeting
+school teacher student class lesson homework test exam university course
+english language word question problem answer idea plan list note report
+project email message internet website app
+
+# --- places and travel ---
+city town village country street road park beach mountain river lake sea
+building center station airport hotel museum library hospital church bus train
+car taxi plane bike ticket map trip vacation tourist camera photo bag suitcase
+place way address far near left right north south east west
+
+# --- body and health ---
+body head face eye ear nose mouth tooth hair hand arm leg foot back heart
+doctor nurse medicine sick ill pain hurt tired well healthy strong weak
+
+# --- adjectives and adverbs ---
+good bad big small large long short tall high low new old young nice beautiful
+pretty ugly happy sad angry afraid nervous quiet loud busy free easy difficult
+hard simple important different same right wrong true real sure ready open
+closed full empty clean dirty warm cool dry wet sunny rainy cloudy windy
+black white red blue green yellow brown gray pink orange
+slowly quickly carefully together alone almost really probably maybe perhaps
+well better best worse worst
+
+# --- weather, nature, animals ---
+weather sun rain snow wind cloud sky air water fire tree flower grass animal
+dog cat bird horse fish
+
+# --- other common nouns and verbs ---
+about cannot ago tonight normal perfect fine promise past star terrible
+whole twice away care somewhere anywhere everywhere nowhere else across except
+excuse hall spoon video fast seat fly drink ring hang blow draw throw catch
+university history market clinic online full each both
+quite space set anybody somebody whatever noisy lunchtime cafe
+dollar euro pan cream corn wax metal alcohol liquid plant knife stone voice
+noise nose knowledge middle
+thing something anything nothing everything part piece side end top bottom
+color size shape story life world music film movie game sport soccer tennis
+party gift present news fun joke luck chance kind type example reason result
+sorry please thank hello goodbye yes okay

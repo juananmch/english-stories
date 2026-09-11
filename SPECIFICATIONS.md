@@ -1,97 +1,151 @@
 # Project Specifications
 
-This document records the requirements agreed for this repository, so future
-work (new stories, new levels) stays consistent.
+The rules every story in this repository follows. Most of them are enforced by
+`tools/validate.py`, which reads `config/levels.json` — so this document
+explains the system, and the config is the authority.
 
 ## 1. Purpose
 
-A collection of short stories for English learners, organized by CEFR level
-(A1 to C2), used for reading practice.
+Graded short stories for adult English learners, organized by CEFR level
+(A1 to C2), for reading practice.
 
-## 2. Repository Structure
+## 2. Audience
 
-- One directory per CEFR level: `A1/`, `A2/`, `B1/`, `B2/`, `C1/`, `C2/`.
-- Each directory has its own `README.md` describing that level.
-- The root `README.md` lists and links all levels.
-- Each story is a separate Markdown file inside its level's directory.
+Adult learners, roughly **20 to 45 years old**. Topics and characters reflect
+adult everyday life — work, family, money, health, travel, friendship — never
+children's or school themes.
 
-## 3. File Naming
+## 3. Repository layout
 
-`NN-title-in-kebab-case.md`, where `NN` is a two-digit sequence number
-within the level (e.g. `01-a-normal-day.md`, `02-my-family.md`).
+```
+A1/ … C2/          one directory per level
+  NN-title.md      one story per file, numbered in reading order
+  README.md        generated index for the level
+  VOCABULARY.md    generated log of every word taught at the level
+config/levels.json word ranges, new-word budgets, grammar inventory, US spelling map
+wordlists/         the vocabulary a reader is assumed to know at each level
+tools/             validator and index builder
+```
 
-## 4. Language Variant
+Generated files carry a "do not edit by hand" header. Edit the stories and run
+`python3 tools/build.py`.
 
-All stories must use **US English**:
+## 4. Story file format
 
-- Spelling: `color`, `favorite`, `center`, `organize` (not `colour`,
-  `favourite`, `centre`, `organise`).
-- Vocabulary: `apartment` (not `flat`), `vacation` (not `holiday`),
-  `elevator` (not `lift`), `trash`/`garbage` (not `rubbish`), `cell phone`
-  (not `mobile`), `store`/`shop` as used in the US, `soccer` (not
-  `football`, unless the sport itself is the topic and context makes it
-  clear), etc.
-- Punctuation and quotation conventions follow US style (e.g. double
-  quotation marks for dialogue, period/comma placement inside quotes).
+Every story is Markdown with YAML front matter:
 
-## 5. Target Audience
+```markdown
+---
+level: A1
+title: A Normal Day
+topic: daily routine
+grammar: [present simple, prepositions of time and place, basic connectors]
+characters: [Laura, Elena]
+word_count: 171
+new_words: 8
+---
 
-Adult learners, roughly **20 to 45 years old**. Story topics and
-characters should reflect adult, everyday life (work, family, shopping,
-travel, hobbies, social life) — not children's or school topics.
+# A Normal Day
 
-## 6. Vocabulary Constraints
+…prose…
 
-- Grammar and vocabulary must stay within the target CEFR level. No words
-  or structures above the level should be used.
-- As a reference ceiling for allowed vocabulary per level, use an
-  established CEFR wordlist (e.g. the Cambridge English Vocabulary Profile,
-  Oxford 3000/5000, or the NGSL/CEFR-J lists) rather than judgment alone.
+## New Words
 
-## 7. File Format and Length
+- **word** — a definition written in language at or below this level
 
-- Format: plain Markdown (`.md`), one story per file, starting with a
-  level-1 heading (`# Title`).
-- Maximum length: **1000 words** per story (in practice, A1 stories are
-  much shorter, roughly 200-350 words, to match the level).
+## Questions
 
-## 8. Vocabulary Repetition Control (New Vocabulary per Story)
+1. …five comprehension questions…
 
-Goal: every story should teach the reader something new, so **target
-vocabulary should not repeat across stories within the same level**.
+<details>
+<summary>Answers</summary>
 
-Recommended method:
+1. …
 
-1. **Split vocabulary into two tiers:**
-   - *Core/structural words* — high-frequency words (articles, pronouns,
-     basic verbs like `be`, `have`, `go`, connectors like `and`, `but`,
-     `because`). These are expected to repeat across stories; a level
-     cannot be written without reusing them.
-   - *Target/content words* — the topic-specific nouns, verbs, and
-     adjectives a story is built around (e.g. `supermarket`, `cashier`,
-     `checkout` in a shopping story). These are the words a story is
-     meant to teach.
+</details>
+```
 
-2. **Keep a running vocabulary log per level**, e.g. `A1/VOCABULARY.md`,
-   listing the target/content words already introduced, grouped by story.
+`word_count` and `new_words` are derived values — run
+`python3 tools/build.py --fix-meta` rather than counting by hand. Entries in
+`grammar` and `characters` must not contain commas, since front-matter lists
+are comma-separated.
 
-3. **Before writing a new story**, check the level's log and avoid
-   reusing words already logged as target vocabulary in an earlier story
-   at that level. Core/structural words are exempt from this check.
+## 5. Language variant
 
-4. **After finishing a story**, append its new target words to the log,
-   so the next story (by anyone, human or AI) can consult it and keep
-   building on fresh vocabulary instead of repeating it.
+**US English** throughout: `color`, `favorite`, `center`, `organize`;
+`apartment` not `flat`, `vacation` not `holiday`, `elevator` not `lift`,
+`pants` not `trousers`, `soccer` not `football`, `pharmacy` not `chemist`.
+The full map is the `us_english` section of `config/levels.json`, and the
+validator rejects any British form listed there.
 
-5. Optionally, each story can end with a short **"New Words"** list. This
-   helps the learner and doubles as the exact source list to append to
-   the level's vocabulary log — keeping the log accurate with minimal
-   extra effort.
+## 6. Level control — the core of the system
 
-This turns vocabulary tracking into a simple, auditable file (the log)
-instead of relying on memory, so it scales correctly as more stories and
-levels are added over time.
+Level is controlled on **two axes**, because CEFR level is driven as much by
+grammar as by vocabulary.
 
-Each level directory has its own log (e.g. `A1/VOCABULARY.md`,
-`A2/VOCABULARY.md`). Before adding a new story to a level, check that
-level's log first.
+### Vocabulary
+
+`wordlists/` defines what a reader at each level is **assumed to know**. The
+allowed vocabulary for a story is every list up to and including its level.
+Anything outside that must be declared in the story's `## New Words` glossary,
+and each story may declare at most `new_word_budget` words (10 at A1, 12 at A2).
+
+That is the whole mechanism, and it closes the hole a hand-maintained log
+leaves open: a story cannot quietly introduce fifty unlisted words, because
+every word is either already known, explicitly taught, or a validation failure.
+
+A word taught in story 3 counts as known from story 4 onward, so vocabulary
+accumulates the way a reader's does.
+
+### Grammar
+
+Each level has a `grammar_allowed` inventory and a set of `grammar_banned`
+patterns. A story declares the structures it practices in its front matter,
+and the validator checks both directions: the declared structures must exist
+in the level's inventory (inherited from all lower levels), and the prose must
+not contain a banned structure. This is what keeps past perfect out of A2 and
+present perfect out of A1.
+
+## 7. No repeated vocabulary
+
+Each story must teach something genuinely new, enforced by four checks:
+
+- **reteach** — a word already taught at this level, or at any lower level,
+  cannot be taught again.
+- **teach-late** — a word cannot be taught in story 7 if it already appeared in
+  story 3. The reader meets it and learns it in the same place.
+- **known** — a word already assumed known at a lower level cannot be taught;
+  an A2 story teaches A2-band vocabulary, not A1 vocabulary.
+- **glossary** — a declared word must actually appear in the prose, and must
+  have a definition.
+
+`VOCABULARY.md` in each level directory is the generated record of this, in
+reading order, with a combined alphabetical glossary.
+
+## 8. Length and pacing
+
+Prose length is bounded per level (`word_count` in the config: 150-400 at A1,
+250-500 at A2). Within a level, stories are ordered from shortest and simplest
+to longest, so a reader working through a directory in order meets a gentle
+slope rather than a step.
+
+## 9. Recurring cast
+
+Each level has a small recurring cast, listed in the generated level README.
+A reader who has finished three A1 stories already knows who Laura and Elena
+are, so attention goes to the language instead of to a new set of names. New
+characters must be registered in `wordlists/names.txt` — an unregistered
+capitalized word is reported as above level.
+
+## 10. Adding a story
+
+1. Read `PROMPT.md` and the level's `VOCABULARY.md`.
+2. Write the story to `<LEVEL>/NN-title.md` in the format above.
+3. `python3 tools/build.py --fix-meta`
+4. `python3 tools/validate.py --level <LEVEL>`
+5. Fix findings until it passes, then `python3 tools/build.py`.
+
+If the validator reports a word as above level that genuinely belongs to the
+level, the fix is to add it to the wordlist — that is a real correction to the
+level definition, not a way around the check. Adding a word to silence a
+finding when it does not belong at that level defeats the whole system.

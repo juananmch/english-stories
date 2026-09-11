@@ -1,35 +1,90 @@
+---
+level: A2
+title: Buying a Car
+topic: money and decisions
+grammar: [past simple, comparatives and superlatives, first conditional, quantifiers]
+characters: [Robert, Kevin]
+word_count: 310
+new_words: 10
+---
+
 # Buying a Car
 
-After years of using public transportation, Brian finally decided to buy his own car. His new job was far from the bus routes, so a car had become necessary.
+For years Robert used the bus and the train and never wanted a car. Then he
+changed jobs, and the new office is forty minutes from the nearest bus stop.
 
-He started by setting a budget. He didn't want to spend more than he could afford, so he decided on a maximum price and started saving a little every month.
+He started with a budget. He decided the maximum price, and then he saved money
+every month for eight months. He did not want to borrow anything.
 
-Brian spent several weekends visiting dealerships. He wanted a reliable, fuel-efficient car, not something too fancy. At the first dealership, a salesman showed him a shiny red sports car.
+In September he started visiting dealers. He wanted something reliable and
+cheap to run, not something fast.
 
-"This model has excellent performance," the salesman said.
+At the first place, a salesman showed him a bright red sports car.
 
-"It's nice," Brian replied, "but I need something more practical, and cheaper."
+"This one has excellent performance," the man said.
 
-At the second dealership, he found a used sedan that seemed perfect. It had low mileage, a clean interior, and a good safety rating. The price was also within his budget.
+"It is beautiful," Robert answered, "and it is twice my budget."
 
-Before making a decision, Brian asked a mechanic friend to inspect the car. "It's in good condition," his friend confirmed. "The engine sounds healthy, and there's no rust."
+At the second place he found a used car that looked right: low mileage, a clean
+interior, and a good safety report. The price was inside his budget.
 
-Feeling confident, Brian decided to negotiate the price with the dealer. "Can you lower the price a little?" he asked politely.
+Before he decided anything, he asked his friend Kevin to look at it. Kevin is a
+mechanic.
 
-After some discussion, the dealer agreed to a small discount. Brian was pleased with the final price.
+They went together on Saturday morning. Kevin opened everything, listened to
+the engine, and looked under the car for twenty minutes.
 
-He also had to arrange car insurance before driving the car home. He compared a few insurance companies online and chose one with a reasonable monthly payment.
+"It is honest," he said finally. "The engine is good and there is no rust. If
+you look after it, it will last you ten years."
 
-On the day he picked up the car, Brian felt a mix of excitement and nervousness. It had been years since he last drove regularly.
+So Robert went back and negotiated. He asked politely for a lower price, and
+after some discussion the dealer agreed to a small discount.
 
-He sat in the driver's seat, adjusted the mirrors, and took a deep breath. "Okay," he said to himself, "let's do this."
+Then came the insurance. He compared four companies online and chose the one
+with the most reasonable monthly payment.
 
-The drive home felt amazing. For the first time in years, Brian didn't have to wait for a bus or worry about the schedule.
+On the day he collected the car, Robert felt nervous. He had not driven
+regularly since university.
 
-That evening, he called his parents to share the news. "I finally bought a car!" he said proudly.
+He sat in the driver's seat, adjusted the mirrors, and breathed slowly.
 
-"That's fantastic," his father replied. "Drive safely, son."
+The drive home was wonderful. No timetable, no waiting in the rain, no running
+for the last bus.
+
+That evening he called his parents.
+
+"I bought a car," he said.
+
+"Drive carefully," his father answered. It is what fathers say.
 
 ## New Words
 
-budget, dealership, reliable, fuel-efficient, mileage, mechanic, inspect, negotiate, insurance, adjust
+- **budget** — the amount of money you plan to spend
+- **borrow** — to take money that you will pay back later
+- **dealer** — a company or person who sells cars
+- **reliable** — something you can trust because it works well
+- **mileage** — the number of miles a car has traveled
+- **interior** — the inside of a car or a building
+- **mechanic** — a person whose job is repairing cars
+- **rust** — the brown damage that water causes to metal
+- **negotiate** — to talk with somebody to agree a price
+- **insurance** — money you pay so a company will help if you have an accident
+
+## Questions
+
+1. Why did Robert need a car?
+2. How long did he save money?
+3. Why did he not buy the red sports car?
+4. What did Kevin check?
+5. What did Robert do about the price?
+
+<details>
+<summary>Answers</summary>
+
+1. His new office is forty minutes from the nearest bus stop.
+2. He saved every month for eight months.
+3. Because it was twice his budget.
+4. He listened to the engine and looked under the car for rust.
+5. He negotiated and got a small discount.
+
+</details>

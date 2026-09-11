@@ -1,33 +1,83 @@
+---
+level: A2
+title: Planning a Vacation
+topic: travel
+grammar: [will and going to for future, comparatives and superlatives, first conditional, quantifiers]
+characters: [Jennifer, Robert]
+word_count: 280
+new_words: 10
+---
+
 # Planning a Vacation
 
-Michael and his wife, Paula, wanted to take a vacation this summer. They both work full-time, so they don't have much free time to travel.
+Jennifer and Robert both work full-time, and this year they promised each other
+one real vacation.
 
-One evening, they sat down together and started planning. "Where should we go this year?" asked Michael.
+One evening in March they sat down with a laptop and started planning.
 
-"I'd like to go somewhere with a beach," Paula suggested. "Somewhere relaxing."
+"Where do you want to go?" Robert asked.
 
-They looked at several destinations online. They compared prices for flights and hotels. Some places were too expensive, and others didn't have good reviews.
+"Somewhere near the sea," Jennifer said. "Somewhere I can do nothing for a
+week."
 
-After a few days, they chose a small coastal town. It had beautiful beaches, affordable hotels, and good restaurants. It also wasn't too far from their city, so the flight would be short.
+They looked at a lot of places. Some were beautiful but very expensive. Others
+were cheap but the reviews were terrible. After four evenings they chose a
+small town on the coast, three hours away by plane.
 
-Once they decided on the destination, they had to plan the details. They booked their flights two months in advance to get a better price. They also reserved a hotel room with a sea view.
+Then came the details. They booked the flights two months early, because
+tickets are always cheaper then. They also reserved a room in a small hotel
+near the beach.
 
-Paula made a list of things to pack: swimsuits, sunscreen, comfortable shoes, and a good book. Michael was responsible for organizing their documents and checking the weather forecast.
+Jennifer made a list of things to pack: swimsuits, sunscreen, comfortable
+shoes and two books. Robert took care of the documents and checked the weather
+for that week.
 
-They also created a rough schedule for their trip. On the first day, they planned to relax on the beach. On the second day, they wanted to visit the old town and try local food. They left the rest of the days flexible, without a strict plan.
+They planned the first two days and left the rest open. On the first day they
+were going to do nothing at all. On the second day they wanted to walk around
+the old town and try the local food.
 
-"I don't want everything to be scheduled," said Michael. "I just want to relax and enjoy the moment."
+"If we plan every hour, it will not feel like a vacation," Robert said.
 
-Paula agreed. Their jobs were often stressful, so this vacation was important for both of them.
+Jennifer agreed. Their jobs are stressful, and this week was important for both
+of them.
 
-Two weeks before the trip, they were both very excited. They talked about the vacation almost every day and imagined themselves on the beach.
+In the last two weeks before the trip they talked about it almost every day.
 
-Finally, the day of the trip arrived. They packed their bags, checked their tickets one last time, and left for the airport early in the morning.
+Finally the morning arrived. They packed the car at five o'clock, checked the
+tickets one more time, and drove to the airport in the dark.
 
-"This is going to be a great vacation," Paula said, smiling, as they got into the taxi.
+"In four hours we will be sitting next to the sea," Jennifer said.
 
-Michael nodded. After months of hard work, they finally deserved some rest.
+Robert smiled. After eleven months of work, four hours felt like nothing.
 
 ## New Words
 
-vacation, destination, coastal, affordable, reserve, sea view, swimsuit, sunscreen, schedule, flexible
+- **review** — what somebody writes to say if a place or thing is good
+- **coast** — the land next to the sea
+- **flight** — a journey by plane
+- **local** — belonging to the place where you are
+- **reserve** — to keep a place or a room for a later date
+- **swimsuit** — the clothes you wear to swim
+- **sunscreen** — cream you put on your skin so the sun does not burn it
+- **comfortable** — nice to wear or sit in
+- **document** — an official paper such as a passport or a ticket
+- **stressful** — making you feel worried and tired
+
+## Questions
+
+1. What kind of place did Jennifer want?
+2. Why did they book the flights two months early?
+3. What did Jennifer put on her packing list?
+4. How much of the trip did they plan?
+5. What did Robert say about planning every hour?
+
+<details>
+<summary>Answers</summary>
+
+1. Somewhere near the sea where she could do nothing for a week.
+2. Because tickets are always cheaper then.
+3. Swimsuits, sunscreen, comfortable shoes and two books.
+4. They planned only the first two days and left the rest open.
+5. He said it would not feel like a vacation.
+
+</details>

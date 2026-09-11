@@ -1,35 +1,74 @@
+---
+level: A1
+title: At the Supermarket
+topic: shopping
+grammar: [present simple, there is / there are, prepositions of time and place, basic connectors]
+characters: [Elena]
+word_count: 219
+new_words: 8
+---
+
 # At the Supermarket
 
-On Saturday morning, Elena goes to the supermarket. She needs food for the week.
+Every Saturday morning Elena goes to the supermarket. She buys food for all the
+week.
 
-She takes a shopping cart and a list. Her list says: bread, milk, eggs, fruit, vegetables, chicken, and rice.
+Before she leaves home, she writes a list on a piece of paper. Today her list
+says: bread, milk, eggs, fruit, vegetables, chicken and rice.
 
-First, she goes to the fruit section. She buys apples, bananas, and oranges. The fruit looks fresh and good.
+At the supermarket she takes a cart. First she goes to the fruit. She buys
+apples, bananas and oranges. The fruit is fresh and it is not expensive.
 
-Next, she goes to the vegetable section. She buys tomatoes, potatoes, and onions. Vegetables are important for a healthy diet.
+Then she buys vegetables: tomatoes, potatoes and onions. Elena eats a lot of
+vegetables because they are healthy.
 
-Then, she walks to the meat section. She buys chicken for dinner. She doesn't like red meat very much.
+After that she buys bread, cheese and milk. There is chicken for dinner too.
 
-After that, she finds the bread. There are many kinds of bread in the supermarket. She chooses a brown bread because it is healthier.
+At the end she sees the chocolate. Elena loves chocolate very much! She puts
+one small chocolate in her cart.
 
-Elena also buys milk, cheese, and eggs. These are for breakfast during the week.
+Now Elena goes to the woman with the money. There are four people in front of
+her, so she waits five minutes.
 
-At the end, she sees some chocolate. She loves chocolate! She puts one bar in her cart. It is a small treat for herself.
+"Hello. How are you today?" the cashier says.
 
-Elena goes to the checkout. There is a short line. She waits five minutes.
+"I am fine, thank you," Elena says.
 
-The cashier is friendly. She says, "Hello, how are you today?"
+Elena pays with her card. The food costs forty dollars. She puts all the food
+in two bags.
 
-Elena says, "I'm fine, thank you. And you?"
+The supermarket is near her apartment, so Elena walks home with her two bags.
+Now she has food for all the week.
 
-"Very well, thanks," says the cashier.
-
-Elena pays with her card. The total is forty dollars. She puts all the food in two bags.
-
-She walks home with her bags. The supermarket is only ten minutes from her apartment. Now she has food for the whole week.
-
-Shopping is not her favorite activity, but she does it every Saturday. It is part of her routine.
+Elena does not love this Saturday morning, but it is not hard. It is only one
+hour, and then she is free.
 
 ## New Words
 
-shopping cart, list, section, fruit, vegetable, cashier, checkout, pay, healthy
+- **supermarket** — a big store where you buy food
+- **list** — words or things you write one under the other
+- **cart** — the big box on wheels you push in a supermarket
+- **fruit** — food like apples, bananas and oranges
+- **healthy** — good for your body
+- **cashier** — the person in a store who takes your money
+- **pay** — to give money for something
+- **bag** — you put things inside it and carry it
+
+## Questions
+
+1. When does Elena go to the supermarket?
+2. What does Elena write before she leaves home?
+3. Why does Elena eat a lot of vegetables?
+4. How much does the food cost?
+5. How does Elena go home?
+
+<details>
+<summary>Answers</summary>
+
+1. She goes every Saturday morning.
+2. She writes a list.
+3. Because vegetables are healthy.
+4. It costs forty dollars.
+5. She walks home.
+
+</details>

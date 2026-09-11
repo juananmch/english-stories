@@ -1,39 +1,86 @@
+---
+level: A1
+title: A Birthday Party
+topic: celebrations
+grammar: [present simple, past simple, there is / there are, possessives]
+characters: [Tom, Elena, Laura, David, Carlos, Ana, Max]
+word_count: 302
+new_words: 8
+---
+
 # A Birthday Party
 
-Today is a special day. It is Rosa's fortieth birthday, and she is having a party at her house.
+Last Saturday was Tom's birthday. He was 41 years old, and his friends made a
+party for him at Elena's apartment.
 
-Rosa starts to prepare in the morning. First, she cleans the house. Then, she decorates the living room with balloons and lights.
+Elena started at nine o'clock in the morning. First she cleaned all the rooms.
+Then she put balloons on the walls and lights on the window. Her apartment was
+very beautiful.
 
-Her husband, Antonio, helps her in the kitchen. They cook a lot of food: sandwiches, salads, and small pizzas. Rosa also orders a big birthday cake from the bakery. The cake has chocolate and strawberries on top.
+Laura and David came at four o'clock. They helped in the kitchen. They made
+sandwiches, salad and small pizzas. David bought a big chocolate cake at the
+store, with 41 candles on it.
 
-At six o'clock, the guests start to arrive. Rosa's parents are the first to come. Her mother brings flowers, and her father brings a bottle of wine.
+"Tom does not know about the party," Elena said. "It is a surprise!"
 
-Soon, more friends and family arrive. Rosa's sister, Carla, comes with her children. Rosa's best friend, Isabel, arrives with a big present.
+At seven o'clock Carlos called Tom.
 
-"Happy birthday!" says everyone.
+"Tom, can you come to Elena's apartment? I want to give you your present."
 
-Rosa smiles. "Thank you all for coming!"
+Tom came at half past seven with his dog, Max. He opened the door, and all his
+friends said: "Happy birthday!"
 
-The house is full of people, music, and laughter. Some guests dance in the living room. Others talk in the kitchen and drink wine.
+Tom was very surprised. For five seconds he did not say a word. Then he
+laughed.
 
-Antonio takes many photos with his phone. He wants to remember this special evening.
+"You are terrible people," he said. "Terrible! Thank you very much."
 
-At eight o'clock, it is time for the cake. Everyone sings "Happy Birthday" to Rosa. She closes her eyes and makes a wish. Then, she blows out the candles.
+There were nine guests at the party. Carlos and Ana came with their children,
+Diego and Sofia. Sofia played with Max all night.
 
-"What did you wish for?" asks Isabel.
+They ate, they talked and they listened to music. Diego and Sofia danced in the
+living room. Max was under the table with the sandwiches, and he was very happy
+too.
 
-"I can't tell you," says Rosa, laughing, "or it won't come true!"
+At ten o'clock Elena brought the cake. Everybody sang, and Tom closed his eyes.
 
-Everyone eats a piece of cake. It is delicious, sweet, and perfect.
+"What do you want?" Sofia asked him.
 
-Later, the guests play some games and dance more. Rosa's father tells old stories about when Rosa was a child. Everyone laughs.
+"I cannot tell you," Tom said, "or it is not going to happen!"
 
-By midnight, most guests go home. Rosa and Antonio are tired, but very happy.
+Then he opened his eyes and he took all the air in his body. He was 41 years
+old, but the 41 candles were not easy. The children helped him.
 
-"This was a perfect birthday," says Rosa. "Thank you for organizing all of this."
+At midnight the guests went home. Tom walked home with Max under the stars.
 
-Antonio smiles. "You deserve it. Happy birthday, my love."
+"Max," he said, "we have very good friends."
 
 ## New Words
 
-decorate, balloon, guest, present, candle, wish, bakery, laughter, deserve
+- **party** — when people come together to eat, talk and have fun
+- **balloon** — a light bag of color that you make big with air
+- **candle** — a stick of wax with a small fire on top
+- **surprise** — something good that you do not know about before
+- **present** — a thing you give to a person on a special day
+- **guest** — a person who comes to your house or your party
+- **dance** — to move your body to music
+- **sing** — to make music with your voice
+
+## Questions
+
+1. Where was the party?
+2. What did Elena put on the walls?
+3. How did Carlos bring Tom to the apartment?
+4. Who played with Max all night?
+5. Why were the candles not easy for Tom?
+
+<details>
+<summary>Answers</summary>
+
+1. It was at Elena's apartment.
+2. She put balloons on the walls.
+3. He called Tom and said he wanted to give him his present.
+4. Sofia played with Max.
+5. Because there were 41 candles.
+
+</details>

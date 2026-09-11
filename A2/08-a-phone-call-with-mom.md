@@ -1,41 +1,93 @@
+---
+level: A2
+title: A Phone Call with Mom
+topic: family
+grammar: [present simple, present perfect for experience, will and going to for future, adverbs of manner and frequency]
+characters: [Patricia, Jennifer]
+word_count: 300
+new_words: 10
+---
+
 # A Phone Call with Mom
 
-Every Sunday, Patricia calls her mother, who lives in a different city. It's become a tradition since Patricia moved away for work three years ago.
+Every Sunday at six o'clock Patricia calls her mother. It started as a small
+thing three years ago, when she moved to another city for work, and now it is a
+tradition.
 
-This Sunday, Patricia called at her usual time, six in the evening. Her mother answered after two rings.
+This Sunday her mother answered after two rings.
 
-"Hi, sweetheart! How was your week?" her mother asked.
+"Hello! How was your week?"
 
-"It was busy," Patricia said. "I had a lot of deadlines at work, but everything turned out fine in the end."
+"Busy," Patricia said. "Too many deadlines. But everything is fine now."
 
-They talked about Patricia's job for a while. She works as a graphic designer for a marketing agency, and her mother always likes hearing about her projects.
+They talked about her work for a while. Patricia is a graphic designer at a
+small agency, and her mother always wants to hear about the projects, even the
+boring ones.
 
-"What about you, Mom? How's everything at home?"
+"And you? How is everything at home?"
 
-"Oh, the usual," her mother laughed. "Your father is still complaining about his back pain, and I've been busy in the garden."
+"The usual," her mother laughed. "Your father complains about his back every
+morning, and then he works in the garden for four hours."
 
-Patricia smiled. She loved hearing the small details about her parents' daily life, even if they seemed ordinary.
+Patricia smiled. She likes these small details more than any news.
 
-"I miss you both," Patricia said. "I'm thinking of visiting next weekend, if that works for you."
+"I miss you both," she said. "I am thinking of coming next weekend."
 
-Her mother's voice became excited. "That would be wonderful! We haven't seen you in almost two months."
+Her mother's voice changed completely. "Really? That would be wonderful. We
+have not seen you since August."
 
-They discussed the details: Patricia would arrive on Friday evening and stay until Sunday afternoon. Her mother promised to cook her favorite dish, roast chicken with potatoes.
+They arranged everything: Patricia will arrive on Friday evening and leave on
+Sunday afternoon. Her mother promised to make her favorite dish, roast chicken
+with potatoes.
 
-"I can't wait," Patricia said. "I've been craving your cooking."
+"I have been thinking about your cooking all month," Patricia said.
 
-Near the end of the call, her mother asked about Patricia's relationship. "How are things going with Mark?"
+Near the end of the call, her mother asked carefully: "And how are things with
+Mark?"
 
-"Really good, actually," Patricia answered, smiling. "We're thinking about moving in together next year."
+"Good," Patricia said. "Actually, very good. We are talking about living
+together next year."
 
-Her mother sounded thrilled. "That's wonderful news! I'm so happy for you two."
+There was a short silence, and then: "I am so happy for you."
 
-They talked for almost an hour, catching up on everything that had happened during the week. Before hanging up, her mother said, "Take care of yourself, and drive safely next weekend."
+They talked for almost an hour. Before she hung up, her mother said the same
+thing she always says: "Drive carefully, and eat properly."
 
-"I will, Mom. Love you. See you soon."
+Afterwards Patricia sat quietly for a few minutes. Later she told Jennifer
+about the call.
 
-After the call, Patricia felt warm and content. No matter how busy life got, these Sunday calls always reminded her what mattered most.
+"One hour every Sunday," Jennifer said. "That is more than most people manage."
+
+"It is the easiest hour of my week," Patricia answered.
 
 ## New Words
 
-tradition, deadline, graphic designer, agency, complain, craving, relationship, thrilled, catch up, content
+- **tradition** — something people do the same way over many years
+- **deadline** — the day or time when work has to be finished
+- **graphic designer** — a person who designs images and text for a job
+- **agency** — a small company that does work for other companies
+- **complain** — to say that you are not happy about something
+- **arrange** — to plan and agree the details of something
+- **roast** — cooked in an oven for a long time
+- **actually** — a word used to say what is really true
+- **usual** — normal, happening most of the time
+- **properly** — in the correct or right way
+
+## Questions
+
+1. When did the Sunday calls start?
+2. What is Patricia's job?
+3. What does her father do every morning?
+4. When will Patricia arrive and leave?
+5. What does her mother always say before she hangs up?
+
+<details>
+<summary>Answers</summary>
+
+1. Three years ago, when she moved to another city for work.
+2. She is a graphic designer at a small agency.
+3. He complains about his back and then works in the garden.
+4. She will arrive on Friday evening and leave on Sunday afternoon.
+5. "Drive carefully, and eat properly."
+
+</details>

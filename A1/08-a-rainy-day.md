@@ -1,33 +1,76 @@
+---
+level: A1
+title: A Rainy Day
+topic: weather and home
+grammar: [present simple, present continuous, past simple, can / cannot for ability]
+characters: [Tom, Max, Elena]
+word_count: 268
+new_words: 8
+---
+
 # A Rainy Day
 
-Today the weather is bad. It is cold, and it is raining a lot. Tom looks out of the window and sighs.
+Tom is 40 years old and he lives alone with his dog. The dog's name is Max.
 
-He planned to go for a walk in the park with his dog, Max. But now, this is not possible.
+This morning Tom opens the window and he looks outside. The sky is gray and it
+is raining. It is cold too.
 
-"Sorry, Max," says Tom. "No walk today."
+"I am sorry, Max," Tom says. "We cannot go to the park today."
 
-Max looks sad. He likes his walks very much.
+Max is sad. He loves the park very much.
 
-Tom decides to have an indoor day. First, he makes a hot cup of tea. The tea is warm and comfortable on a cold day.
+Tom makes a hot cup of tea and he sits on the sofa. He is cold, so he puts a
+blanket on his legs. Max sleeps near his feet.
 
-He sits on the sofa with a blanket. He wants to read his new book. The book is about a detective in an old city. It is very interesting.
+Tom is reading a very good book about a man in an old city. He reads for two
+hours. Outside, the rain does not stop.
 
-At twelve o'clock, he is hungry. He makes hot chili for lunch. Chili is perfect food for a rainy day. He also eats some bread with butter.
+At twelve o'clock Tom is hungry. There is no bread in the kitchen and he cannot
+go to the store, so he makes soup with potatoes and onions. Hot soup is perfect
+food for a cold day.
 
-In the afternoon, Tom calls his sister, Beatriz. They talk for one hour about their week. Beatriz also has bad weather in her city.
+In the afternoon his friend Elena calls him on the phone. They talk for one
+hour about their families and their work.
 
-"Maybe it will be sunny tomorrow," says Beatriz.
+"Is it raining in your city too?" Tom asks.
 
-"I hope so," says Tom.
+"Yes! All day," Elena says. "But tomorrow it is going to be sunny."
 
-After the phone call, Tom washes some dishes. It is not exciting, but the kitchen looks nice now.
+At four o'clock the rain stops. Tom is very happy. He takes Max outside and
+they walk for twenty minutes near the house. Max runs and runs. Then the rain
+starts again and they come home wet.
 
-At four o'clock, the rain stops for a short time. Tom quickly takes Max for a small walk near his house. Max is very happy. They walk for fifteen minutes before the rain starts again.
+In the evening Tom cooks pasta and he watches television with Max next to him.
 
-In the evening, Tom cooks pasta for dinner. After dinner, he watches a film with Max next to him on the sofa.
-
-Rainy days are not his favorite, but sometimes they are good for rest. Tomorrow, he hopes, will be sunny again.
+It was not an exciting day. But it was a quiet, warm day at home, and sometimes
+that is very good.
 
 ## New Words
 
-indoor, blanket, detective, dishes, sunny, warm, hope, rest, film
+- **alone** — with no other person
+- **gray** — the color of clouds when it is going to rain
+- **sad** — not happy
+- **sofa** — a long soft chair for two or three people
+- **blanket** — a big warm cloth for your bed or your legs
+- **wet** — with water on it or in it
+- **sunny** — with a lot of sun
+- **exciting** — very interesting, not boring
+
+## Questions
+
+1. Who does Tom live with?
+2. Why can they not go to the park?
+3. What does Tom make for lunch?
+4. What does Elena say about tomorrow?
+5. What happens at four o'clock?
+
+<details>
+<summary>Answers</summary>
+
+1. He lives alone with his dog, Max.
+2. Because it is raining and it is cold.
+3. He makes soup with potatoes and onions.
+4. She says it is going to be sunny.
+5. The rain stops and Tom takes Max outside.
+
+</details>

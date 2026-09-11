@@ -1,0 +1,201 @@
+{
+  "_comment": "Machine-readable level contract. tools/validate.py enforces every rule here. {PART} in a banned pattern expands to the past-participle alternation defined in tools/lexicon.py.",
+
+  "order": ["A1", "A2", "B1", "B2", "C1", "C2"],
+
+  "levels": {
+    "A1": {
+      "name": "Beginner",
+      "word_count": { "min": 150, "max": 400 },
+      "new_word_budget": 10,
+      "_grammar_note": "Entries must not contain commas: front matter lists are comma-separated.",
+      "grammar_allowed": [
+        "present simple",
+        "present continuous",
+        "past simple",
+        "there is / there are",
+        "can / cannot for ability",
+        "going to for plans",
+        "imperatives",
+        "possessives",
+        "prepositions of time and place",
+        "basic connectors"
+      ],
+      "grammar_banned": [
+        {
+          "id": "present-perfect",
+          "pattern": "\\b(have|has|haven't|hasn't|'ve)\\s+(just\\s+|already\\s+|never\\s+|ever\\s+)?{PART}\\b",
+          "message": "Present perfect is introduced at A2, not A1."
+        },
+        {
+          "id": "past-perfect",
+          "pattern": "\\b(had|hadn't)\\s+(just\\s+|already\\s+|never\\s+)?{PART}\\b",
+          "message": "Past perfect is B1+."
+        },
+        {
+          "id": "passive-voice",
+          "pattern": "\\b(is|are|was|were|be|been)\\s+{PART}\\s+by\\b",
+          "message": "Passive voice is B1+."
+        },
+        {
+          "id": "second-conditional",
+          "pattern": "\\bif\\b[^.!?]{0,60}\\b(would|could)\\b",
+          "message": "Second/third conditional is B1+."
+        },
+        {
+          "id": "modal-should-must",
+          "pattern": "\\b(should|shouldn't|must|mustn't|ought to)\\b",
+          "message": "should / must for advice and obligation is introduced at A2."
+        },
+        {
+          "id": "past-continuous",
+          "pattern": "\\b(was|were|wasn't|weren't)\\s+\\w+ing\\b",
+          "message": "Past continuous is introduced at A2."
+        },
+        {
+          "id": "relative-clause",
+          "pattern": "\\b(which|whose|whom)\\b",
+          "message": "Relative clauses with which/whose/whom are B1+."
+        }
+      ]
+    },
+
+    "A2": {
+      "name": "Elementary",
+      "word_count": { "min": 250, "max": 500 },
+      "new_word_budget": 12,
+      "grammar_allowed": [
+        "all A1 structures",
+        "past simple",
+        "past continuous",
+        "present perfect for experience",
+        "will and going to for future",
+        "comparatives and superlatives",
+        "should / have to / must",
+        "first conditional",
+        "adverbs of manner and frequency",
+        "gerunds and infinitives",
+        "quantifiers"
+      ],
+      "grammar_banned": [
+        {
+          "id": "past-perfect",
+          "pattern": "\\b(had|hadn't)\\s+(just\\s+|already\\s+|never\\s+)?{PART}\\b",
+          "message": "Past perfect is B1+."
+        },
+        {
+          "id": "passive-voice",
+          "pattern": "\\b(is|are|was|were|be|been)\\s+{PART}\\s+by\\b",
+          "message": "Passive voice is B1+."
+        },
+        {
+          "id": "second-conditional",
+          "pattern": "\\bif\\b[^.!?]{0,60}\\b(would|could)\\b",
+          "message": "Second/third conditional is B1+."
+        },
+        {
+          "id": "relative-clause-whom",
+          "pattern": "\\b(whose|whom)\\b",
+          "message": "Relative clauses with whose/whom are B1+."
+        }
+      ]
+    },
+
+    "B1": {
+      "name": "Intermediate",
+      "word_count": { "min": 350, "max": 700 },
+      "new_word_budget": 15,
+      "grammar_allowed": [
+        "all A2 structures",
+        "past perfect",
+        "passive voice",
+        "second conditional",
+        "relative clauses",
+        "reported speech",
+        "used to",
+        "modals of possibility"
+      ],
+      "grammar_banned": [
+        {
+          "id": "third-conditional",
+          "pattern": "\\bif\\b[^.!?]{0,60}\\bhad\\s+{PART}\\b",
+          "message": "Third conditional is B2+."
+        }
+      ]
+    },
+
+    "B2": {
+      "name": "Upper Intermediate",
+      "word_count": { "min": 450, "max": 900 },
+      "new_word_budget": 18,
+      "grammar_allowed": [
+        "all B1 structures",
+        "third conditional and mixed conditionals",
+        "full passive range",
+        "wish / if only",
+        "participle clauses",
+        "cleft sentences"
+      ],
+      "grammar_banned": []
+    },
+
+    "C1": {
+      "name": "Advanced",
+      "word_count": { "min": 500, "max": 1000 },
+      "new_word_budget": 20,
+      "grammar_allowed": ["all B2 structures", "inversion", "subjunctive", "nuanced modality", "complex discourse markers"],
+      "grammar_banned": []
+    },
+
+    "C2": {
+      "name": "Proficiency",
+      "word_count": { "min": 500, "max": 1000 },
+      "new_word_budget": 20,
+      "grammar_allowed": ["unrestricted"],
+      "grammar_banned": []
+    }
+  },
+
+  "us_english": {
+    "_comment": "British form -> required US form. Checked case-insensitively on whole words.",
+    "colour": "color",
+    "favourite": "favorite",
+    "centre": "center",
+    "organise": "organize",
+    "organised": "organized",
+    "realise": "realize",
+    "realised": "realized",
+    "recognise": "recognize",
+    "apologise": "apologize",
+    "travelled": "traveled",
+    "travelling": "traveling",
+    "programme": "program",
+    "neighbour": "neighbor",
+    "neighbours": "neighbors",
+    "grey": "gray",
+    "litre": "liter",
+    "metre": "meter",
+    "theatre": "theater",
+    "practise": "practice",
+    "licence": "license",
+    "defence": "defense",
+    "cheque": "check",
+    "flat": "apartment",
+    "lift": "elevator",
+    "rubbish": "trash",
+    "trousers": "pants",
+    "biscuit": "cookie",
+    "lorry": "truck",
+    "petrol": "gas",
+    "queue": "line",
+    "holiday": "vacation",
+    "autumn": "fall",
+    "mum": "mom",
+    "football": "soccer",
+    "pavement": "sidewalk",
+    "underground": "subway",
+    "chemist": "pharmacy",
+    "torch": "flashlight",
+    "jumper": "sweater"
+  }
+}

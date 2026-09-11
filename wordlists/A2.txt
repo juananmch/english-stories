@@ -1,0 +1,122 @@
+# A2 headwords — words that become assumed-known at A2 (in addition to all of A1).
+# Same format as A1.txt: one lemma per entry, whitespace or comma separated.
+
+# --- added while writing the A2 set ---
+adjust breathe breathing temperature instruction pharmacist tiredness session
+disaster laptop engine salesman performance payment maximum minimum timetable
+awake stomach spoon hug knock cupboard bowl lemon powder seed amount swallow
+neck damage member equipment strength vehicle mile metal rust interior
+discount dealer borrow warn silence detail whisper softly unaware abroad
+roommate desperate annoying panic shared missing deadline tradition agency
+complain arrange roast properly consistent habit injury muscle trainer
+recognize join machine gym budget reliable mileage mechanic negotiate
+insurance review coast reserve swimsuit sunscreen comfortable document
+stressful symptom examine advice prescription pill pharmacy appointment nurse
+sore throat recipe ingredient spice chop garlic dessert success invite
+accountant interview prepare calm department experience skill current salary
+relieved move rent afford truck furniture unpack neighborhood neighbor couple
+decision supervisor interrupt employee delete backup restore distance worth
+drop local flight
+
+# --- everyday life and home ---
+neighborhood balcony roof stairs elevator furniture sofa shelf drawer mirror
+blanket pillow towel soap toothbrush dish plate pan pot oven fridge freezer
+washing machine rent landlord move unpack pack repair fix broken tool garage
+basement ceiling entrance exit corner garden gate fence
+
+# --- work and study ---
+career position employee employer colleague coworker staff department team
+interview apply application experience skill training course qualification
+degree certificate contract schedule shift deadline task project presentation
+client customer service product quality report document file folder computer
+software system password print copy sign contact arrange organize manage
+responsible responsibility opportunity promotion salary income budget cost
+save spend earn afford bill receipt
+
+# --- communication and feelings ---
+conversation discussion opinion advice suggestion complaint argument agreement
+agree disagree explain describe suggest recommend promise invite accept refuse
+apologize thank congratulate greet introduce mention repeat reply respond
+proud relieved worried anxious stressed calm excited disappointed surprised
+embarrassed confident comfortable uncomfortable lonely glad pleased upset
+bored interested interesting boring exciting amazing terrible awful serious
+polite rude friendly kind generous patient honest funny
+
+# --- health and body ---
+health headache stomach throat fever cold flu cough injury accident emergency
+clinic appointment patient treatment medicine pill prescription pharmacy
+symptom examine recover rest exercise diet weight muscle fit shape energy
+
+# --- travel and transport ---
+journey destination flight airline passenger luggage passport visa border
+customs departure arrival delay platform track route traffic driver license
+insurance accommodation reservation reserve book cancel confirm guide tour
+abroad local foreign culture tradition souvenir view scenery coast island
+countryside forest field hill valley bridge tunnel
+
+# --- shopping and services ---
+supermarket shopping cart checkout cashier queue line discount offer sale
+price tag size fit exchange refund deliver delivery order package post office
+market stall brand choice compare quality cheap expensive value
+
+# --- food and cooking ---
+recipe ingredient spice pepper sauce oil flour noodle lettuce mushroom pepper
+garlic lemon strawberry dessert snack meal portion taste flavor sweet sour
+spicy fresh frozen boil fry bake roast cut chop mix serve prepare
+
+# --- time, sequence and frequency ---
+century decade period moment instant recently lately suddenly immediately
+finally eventually afterwards meanwhile nowadays usually rarely hardly
+frequently occasionally constantly forever ago since until while whenever
+schedule routine habit regular flexible
+
+# --- abstract and general ---
+situation condition circumstance detail fact information knowledge experience
+decision choice option possibility chance risk danger safety security
+difference similarity comparison example purpose reason cause effect result
+consequence advantage disadvantage benefit problem solution solve method way
+process step stage progress improvement change development growth success
+failure mistake error attempt effort challenge goal aim target plan strategy
+subject topic issue matter point view attitude behavior character personality
+relationship friendship marriage society community government law rule
+permission required necessary possible impossible probable likely certain
+
+# --- verbs ---
+achieve add admit affect allow announce appear attend avoid become believe
+belong borrow break build burn catch cause check climb collect compare
+complain complete consider contain continue control create cross decide
+deliver depend describe develop die disappear discover discuss divide doubt
+drop enjoy enter escape exist expect explain fail fall feed fight fill
+follow force forgive grow guess handle hang happen hide hire hurry ignore
+imagine improve include increase inspect invent involve join jump lead lend
+lie lift limit link manage mark marry matter measure mind miss notice offer
+order own pass perform pick plan practice prefer prepare present prevent
+produce protect prove provide pull push realize receive recognize reduce
+refuse regret relax remain remember remind remove repeat replace report
+represent require return review rise save search seem select separate settle
+shake share shout sign solve sound spread stand steal stick succeed suffer
+suggest support suppose surprise survive teach thank throw touch train treat
+trust turn understand wake warn waste wear win wish wonder worry wrap
+
+# --- adjectives and adverbs ---
+able available aware basic brave bright broad busy careful careless cheerful
+clear clever common complete correct crowded curious dangerous dark deep
+dependent direct double due eager efficient elegant empty enough entire equal
+exact excellent expensive extra fair familiar famous favorite final financial
+fluent formal former frequent front further general gentle global grateful
+guilty heavy helpful huge ideal ill immediate independent informal initial
+intelligent legal light limited lucky main major medical mental minor modern
+narrow national natural nearby necessary negative nervous normal obvious
+official ordinary original particular perfect personal physical popular
+positive powerful practical present previous private public quiet rapid rare
+reasonable recent regular reliable responsible rough safe secret sensitive
+separate severe sharp similar single slight smooth social soft solid special
+specific standard strange strict strong sudden suitable surprising thick thin
+tiny total traditional typical unusual urgent useful usual valuable various
+wide wonderful worth young
+absolutely actually almost already anyway certainly clearly completely
+definitely especially exactly extremely fortunately generally however
+increasingly indeed instead mainly mostly nearly obviously particularly
+personally possibly probably quickly quietly rather really recently seriously
+simply slightly slowly specially straight successfully suddenly therefore
+though totally truly unfortunately usually

@@ -1,35 +1,87 @@
+---
+level: A2
+title: A Job Interview
+topic: work
+grammar: [past simple, present perfect for experience, will and going to for future, gerunds and infinitives]
+characters: [Robert, Jennifer]
+word_count: 314
+new_words: 10
+---
+
 # A Job Interview
 
-Robert had a job interview yesterday. He applied for a position as an accountant at a large company downtown.
+Robert is an accountant. He has worked at the same company for six years, and
+this month he decided to look for something new.
 
-He prepared for the interview for almost a week. He researched the company, practiced common questions, and chose his best suit. He wanted to make a good impression.
+Last Tuesday he had an interview at a large company in the city center. He
+prepared for almost a week: he read about the company, he practiced the common
+questions, and he chose his best suit.
 
-On the day of the interview, Robert arrived twenty minutes early. He waited in the reception area and tried to stay calm, even though his hands were a little shaky.
+On the day of the interview he arrived twenty minutes early. He waited near the
+door and tried to stay calm, but his hands were shaking a little.
 
-A young woman called his name. "Robert? The interviewer is ready for you now."
+A young woman came out and said his name. "They are ready for you now."
 
-She led him to a small meeting room. Two people were sitting at the table: Mr. Adams, the department manager, and Ms. Lee, from human resources.
+She took him to a small meeting room. Two people were sitting at the table: Mr.
+Adams, the department manager, and Ms. Lee.
 
-"Please, have a seat," said Mr. Adams. "Tell us about your experience."
+"Please sit down," Mr. Adams said. "Tell us about your experience."
 
-Robert explained that he had worked as an accountant for six years at his previous company. He talked about his skills and gave examples of projects he had managed.
+Robert explained his work at his old company. He talked about his skills and
+gave examples of projects he finished last year.
 
-Ms. Lee asked, "Why do you want to leave your current job?"
+Then Ms. Lee asked a difficult question. "Why do you want to leave your
+current job?"
 
-"I'm looking for new challenges," Robert answered honestly. "I've learned a lot at my current company, but I think it's time to grow in a bigger team."
+Robert thought for a moment. He did not want to say anything bad about his old
+company.
 
-The interview lasted about forty-five minutes. They discussed his salary expectations, his availability, and his strengths and weaknesses.
+"I have learned a lot there," he said, "but I am ready for a bigger team and
+new problems."
 
-At the end, Mr. Adams smiled and said, "Thank you for coming, Robert. We will contact you next week with our decision."
+The interview lasted about forty-five minutes. They talked about his salary,
+the hours, and his strong and weak points.
 
-Robert left the building feeling relieved. He thought the interview went well, but he wasn't completely sure.
+At the end Mr. Adams smiled. "Thank you for coming. We will call you next week."
 
-That evening, he called his wife to tell her about it. "I think it went okay," he said. "Now we just have to wait."
+Robert left the building and felt relieved. He thought the interview went well,
+but he was not completely sure.
 
-A week later, Robert received an email. The company offered him the job! He was thrilled and immediately called his family to share the good news.
+That evening he called Jennifer and told her everything.
 
-"All that preparation paid off," his wife said proudly. Robert agreed. Hard work and patience had finally brought good results.
+"You prepared for a week," she said. "Whatever happens, you did your part."
+
+A week later an email arrived: the company offered him the job. Robert read it
+twice, and then he called Jennifer before he called anybody else.
 
 ## New Words
 
-interview, apply, accountant, impression, calm, department, experience, previous, salary, relieved
+- **accountant** — a person whose job is working with money and numbers
+- **interview** — a meeting where a company asks you questions about a job
+- **prepare** — to get ready for something before it happens
+- **calm** — quiet and not worried
+- **department** — one part of a big company
+- **experience** — the things you have done and learned in your work
+- **skill** — something you have learned to do well
+- **current** — happening now
+- **suit** — formal jacket and pants worn together
+- **relieved** — happy because a worry has finished
+
+## Questions
+
+1. How long has Robert worked at the same company?
+2. How did Robert prepare for the interview?
+3. Who was in the meeting room?
+4. What difficult question did Ms. Lee ask?
+5. What happened a week later?
+
+<details>
+<summary>Answers</summary>
+
+1. He has worked there for six years.
+2. He read about the company, practiced common questions and chose his best suit.
+3. Mr. Adams, the department manager, and Ms. Lee.
+4. She asked why he wants to leave his current job.
+5. An email arrived and the company offered him the job.
+
+</details>

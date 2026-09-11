@@ -1,0 +1,57 @@
+# C1 headwords — words that become assumed-known at C1 (in addition to A1-B2).
+#
+# STATUS: starter list. Expand this before authoring C1 stories.
+
+aberration abhor abridge abstruse accolade acquiesce acrimonious adamant
+admonish adroit adulation adversarial affable affinity aggrandize alacrity
+allay allegory altruistic amalgamate ambivalent ameliorate amenable anachronism
+anathema animosity antipathy antithesis apathy aplomb apocryphal apprehension
+approbation arcane archetype ardent arduous articulation ascetic assuage
+astute attenuate audacious augur auspicious austere avarice banal belie
+belligerent benevolent bombastic brevity burgeon cacophony cajole callous
+candor capricious castigate catharsis caustic censure cerebral chicanery
+circumspect clandestine cogent cognizant commensurate complacent conciliatory
+condone conflate congenial conjecture connoisseur consternation contrite
+conundrum convoluted copious cordial corollary cosmopolitan covert credence
+cryptic culpable cursory cynical dearth debacle decorum deference deleterious
+delineate demarcate denigrate deride derivative desultory diatribe didactic
+diffident digress disabuse disavow discordant discourse disdain disparage
+disparate dispassionate disseminate dissent dissuade divergence divulge
+dogmatic duplicity ebullient eclectic edify efficacy effusive egregious
+elucidate emanate embellish eminent enigma ephemeral epitome equanimity
+equivocal erudite esoteric espouse euphemism evanescent exacting exalt
+excoriate exculpate exigent exonerate expedient extol extraneous extrapolate
+facetious fallacy fastidious fathom fervent fickle flagrant florid
+foment forbearance formidable fortuitous fraught furtive garrulous germane
+grandiose gratuitous gregarious guile hackneyed harangue harbinger haughty
+hegemony heresy heterogeneous iconoclast idiosyncratic ignominy immutable
+impervious impetuous implacable importune improvise impunity inadvertently
+incisive incongruous incontrovertible indefatigable indelible indict indolent
+ineffable inexorable infallible ingenuous inherent inimical innocuous
+insidious insipid insolent insurmountable interminable intransigent inundate
+invective inveterate irascible itinerant judicious juncture laconic languish
+largesse laudable levity litigate loquacious lucid magnanimous malleable
+maverick mellifluous mendacious mercurial meticulous misnomer mollify
+morose munificent myriad nadir nefarious neophyte nonchalant nostalgia
+noxious obdurate obfuscate objectivity obsequious obstinate officious
+onerous opaque opulent ostentatious palliate palpable panacea partisan
+paucity pedantic penchant penitent perfunctory peripheral pernicious
+perspicacious pertinacious petulant philanthropy phlegmatic pinnacle
+pithy placate platitude plethora poignant polemic ponderous portend
+posit pragmatism preamble precarious precocious predilection preeminent
+prescient presumptuous prevaricate pristine probity proclivity prodigious
+profligate prolific propensity propitious prosaic protagonist providence
+proximity punctilious pundit quandary querulous quiescent quintessential
+rancor rapport rebuke recalcitrant recant reciprocity reclusive recondite
+redolent refractory relegate remonstrate reprehensible reprisal repudiate
+rescind resolute respite reticent reverence rhetorical ribald rudimentary
+ruminate sagacious salutary sanguine sardonic scathing scrupulous
+sedulous serendipity servile singular slander solace solicitous soporific
+specious spurious squander staid stalwart stark steadfast stoic stringent
+stymie sublime subterfuge sumptuous superfluous supplant surreptitious
+sycophant tacit taciturn tangential tantamount temerity tenacious tenuous
+tirade torpor tractable transgress trepidation truculent turpitude ubiquitous
+umbrage unassailable uncanny unctuous undulate untenable upbraid usurp
+vacillate vacuous vanguard vehement venerate veracity verbose vestige
+vex vicarious vicissitude vilify virtuoso vitriol vociferous voracious
+whimsical zeal zenith

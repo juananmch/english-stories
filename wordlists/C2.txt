@@ -1,0 +1,8 @@
+# C2 headwords — words that become assumed-known at C2 (in addition to A1-C1).
+#
+# STATUS: intentionally open. At C2 the learner is expected to handle
+# unrestricted vocabulary, so the validator's ceiling check is disabled for
+# this level (see "unrestricted" in config/levels.json grammar_allowed and the
+# UNRESTRICTED_LEVELS constant in tools/validate.py).
+#
+# Entries may still be added here to document deliberate teaching targets.

@@ -1,35 +1,90 @@
+---
+level: A2
+title: The Gym
+topic: health and habits
+grammar: [past simple, present perfect for experience, comparatives and superlatives, gerunds and infinitives]
+characters: [Kevin, Nadia]
+word_count: 313
+new_words: 10
+---
+
 # The Gym
 
-At the beginning of the year, Daniel decided to join a gym. He wanted to get in better shape and have more energy during the day.
+In January Kevin joined a gym. He is 38, he sits at a desk all day, and he
+wanted more energy.
 
-His first visit was a little intimidating. The gym was full of equipment he didn't recognize, and everyone seemed to know exactly what they were doing.
+His first visit was not easy. The gym was full of machines he did not
+recognize, and everybody else seemed to know exactly what they were doing.
 
-A trainer named Sam noticed Daniel looking confused. "Is this your first time here?" he asked.
+A trainer called Sam noticed him standing near the door.
 
-"Yes," Daniel admitted. "I'm not sure where to start."
+"First time?" he asked.
 
-Sam offered to help him create a simple workout plan. They talked about Daniel's goals: he wanted to lose a little weight and build some muscle.
+"Is it that obvious?" Kevin said.
 
-"Let's start slowly," Sam suggested. "Three days a week is enough for a beginner."
+Sam laughed and offered to help. They talked about what Kevin wanted: a little
+less weight, a little more strength, and no injuries.
 
-Over the next few weeks, Daniel followed the plan carefully. He did cardio exercises, like running on the treadmill, and some basic weightlifting. At first, his muscles were sore for days after each workout.
+"Start slowly," Sam said. "Three days a week is enough at the beginning.
+People who come every day in January stop completely in February."
 
-"Is this normal?" he asked Sam during one session.
+Kevin followed the plan. He ran on the machine for twenty minutes and then did
+some simple exercises with light weights. For the first two weeks his muscles
+hurt after every session.
 
-"Completely normal," Sam laughed. "Your body needs time to adapt. It will get easier."
+"Is this normal?" he asked.
 
-Daniel also started paying more attention to his diet. He ate more vegetables and drank more water. He noticed that these small changes made a big difference in how he felt.
+"Completely normal," Sam said. "Your body is not used to it yet. It will get
+easier."
 
-After one month, Daniel could already see some progress. He had more energy at work, and climbing the stairs to his apartment didn't feel as tiring anymore.
+Kevin also changed some habits outside the gym. He ate more vegetables, drank
+more water, and stopped buying snacks on the way home. These small changes made
+a bigger difference than he expected.
 
-By the third month, he felt like a different person. He had lost some weight, and his clothes fit better. More importantly, he felt stronger and more confident.
+After one month he noticed something: he climbed the stairs to his apartment
+without stopping. Six weeks earlier that was impossible.
 
-"I'm really proud of you," said Sam during one of their sessions. "You've been very consistent."
+After three months he felt like a different person. He lost some weight, his
+clothes fit better, and he slept much better at night.
 
-Daniel smiled. "I never thought I would enjoy exercising, but now it's part of my routine. I actually look forward to it."
+"You have been very consistent," Sam told him in March. "That is the whole
+secret. There is nothing else."
 
-Going to the gym had changed more than just his body — it had also improved his mood and his confidence.
+Kevin has never enjoyed exercise, and he still does not love it. But now it is
+part of his week, like work or shopping, and he misses it when he stops.
+
+His friend Nadia noticed the change before he said anything.
+
+"You look better," she said. "You look awake."
 
 ## New Words
 
-join, equipment, trainer, workout, goal, cardio, treadmill, weightlifting, progress, consistent
+- **join** — to become a member of a club or a group
+- **gym** — a place with machines where people exercise
+- **machine** — equipment with moving parts that does a job
+- **recognize** — to know something because you have seen it before
+- **trainer** — a person who teaches you how to exercise
+- **strength** — how strong your body is
+- **injury** — damage to your body
+- **muscle** — the part of your body that gets stronger with exercise
+- **habit** — something you do regularly, often without thinking
+- **consistent** — doing something regularly in the same way
+
+## Questions
+
+1. Why did Kevin join a gym?
+2. What advice did Sam give him about how often to come?
+3. What happened to Kevin's muscles in the first two weeks?
+4. What did he notice after one month?
+5. What does Sam say is the whole secret?
+
+<details>
+<summary>Answers</summary>
+
+1. He sits at a desk all day and wanted more energy.
+2. He said to start slowly, three days a week at the beginning.
+3. They hurt after every session.
+4. He climbed the stairs to his apartment without stopping.
+5. Being consistent.
+
+</details>
