@@ -86,7 +86,44 @@ session to recover context.
   part-of-speech tagging; both are A1 so it cannot affect a level judgment.
 - Pushed workstream 1 after the `gh` token gained the `workflow` scope.
 
-**Pending next:** workstream 2, part 2 — tests for the `validate.py` vocabulary
-checks (`ceiling`, `known`, `reteach`, `teach-late`, `glossary`, `budget`) using
-a temporary repo tree with `lx.ROOT` / `lx.WORDLIST_DIR` pointed at it; no
-refactor of `check_level` needed. Then push and start workstream 3 at B1.
+### Workstream 2, part 2 — validator tests (same day, later)
+
+- `tests/test_validate.py`: 28 tests for the six vocabulary checks. Each test
+  writes a tiny repository (two wordlists, a cast, one or two stories) to a
+  temp dir, points `lx.ROOT` / `lx.WORDLIST_DIR` at it and calls `check_level`
+  with an inline config. No change to `validate.py` was needed.
+- Being characterization tests they were green on first run, so the "red"
+  phase was a mutation check instead: disabling each check in turn
+  (`ceiling`, `budget`, `glossary`, `reteach`, `teach-late`, `known`) makes
+  2–4 tests fail. All six confirmed.
+- Two facts about the validator worth knowing, now pinned by tests:
+  - `reteach` at the same level always arrives with `teach-late` — a word
+    taught earlier necessarily appeared earlier.
+  - **Declaring a different surface form evades `known` and `reteach`.**
+    `cats` next to a known `cat` is not caught, because the declared surface
+    is itself vocabulary and a known surface beats a stem. A corpus scan found
+    33 glossary entries that survive only because of this: mostly legitimate
+    distinct items (`shower`/`show`, `friendly`/`friend`, `trainer`/`train`,
+    `dealer`, `foreigner`, `disagreement`, `documentation`, `valuation`,
+    `bewilderment`), plus a debatable band of participial adjectives
+    (`shared`, `missing`, `qualified`, `determined`, `convinced`, `settled`,
+    `entitled`, `promising`) and `-ly` adverbs of known adjectives
+    (`softly`, `gradually`, `significantly`, `consistently`, `considerably`,
+    `deliberately`, `implicitly`, `acutely`, `tentatively`). Not fixable in
+    the tool without part-of-speech information, and the protection is doing
+    real work, so this stays a **curation item for the audit**: review that
+    band by hand, one level at a time.
+- One more instance of the wordlist-completeness limitation: `wounded` →
+  `wound` → `wind`, via the irregular-past map applied to a stem. Harmless
+  today (`wounded` is declared in `C2/02`); would only bite if `wound` were
+  missing from the wordlists while `wind` were present.
+- Suite is now 58 tests (`test_site` 17, `test_lexicon` 13, `test_validate`
+  28). Validator and `build.py --check` still clean. Workstream 2 complete.
+- Correction to the part 1 entry above: `test_lexicon.py` has 13 tests
+  carrying 72 assertions, not "30 tests".
+
+**Pending next:** workstream 3 at B1 — vendor a SUBTLEX-US lemma-rank slice
+(with Brysbaert & New 2009 attribution), lemmatize and curate, expand B1,
+validate, fix B1 stories; then the lexical-band and sentence-length warnings
+with the a priori thresholds from `docs/PLAN.md`. Include the 33-entry
+surface-form list above in the B1 curation pass.
