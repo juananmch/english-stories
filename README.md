@@ -22,7 +22,8 @@ inventory, and US English throughout.
 
 The stories are published as a static site at
 **https://juananmch.github.io/english-stories/**, where the words each story
-teaches are marked in the text and show their meaning when you tap them.
+teaches are marked in the text and show their meaning when you tap them,
+and each story ends with a set of review cards built from its own sentences.
 The site is rebuilt and deployed on every push to `main`.
 
 ## How this works
@@ -37,10 +38,11 @@ The site is rebuilt and deployed on every push to `main`.
 ## Checking and building
 
 ```sh
-python3 tools/validate.py -v     # check every story against its level
-python3 tools/build.py           # regenerate VOCABULARY.md and the indexes
-python3 tools/build.py --check   # fail if generated files are stale
-python3 tools/site.py            # build the web version into _site/
+python3 -m unittest discover -s tests   # test the toolchain itself
+python3 tools/validate.py -v            # check every story against its level
+python3 tools/build.py                  # regenerate VOCABULARY.md and the indexes
+python3 tools/build.py --check          # fail if generated files are stale
+python3 tools/site.py                   # build the web version into _site/
 ```
 
 Everything runs on a plain Python 3 install with no dependencies, and runs in

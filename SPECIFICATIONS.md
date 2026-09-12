@@ -144,10 +144,13 @@ Pages by `.github/workflows/pages.yml` on every push to `main`. The workflow
 runs the validator first, so a story that breaks the level contract is never
 published.
 
-The site exists because it can do one thing the Markdown cannot: mark each word
-a story teaches directly in the prose and show its definition where the reader
-meets it, instead of in a list at the bottom. Everything on it is generated from
-the story files — there is no separate content to keep in sync.
+The site exists because it can do things the Markdown cannot: mark each word a
+story teaches directly in the prose and show its definition where the reader
+meets it, instead of in a list at the bottom; and end each story with a review
+deck — one card per taught word, showing the sentence where the reader first met
+it with the word blanked out, opening to reveal the word and its definition.
+The decks are stateless and need no script. Everything on the site is generated
+from the story files — there is no separate content to keep in sync.
 
 ## 11. Adding a story
 

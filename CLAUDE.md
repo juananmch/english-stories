@@ -30,6 +30,17 @@ python3 tools/site.py && python3 -m http.server --directory _site
 
 Everything is plain Python 3 with no dependencies. There is nothing to install.
 
+## Workflow for changing the tools
+
+The tools have their own tests in `tests/`, run with
+`python3 -m unittest discover -s tests`. Write the failing test first. The 60
+stories are not a substitute: the validator passing tells you the *content* is
+consistent with the tools, not that the tools are right — a mis-stem in the
+lemmatizer silently mis-classifies a word and nothing downstream notices.
+
+`tools/site.py` shadows the standard-library `site` module, so tests load it by
+path rather than importing it. See `tests/test_site.py`.
+
 ## Rules that are easy to get wrong
 
 - **Never edit generated files by hand.** Every `README.md` (root and per level)

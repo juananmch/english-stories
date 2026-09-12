@@ -15,6 +15,9 @@ jobs:
         with:
           python-version: "3.11"
 
+      - name: Run the toolchain tests
+        run: python3 -m unittest discover -s tests
+
       - name: Validate stories against the level contract
         run: python3 tools/validate.py -v
 

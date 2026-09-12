@@ -152,6 +152,23 @@ details {
 details summary { cursor: pointer; font-weight: 650; font-size: .9375rem; }
 details[open] summary { margin-bottom: 11px; }
 
+/* review — cloze cards, one per taught word. The blank fills itself from
+   data-answer when the card opens, so the reveal needs no script. */
+.review details { margin-top: 10px; }
+.review summary { font-weight: 400; font-size: 1rem; line-height: 1.65; }
+.review details[open] summary { margin-bottom: 8px; }
+.blank {
+  display: inline-block; min-width: 5em; vertical-align: baseline;
+  border-bottom: 2px solid var(--accent);
+}
+.review details[open] .blank {
+  min-width: 0; border-bottom-color: transparent;
+  color: var(--accent); font-weight: 650;
+}
+.review details[open] .blank::after { content: attr(data-answer); }
+.answer { margin: 0; color: var(--muted); font-size: .9375rem; }
+.answer strong { color: var(--text); }
+
 /* tables */
 table { border-collapse: collapse; width: 100%; font-size: .9375rem; }
 th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
@@ -249,10 +266,13 @@ def find_spans(text: str, glossary: list, vocab: set) -> list:
     def free(start: int, end: int) -> bool:
         return all(end <= s or start >= e for s, e in taken)
 
-    # Multi-word entries first, so "ice cream" wins over a bare "cream".
-    ordered = sorted(glossary, key=lambda item: -len(item[0].split()))
+    # Multi-word and hyphenated entries first, so "ice cream" wins over a bare
+    # "cream". Hyphenated words are phrases here because the tokenizer splits
+    # on the hyphen, so "second-guess" would otherwise never be found.
+    parts_of = lambda word: re.split(r"[\s-]+", word)
+    ordered = sorted(glossary, key=lambda item: -len(parts_of(item[0])))
     for word, definition in ordered:
-        parts = word.split()
+        parts = parts_of(word)
         if len(parts) > 1:
             pattern = re.compile(r"\b" + r"\W+".join(re.escape(p) for p in parts) + r"\w*\b", re.IGNORECASE)
             for match in pattern.finditer(text):
@@ -262,7 +282,7 @@ def find_spans(text: str, glossary: list, vocab: set) -> list:
 
     heads = {}
     for word, definition in glossary:
-        if len(word.split()) == 1:
+        if len(parts_of(word)) == 1:
             heads[lx.lemma(word, vocab)] = (word, definition)
     if heads:
         for match in lx.WORD_RE.finditer(text):
@@ -278,10 +298,7 @@ def find_spans(text: str, glossary: list, vocab: set) -> list:
 def render_prose(prose: str, glossary: list, vocab: set) -> str:
     """Prose as HTML paragraphs, with taught words marked and defined inline."""
     out = []
-    for block in re.split(r"\n\s*\n", prose.strip()):
-        text = " ".join(line.strip() for line in block.splitlines() if line.strip())
-        if not text:
-            continue
+    for text in paragraphs(prose):
         spans = find_spans(text, glossary, vocab)
         pieces, cursor = [], 0
         for start, end, _word, definition in spans:
@@ -295,6 +312,82 @@ def render_prose(prose: str, glossary: list, vocab: set) -> str:
         pieces.append(html.escape(text[cursor:]))
         out.append("<p>" + "".join(pieces) + "</p>")
     return "\n".join(out)
+
+
+def paragraphs(prose: str) -> list:
+    out = []
+    for block in re.split(r"\n\s*\n", prose.strip()):
+        text = " ".join(line.strip() for line in block.splitlines() if line.strip())
+        if text:
+            out.append(text)
+    return out
+
+
+# A sentence ends at . ! or ? (plus any closing quote or bracket) only when the
+# next sentence visibly starts — a capital or an opening quote — or the paragraph
+# ends. That keeps `"Welcome!" she said.` together, since `she` is lowercase.
+SENTENCE_END_RE = re.compile(r"[.!?][\"')\]]*(?=\s+[\"(\[A-Z]|\s*$)")
+TITLE_ABBREVIATIONS = ("Mr.", "Mrs.", "Ms.", "Dr.")
+
+
+def _ends_sentence(text: str, match) -> bool:
+    if text[: match.end()].endswith(TITLE_ABBREVIATIONS):
+        return False
+    # An odd number of quotes so far means the terminator is inside a quotation
+    # that keeps going — "We have a backup. It takes a minute." is one unit.
+    return text.count('"', 0, match.end()) % 2 == 0
+
+
+def sentence_bounds(text: str, start: int, end: int) -> tuple:
+    """Start and end of the sentence containing text[start:end]."""
+    s, e = 0, len(text)
+    for match in SENTENCE_END_RE.finditer(text):
+        if not _ends_sentence(text, match):
+            continue
+        if match.end() <= start:
+            s = match.end()
+        elif match.start() >= end:
+            e = match.end()
+            break
+    while s < start and text[s].isspace():
+        s += 1
+    return s, e
+
+
+def cloze_cards(prose: str, glossary: list, vocab: set) -> list:
+    """One card per taught word: the sentence where the reader first met it, split
+    around the word so it can be blanked out. Cards follow glossary order."""
+    first = {}
+    for text in paragraphs(prose):
+        for start, end, word, _definition in find_spans(text, glossary, vocab):
+            if word not in first:
+                s, e = sentence_bounds(text, start, end)
+                first[word] = {"before": text[s:start], "answer": text[start:end], "after": text[end:e]}
+    cards = []
+    for word, definition in glossary:
+        if word in first:
+            cards.append({"word": word, "definition": definition, **first[word]})
+    return cards
+
+
+def render_review(cards: list) -> str:
+    if not cards:
+        return ""
+    items = "".join(
+        '<details class="cloze">'
+        f'<summary>{html.escape(c["before"])}'
+        f'<span class="blank" data-answer="{html.escape(c["answer"])}"></span>'
+        f'{html.escape(c["after"])}</summary>'
+        f'<p class="answer"><strong>{html.escape(c["word"])}</strong> — {html.escape(c["definition"])}</p>'
+        "</details>"
+        for c in cards
+    )
+    return (
+        '<section class="review"><h2>Review</h2>'
+        '<p class="lede">Each sentence is from the story with one of its new words missing. '
+        "Try to remember the word, then open the card to check.</p>"
+        f"{items}</section>"
+    )
 
 
 NUMBERED_RE = re.compile(r"^\s*\d+\.\s+(.*\S)\s*$", re.MULTILINE)
@@ -343,6 +436,10 @@ def story_page(story: dict, level: str, vocab: set, prev, nxt, levels) -> str:
             body.append(
                 f'<details><summary>Show answers</summary><ol class="questions">{as_}</ol></details>'
             )
+
+    review = render_review(cloze_cards(story["prose"], story["glossary"], vocab))
+    if review:
+        body.append(review)
 
     pager = []
     if prev:
