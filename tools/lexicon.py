@@ -91,6 +91,18 @@ IRREGULAR_LEMMAS = {
     "worse": "bad", "worst": "bad", "more": "much", "most": "much", "less": "little",
     "clothes": "clothes", "glasses": "glasses", "pants": "pants", "stairs": "stairs",
     "dishes": "dish", "watches": "watch",
+    # found missing by the B1 wordlist audit, which proposed these surface
+    # forms as headwords because nothing resolved them to a known base
+    "fought": "fight", "beaten": "beat", "mistook": "mistake", "mistaken": "mistake",
+    "bound": "bind", "yourselves": "yourself", "shook": "shake", "shaken": "shake",
+    "bent": "bend", "bled": "bleed", "spun": "spin", "swung": "swing", "wept": "weep",
+    "sped": "speed", "spat": "spit", "dove": "dive", "sworn": "swear",
+    "withdrew": "withdraw", "withdrawn": "withdraw", "overcame": "overcome",
+    "forbade": "forbid", "forbidden": "forbid", "crept": "creep", "arose": "arise",
+    "arisen": "arise", "awoke": "awake", "awoken": "awake", "shrank": "shrink",
+    "shrunk": "shrink", "strode": "stride", "undertook": "undertake",
+    "undertaken": "undertake", "overtook": "overtake", "overtaken": "overtake",
+    "upheld": "uphold", "beheld": "behold", "foresaw": "foresee", "foreseen": "foresee",
 }
 
 CONTRACTION_TAILS = {"s", "t", "re", "ve", "ll", "d", "m"}

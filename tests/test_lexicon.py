@@ -115,6 +115,23 @@ class LemmaTest(unittest.TestCase):
         self.assertEqual(lem("didn't", "do"), "do")
         self.assertEqual(lem("won't", "will", "win"), "will")
 
+    def test_irregular_forms_found_missing_by_the_b1_audit(self):
+        # Each of these surfaced as a proposed B1 headword because nothing
+        # resolved it to a base the reader already knew.
+        for surface, base in [
+            ("fought", "fight"), ("beaten", "beat"), ("mistaken", "mistake"), ("mistook", "mistake"),
+            ("bound", "bind"), ("yourselves", "yourself"), ("shook", "shake"), ("shaken", "shake"),
+            ("bent", "bend"), ("bled", "bleed"), ("spun", "spin"), ("swung", "swing"),
+            ("wept", "weep"), ("sped", "speed"), ("spat", "spit"), ("dove", "dive"),
+            ("sworn", "swear"), ("withdrew", "withdraw"), ("withdrawn", "withdraw"),
+            ("overcame", "overcome"), ("forbade", "forbid"), ("forbidden", "forbid"),
+            ("crept", "creep"), ("arose", "arise"), ("arisen", "arise"), ("awoke", "awake"),
+            ("shrank", "shrink"), ("shrunk", "shrink"), ("strode", "stride"), ("undertook", "undertake"),
+            ("undertaken", "undertake"), ("overtook", "overtake"), ("upheld", "uphold"),
+            ("beheld", "behold"), ("foresaw", "foresee"), ("foreseen", "foresee"),
+        ]:
+            self.assertEqual(lem(surface, base), base, surface)
+
     def test_possessives_and_contractions(self):
         self.assertEqual(lem("dog's", "dog"), "dog")
         self.assertEqual(lem("teacher's", "teacher"), "teacher")
