@@ -75,6 +75,24 @@ class LemmaAmbiguityTest(unittest.TestCase):
         self.assertEqual(lem("staring", "star", "stare"), "stare")
         self.assertEqual(lem("later", "lat", "late"), "late")
 
+    def test_one_syllable_cvc_stem_is_never_offered_as_the_base(self):
+        # A base like "car" would double before a vowel suffix ("carring"), so
+        # "caring" cannot be car+ing. When "care" is unknown the word must stay
+        # unresolved rather than collapse onto the shorter known word.
+        self.assertEqual(lem("caring", "car"), "caring")
+        self.assertEqual(lem("scared", "scar"), "scared")
+        self.assertEqual(lem("forest", "for"), "forest")
+        self.assertEqual(lem("boring", "bor"), "boring")
+        self.assertEqual(lem("later", "lat"), "later")
+
+    def test_vowel_pair_and_consonant_cluster_stems_are_still_the_base(self):
+        self.assertEqual(lem("heating", "heat"), "heat")
+        self.assertEqual(lem("hearing", "hear"), "hear")
+        self.assertEqual(lem("needed", "need"), "need")
+        self.assertEqual(lem("wanted", "want"), "want")
+        self.assertEqual(lem("freed", "free"), "free")
+        self.assertEqual(lem("quitting", "quit"), "quit")
+
     def test_bare_stem_still_wins_when_it_is_the_real_base(self):
         self.assertEqual(lem("cooking", "cook", "cooke"), "cook")
         self.assertEqual(lem("asked", "ask", "aske"), "ask")

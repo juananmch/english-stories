@@ -129,17 +129,21 @@ SUFFIX_RULES = (
 # Suffixes that begin with a vowel drop a base's silent e: care -> caring.
 VOWEL_SUFFIXES = {"ing", "ed", "est", "er", "ation"}
 VOWELS = "aeiou"
+SYLLABLE_RE = re.compile(r"[aeiouy]+")
 
 
-def _dropped_silent_e(stem: str) -> bool:
-    """True when a vowel suffix was more likely added to stem+e than to stem.
+def _one_syllable_cvc(stem: str) -> bool:
+    """True when the stem cannot itself be the base of a vowel-suffixed word.
 
-    A one-syllable base ending consonant-vowel-consonant doubles the last letter
-    instead (hop -> hopping), so a stem ending in a *single* consonant after a
-    vowel points to a dropped e: hoping -> hope, caring -> care, noted -> note.
+    A one-syllable base ending consonant-vowel-consonant doubles its last letter
+    before -ing/-ed/-er/-est (hop -> hopping, star -> starred), so a stem like
+    "car" or "not" with a *single* final consonant must have come from a silent-e
+    base: caring -> care, noted -> note, later -> late. Two-syllable bases
+    (open -> opened, visit -> visited) do not double, so they are left alone.
     """
     return (
         len(stem) >= 2
+        and len(SYLLABLE_RE.findall(stem)) == 1
         and stem[-1] not in VOWELS + "wxy"
         and stem[-2] in VOWELS
         and (len(stem) == 2 or stem[-3] not in VOWELS)
@@ -176,8 +180,8 @@ def candidates(word: str) -> list:
         if not stem:
             continue
         # silent e: making -> make, hoped -> hope, arrived -> arrive
-        if not replacement and suffix in VOWEL_SUFFIXES and _dropped_silent_e(stem):
-            out.extend((stem + "e", stem))
+        if not replacement and suffix in VOWEL_SUFFIXES and _one_syllable_cvc(stem):
+            out.append(stem + "e")
         elif not replacement:
             out.extend((stem, stem + "e"))
         else:
