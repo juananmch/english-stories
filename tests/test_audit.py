@@ -101,6 +101,28 @@ class ProposeTest(unittest.TestCase):
         # Nothing shorter than three letters.
         self.assertEqual(audit.inflection_stems("gas"), [])
 
+    def test_known_vocabulary_for_a_level_includes_words_taught_below_it(self):
+        import tempfile
+        import lexicon as lx
+        with tempfile.TemporaryDirectory() as root:
+            saved = lx.ROOT, lx.WORDLIST_DIR
+            lx.ROOT, lx.WORDLIST_DIR = root, os.path.join(root, "wordlists")
+            try:
+                os.makedirs(os.path.join(root, "wordlists"))
+                os.makedirs(os.path.join(root, "A1"))
+                with open(os.path.join(root, "wordlists", "A1.txt"), "w") as fh:
+                    fh.write("the cat\n")
+                with open(os.path.join(root, "wordlists", "names.txt"), "w") as fh:
+                    fh.write("Laura\n")
+                with open(os.path.join(root, "A1", "01-story.md"), "w") as fh:
+                    fh.write("# S\n\nThe bakery.\n\n## New Words\n\n- **bakery** — a shop\n")
+                known = audit.known_at("A2", ["A1", "A2"])
+            finally:
+                lx.ROOT, lx.WORDLIST_DIR = saved
+        # Wordlists through the level, the cast, and every word a lower
+        # level's stories taught: all of it is known when the level starts.
+        self.assertEqual(known, {"the", "cat", "laura", "bakery"})
+
     def test_headword_count_at_each_cutoff(self):
         # How many headwords the level would have if every candidate up to the
         # cutoff were accepted — the number the curation pass sizes itself by.

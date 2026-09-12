@@ -105,11 +105,24 @@ def propose(rows: list, known: set, limit: int) -> dict:
     return result
 
 
-def headword_counts(rows: list, known: set, cutoffs: list) -> list:
-    """(cutoff, cumulative headwords if every candidate up to it is accepted)."""
+def headword_counts(rows: list, known: set, cutoffs: list, base: int | None = None) -> list:
+    """(cutoff, vocabulary size if every candidate up to it is accepted), where
+    the size starts from `base` — by default everything in `known`."""
+    base = len(known) if base is None else base
     proposed = propose(rows, known, limit=max(cutoffs))
-    return [(cutoff, len(known) + sum(1 for rank, _s, _h in proposed["new"] if rank <= cutoff))
+    return [(cutoff, base + sum(1 for rank, _s, _h in proposed["new"] if rank <= cutoff))
             for cutoff in cutoffs]
+
+
+def known_at(level: str, order: list) -> set:
+    """Everything a reader knows when the level starts: the wordlists through
+    the level, the cast, and every word a lower level's stories taught."""
+    known = lx.load_cumulative_wordlist(level, order) | lx.load_names()
+    for lower in order[: order.index(level)]:
+        for path in lx.story_files(lower):
+            for word, _definition in lx.load_story(path)["glossary"]:
+                known.update(word.lower().split())
+    return known
 
 
 def taught_at_or_above(level: str, order: list) -> dict:
@@ -137,14 +150,16 @@ def main() -> int:
 
     config = lx.load_config()
     order = config["order"]
-    known = lx.load_cumulative_wordlist(args.level, order) | lx.load_names()
+    known = known_at(args.level, order)
     rows = lx.load_frequency_rows()
 
     if args.sizes:
         cutoffs = [2000, 2500, 3000, 3500, 4000, 4500, 5000, 6000, 7000, 8000, 10000, 12000, 15000, 20000]
-        print(f"{args.level}: {len(lx.load_cumulative_wordlist(args.level, order))} headwords now")
-        for cutoff, total in headword_counts(rows, known, cutoffs):
-            print(f"  up to rank {cutoff:>6}: {total:>6} headwords")
+        vocabulary = len(known - lx.load_names())
+        print(f"{args.level}: {len(lx.load_cumulative_wordlist(args.level, order))} wordlist headwords, "
+              f"{vocabulary} words known at the start of the level including those taught below")
+        for cutoff, total in headword_counts(rows, known, cutoffs, base=vocabulary):
+            print(f"  up to rank {cutoff:>6}: {total:>6} words")
         return 0
 
     proposed = propose(rows, known, args.rank)
