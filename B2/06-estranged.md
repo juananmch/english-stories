@@ -5,7 +5,7 @@ topic: family and reconciliation
 grammar: [past perfect, third conditional, wish / if only, reported speech]
 characters: [Nora, Henry]
 word_count: 465
-new_words: 9
+new_words: 8
 ---
 
 # Estranged
@@ -66,8 +66,6 @@ expected either.
 
 ## New Words
 
-- **stroke** — a sudden medical event caused by blocked blood flow to the
-  brain
 - **estrangement** — a state in which people who were once close no longer
   speak or have a relationship
 - **stem from** — to be caused by or originate from

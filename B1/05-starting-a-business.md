@@ -5,7 +5,7 @@ topic: work and risk
 grammar: [past simple, present perfect for experience, first conditional, passive voice]
 characters: [Grace, Owen]
 word_count: 368
-new_words: 11
+new_words: 9
 ---
 
 # Starting a Business
@@ -62,10 +62,8 @@ she had made the right choice.
 - **exaggerate** — to make something sound bigger or more extreme than it is
 - **spreadsheet** — a document used for organizing numbers and lists
 - **registered** — officially recorded on a list
-- **loan** — money that a bank lends you, to be paid back later
 - **regulation** — an official rule
 - **intimidating** — making you feel nervous or frightened
-- **commercial** — used for business rather than personal use
 - **resign** — to formally leave a job
 - **glamorous** — attractive and exciting in an impressive way
 - **anticipate** — to expect something before it happens

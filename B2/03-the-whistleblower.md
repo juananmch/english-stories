@@ -5,7 +5,7 @@ topic: ethics at work
 grammar: [passive voice, third conditional, modals of possibility, relative clauses]
 characters: [Thomas, Diane]
 word_count: 487
-new_words: 11
+new_words: 10
 ---
 
 # The Whistleblower
@@ -73,7 +73,6 @@ nothing."
 - **falsify** — to change information dishonestly to make it seem true
 - **inspection** — an official check to make sure something meets required
   standards
-- **flag** — to mark or point out something as needing attention
 - **whistleblower** — a person who reports wrongdoing within an organization
 - **mortgage** — a loan used to buy a house, paid back over many years
 - **reassure** — to make someone feel less worried

@@ -5,7 +5,7 @@ topic: family and money
 grammar: [third conditional, passive voice, relative clauses, past perfect]
 characters: [Isabel, Thomas]
 word_count: 554
-new_words: 10
+new_words: 9
 ---
 
 # The Inheritance
@@ -82,7 +82,6 @@ other way."
 ## New Words
 
 - **jointly** — owned or done together by two or more people
-- **generation** — a group of people born and living around the same time
 - **single-handedly** — done by one person without any help
 - **blindsided** — surprised in an unpleasant, unexpected way
 - **resentful** — feeling angry about something perceived as unfair

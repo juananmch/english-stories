@@ -73,3 +73,97 @@ transfer transform transition transmit transport trigger ultimate undergo
 underlie undertake uniform unify unique utilize valid vary vehicle venture
 verify version via violate virtual visible vision volume voluntary welfare
 whereas widespread withdraw yield
+
+
+# --- below: frequency-band expansion, 2026-09-12 ---
+#
+# Headwords proposed by tools/audit.py from the 4,000 most frequent SUBTLEX-US
+# surface forms (data/subtlex-us.tsv) that the cumulative A1 + A2 + B1
+# vocabulary did not already cover, then curated by hand: contraction
+# fragments, fillers, profanity and insults, British spellings, archaic forms,
+# film-genre jargon (legal, police, military, fantasy) and words that are B2 or
+# above by CEFR labelling were rejected — 171 of 1,065. Frequency is a proxy
+# for level, not the level itself; see docs/PLAN.md, workstream 3.
+#
+# In rank order, most frequent first.
+
+sir guy kill dead stuff honey such case hit crazy police bit shot dear lady
+death gun ahead truth anymore blood stupid war bet till shoot alive sex power
+sort date scare dream beat king poor human kiss unless mad murder state ball
+fault future wedding weird court earth ship club attention honor smart boat
+song tough quit count charge fool swear land cute lie master rock army record
+college born pleasure ought judge lawyer fat gold mess brain soul attack scene
+owe kick evil forward respect crime grab art upstairs jail peace tape gas die
+prison smoke pardon sake board roll grand upon plenty race action press rid
+arrest gay bunch fellow lay hole guard feeling bear wild silly heaven lock
+ridiculous dare queen innocent cell bomb nut band pressure code magic pregnant
+witness camp beg duty tight moon hero asleep trial spirit enemy drug beauty
+victim coach crew trick mission pool weapon faith dig blind strike sight
+nature breath account tie suspect skin operation deserve command whoever
+beyond jury form program horrible battle terrific gentleman loose shame devil
+speed bite block attorney heat fantastic lab princess bell naked pig
+downstairs soldier monster planet insane split jealous bullet scream speech
+hook incredible signal football page justice crowd pair science mail spell
+ghost fake release pray nor director brilliant cab candy pocket trade romantic
+liar fan bless fancy genius criminal proof vote suicide bury mood male someday
+monkey toast sometime property secretary funeral magazine freedom handsome
+crack chase defense rat goodness telephone surgery professional assistant
+model harm square silver access female someplace rush awesome champagne pound
+mayor lip tongue bath storm spare bone score ocean reality gang farm alarm
+fortune bleed punch affair wherever unbelievable grade investigation load wood
+toilet dump shock pie crash artist joy ruin wise nonsense officer button
+switch charm decent desert pride witch tip birth wire bull toward ashamed
+section connection closet giant wheel policy tear fate governor pilot miracle
+aboard disgust cigarette drag fourth row actor grave senior flat scary super
+priest disease sword talent garbage swing slip knee hunt object percent dirt
+tank data request golf cow dawn stock conference rescue audience mercy
+universe baseball outfit pure rate celebrate piano location duck doll
+attractive path poison happiness anytime channel belt penny thief bride
+pathetic dozen gorgeous odd theater tail dust trap aside deck gut courage
+illegal pity protection couch stare screen precious studio rob golden frighten
+royal cast destiny robbery violence mystery nerve embarrass tower maid wallet
+steady rope image turkey nasty jungle trash ambulance nightmare prize snake
+cancer term media material expert downtown sweat political cent plain boom
+union cable underwear castle miserable glory zero victory creature basketball
+yell wave chain shadow skip estate horn agent pleasant district bug rabbit
+champion competition presence cure threat shine diamond bat alert chip
+sentence fabulous nation booth casino successful bow cage wolf wing pet rip
+series drama zone explanation spy bang useless loan soda trunk mask passion
+purse beef cabin script article education frankly anger pipe supper spit
+reputation intelligence ability fifth trail palace hop boot mouse ease laundry
+treasure revenge cowboy motion mall virus scratch contest plastic fashion cap
+cheer supply nail league vice coincidence cheat title impression division
+tiger therapy steel minister slave shy cruel prime surface lifetime motel
+collection device noon reward bother iron express sacrifice highway insist
+slide wagon lack kit clue concert temple ranch foolish darkness flag tent
+rotten alien patch snap liquor mass comfort fuel legend player electric opera
+circus starve impressive sink sneak wipe toy youth crush factory instance
+fairy violent humor average liberty suite stake nephew gamble politics
+occasion unhappy network confession explosion offense surgeon tube math
+operator pin alley reaction chat depressed underneath commercial fantasy chill
+steak glove honeymoon experiment classic crystal whiskey prisoner poker
+actress gear suspicious sin selfish dough confess clown helicopter forth strip
+satellite tune guitar sigh belly net romance pitch makeup surrender stranger
+whistle hip patience junk flash lion badge opposite privacy unknown painful
+pour extraordinary twin meantime squeeze bend host mysterious shark technology
+angle guilt mud tap seal stretch territory spin relief noble sample angel tax
+deaf port technically literally bean coward awkward flip ward debt
+international tragedy childhood cotton admire brush jet costume lightning bush
+frame remote skinny cave blonde conscience aid oxygen religious religion
+construction audition laughter shave flow drill principal sail gain crown
+wreck species zoo poem ad leather barn cherry jam lap steam punishment
+adventure sheep gum struggle poetry freeze possession thunder halfway abandon
+surround paradise palm motive shove magnificent pit shell cattle hut stink
+pile basket motor marvelous musical backward stroke accuse temporary goose
+chuckle despite propose superior blade identity delight inch mob sack clerk
+activity profile parade scout award dive medication manner chamber capital
+chin tub lobby toe string description nap pump production relate twist pole
+bid remarkable insult slap sheet hammer neat rehearsal rear railroad battery
+editor toss diner sailor tire bump lawn invisible peanut fond purple
+convention excitement item thus episode tend cruise tragic handy graduate
+advise signature dismiss accent scientist robot behalf entry generation
+servant permit widow terrorist dull dime crawl underground bargain loyal tale
+log tattoo basis needle jazz chef bacon unfortunate sunshine rocket thumb frog
+comedy shoulder dine policeman pop existence picnic industry reckon loyalty
+carpet spoil appearance lazy plot ham medal waitress hockey destruction visual
+active puppy electricity discovery unconscious perfume temper

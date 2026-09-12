@@ -9,18 +9,18 @@ checklist to maintain by hand.
 
 | # | Story | New words | Cumulative |
 |---|-------|-----------|------------|
-| 01 | [A Difficult Decision](./01-a-difficult-decision.md) | quit, weigh, expense, pressured, miserable, acceptance, qualified | 7 |
-| 02 | [Lost in Translation](./02-lost-in-translation.md) | determined, counter, nod, frustrated, panicked, confusion, annoyed, insist, despite | 16 |
-| 03 | [The Job Offer](./03-the-job-offer.md) | regional, significantly, incredible, respected, secondary school, relocate, promising, overhear | 24 |
-| 04 | [A Family Argument](./04-a-family-argument.md) | unreasonable, presumably, convinced, pause, erase | 29 |
-| 05 | [Starting a Business](./05-starting-a-business.md) | hobby, exaggerate, spreadsheet, registered, loan, regulation, intimidating, commercial, resign, glamorous, anticipate | 40 |
-| 06 | [The Reunion](./06-the-reunion.md) | reunion, graduate, charm, scan, strike, surface, comforting, distant, gratitude | 49 |
-| 07 | [A Health Scare](./07-a-health-scare.md) | gradually, series, strain, oddly, relief, rush, take for granted | 56 |
-| 08 | [Moving Abroad](./08-moving-abroad.md) | automatic, misunderstand, isolation, barrier, foreigner, shortcut | 62 |
-| 09 | [The Promotion](./09-the-promotion.md) | hesitation, panel, brilliant, deserve, casual, second-guess, feedback, consistently, struggle, discomfort, resentment, leadership | 74 |
-| 10 | [An Unexpected Guest](./10-an-unexpected-guest.md) | disagreement, resolve, hesitate, suspect, outcome, tense, irritation, temporary, settled | 83 |
+| 01 | [A Difficult Decision](./01-a-difficult-decision.md) | weigh, expense, pressured, acceptance, qualified | 5 |
+| 02 | [Lost in Translation](./02-lost-in-translation.md) | determined, counter, nod, frustrated, panicked, confusion, annoyed | 12 |
+| 03 | [The Job Offer](./03-the-job-offer.md) | regional, significantly, respected, secondary school, relocate, promising, overhear | 19 |
+| 04 | [A Family Argument](./04-a-family-argument.md) | unreasonable, presumably, convinced, pause, erase | 24 |
+| 05 | [Starting a Business](./05-starting-a-business.md) | hobby, exaggerate, spreadsheet, registered, regulation, intimidating, resign, glamorous, anticipate | 33 |
+| 06 | [The Reunion](./06-the-reunion.md) | reunion, scan, comforting, distant, gratitude | 38 |
+| 07 | [A Health Scare](./07-a-health-scare.md) | gradually, strain, oddly, take for granted | 42 |
+| 08 | [Moving Abroad](./08-moving-abroad.md) | automatic, misunderstand, isolation, barrier, foreigner, shortcut | 48 |
+| 09 | [The Promotion](./09-the-promotion.md) | hesitation, panel, casual, second-guess, feedback, consistently, discomfort, resentment, leadership | 57 |
+| 10 | [An Unexpected Guest](./10-an-unexpected-guest.md) | disagreement, resolve, hesitate, outcome, tense, irritation, settled | 64 |
 
-**83 words taught across 10 stories.**
+**64 words taught across 10 stories.**
 
 ## Glossary
 
@@ -31,17 +31,12 @@ checklist to maintain by hand.
 | anticipate | to expect something before it happens | [Starting a Business](./05-starting-a-business.md) |
 | automatic | done without thinking, from habit | [Moving Abroad](./08-moving-abroad.md) |
 | barrier | something that makes it difficult to do something | [Moving Abroad](./08-moving-abroad.md) |
-| brilliant | excellent | [The Promotion](./09-the-promotion.md) |
 | casual | relaxed and informal | [The Promotion](./09-the-promotion.md) |
-| charm | the quality of being pleasant or attractive | [The Reunion](./06-the-reunion.md) |
 | comforting | making you feel less worried or sad | [The Reunion](./06-the-reunion.md) |
-| commercial | used for business rather than personal use | [Starting a Business](./05-starting-a-business.md) |
 | confusion | a state of not understanding what is happening | [Lost in Translation](./02-lost-in-translation.md) |
 | consistently | in the same way, again and again | [The Promotion](./09-the-promotion.md) |
 | convinced | certain that something is true | [A Family Argument](./04-a-family-argument.md) |
 | counter | a long table where you are served in a shop or office | [Lost in Translation](./02-lost-in-translation.md) |
-| deserve | to have earned something through your actions or qualities | [The Promotion](./09-the-promotion.md) |
-| despite | without being affected by; even though | [Lost in Translation](./02-lost-in-translation.md) |
 | determined | having decided firmly to do something | [Lost in Translation](./02-lost-in-translation.md) |
 | disagreement | a situation where people do not agree | [An Unexpected Guest](./10-an-unexpected-guest.md) |
 | discomfort | a feeling of being uncomfortable or uneasy | [The Promotion](./09-the-promotion.md) |
@@ -54,19 +49,14 @@ checklist to maintain by hand.
 | frustrated | annoyed because something is not going the way you want | [Lost in Translation](./02-lost-in-translation.md) |
 | glamorous | attractive and exciting in an impressive way | [Starting a Business](./05-starting-a-business.md) |
 | gradually | slowly, over a period of time | [A Health Scare](./07-a-health-scare.md) |
-| graduate | to finish a course of study successfully | [The Reunion](./06-the-reunion.md) |
 | gratitude | a feeling of being thankful | [The Reunion](./06-the-reunion.md) |
 | hesitate | to pause before doing or deciding something because you are | [An Unexpected Guest](./10-an-unexpected-guest.md) |
 | hesitation | a pause caused by feeling unsure | [The Promotion](./09-the-promotion.md) |
 | hobby | an activity you do for enjoyment, not for money | [Starting a Business](./05-starting-a-business.md) |
-| incredible | very good or surprising, hard to believe | [The Job Offer](./03-the-job-offer.md) |
-| insist | to say firmly that something must happen | [Lost in Translation](./02-lost-in-translation.md) |
 | intimidating | making you feel nervous or frightened | [Starting a Business](./05-starting-a-business.md) |
 | irritation | a feeling of slight anger | [An Unexpected Guest](./10-an-unexpected-guest.md) |
 | isolation | the state of being alone or separated from others | [Moving Abroad](./08-moving-abroad.md) |
 | leadership | the ability or act of leading a group of people | [The Promotion](./09-the-promotion.md) |
-| loan | money that a bank lends you, to be paid back later | [Starting a Business](./05-starting-a-business.md) |
-| miserable | very unhappy | [A Difficult Decision](./01-a-difficult-decision.md) |
 | misunderstand | to understand something incorrectly | [Moving Abroad](./08-moving-abroad.md) |
 | nod | to move your head up and down to show agreement | [Lost in Translation](./02-lost-in-translation.md) |
 | oddly | in a strange or unusual way | [A Health Scare](./07-a-health-scare.md) |
@@ -79,33 +69,24 @@ checklist to maintain by hand.
 | presumably | probably, as far as one can tell | [A Family Argument](./04-a-family-argument.md) |
 | promising | likely to be good in the future | [The Job Offer](./03-the-job-offer.md) |
 | qualified | having passed the training needed for a job | [A Difficult Decision](./01-a-difficult-decision.md) |
-| quit | to stop doing a job or an activity | [A Difficult Decision](./01-a-difficult-decision.md) |
 | regional | relating to a particular area or region | [The Job Offer](./03-the-job-offer.md) |
 | registered | officially recorded on a list | [Starting a Business](./05-starting-a-business.md) |
 | regulation | an official rule | [Starting a Business](./05-starting-a-business.md) |
-| relief | a feeling of comfort after worry has ended | [A Health Scare](./07-a-health-scare.md) |
 | relocate | to move to a different place to live or work | [The Job Offer](./03-the-job-offer.md) |
 | resentment | a feeling of anger about something unfair | [The Promotion](./09-the-promotion.md) |
 | resign | to formally leave a job | [Starting a Business](./05-starting-a-business.md) |
 | resolve | to find a solution to a problem or argument | [An Unexpected Guest](./10-an-unexpected-guest.md) |
 | respected | admired and thought well of by other people | [The Job Offer](./03-the-job-offer.md) |
 | reunion | an event where people who have not seen each other for a | [The Reunion](./06-the-reunion.md) |
-| rush | to do something too quickly | [A Health Scare](./07-a-health-scare.md) |
 | scan | to look quickly over something or somewhere | [The Reunion](./06-the-reunion.md) |
 | second-guess | to doubt or question a decision after making it | [The Promotion](./09-the-promotion.md) |
 | secondary school | school for older children, after primary school | [The Job Offer](./03-the-job-offer.md) |
-| series | a number of things of the same kind, one after another | [A Health Scare](./07-a-health-scare.md) |
 | settled | comfortable and established in a new place or situation | [An Unexpected Guest](./10-an-unexpected-guest.md) |
 | shortcut | a quicker way of doing or reaching something | [Moving Abroad](./08-moving-abroad.md) |
 | significantly | in a way that is large enough to be important | [The Job Offer](./03-the-job-offer.md) |
 | spreadsheet | a document used for organizing numbers and lists | [Starting a Business](./05-starting-a-business.md) |
 | strain | an injury caused by using a muscle too much | [A Health Scare](./07-a-health-scare.md) |
-| strike | to make somebody suddenly notice or think of | [The Reunion](./06-the-reunion.md) |
-| struggle | to have a lot of difficulty doing something | [The Promotion](./09-the-promotion.md) |
-| surface | to appear or come into view | [The Reunion](./06-the-reunion.md) |
-| suspect | to think something is likely, without being certain | [An Unexpected Guest](./10-an-unexpected-guest.md) |
 | take for granted | to fail to appreciate something because it is always | [A Health Scare](./07-a-health-scare.md) |
-| temporary | lasting for only a limited time | [An Unexpected Guest](./10-an-unexpected-guest.md) |
 | tense | feeling worried or nervous, unable to relax | [An Unexpected Guest](./10-an-unexpected-guest.md) |
 | unreasonable | not fair or sensible | [A Family Argument](./04-a-family-argument.md) |
 | weigh | to think carefully about the good and bad points of something | [A Difficult Decision](./01-a-difficult-decision.md) |

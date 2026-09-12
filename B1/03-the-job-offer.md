@@ -5,7 +5,7 @@ topic: work and relocation
 grammar: [past perfect, second conditional, passive voice, modals of possibility]
 characters: [Marcus, Grace]
 word_count: 391
-new_words: 8
+new_words: 7
 ---
 
 # The Job Offer
@@ -65,7 +65,6 @@ he had expected.
 
 - **regional** — relating to a particular area or region
 - **significantly** — in a way that is large enough to be important
-- **incredible** — very good or surprising, hard to believe
 - **respected** — admired and thought well of by other people
 - **secondary school** — school for older children, after primary school
 - **relocate** — to move to a different place to live or work

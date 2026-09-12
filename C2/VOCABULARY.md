@@ -11,16 +11,16 @@ checklist to maintain by hand.
 |---|-------|-----------|------------|
 | 01 | [The Eulogy](./01-the-eulogy.md) | eulogize, persona, amiability, allegiance, eviscerate, severable, idiosyncrasy, calibrated, disclosure | 9 |
 | 02 | [A Question of Style](./02-a-question-of-style.md) | ripen, adjudicate, evasion, incoherence, wounded, tact, gratifyingly | 16 |
-| 03 | [Between Languages](./03-between-languages.md) | dislocation, rueful, modulate, residual, utterance, bleed, fragmentation, multitude, disquiet, irrevocably | 26 |
-| 04 | [The Retrospective](./04-the-retrospective.md) | vertiginous, apprenticeship, crucible, coherence, uncharacteristic, modesty | 32 |
-| 05 | [The Last Correction](./05-the-last-correction.md) | fastidiousness, insular, infelicity, exemplary, obsolescence, testament, armor | 39 |
-| 06 | [A Necessary Fiction](./06-a-necessary-fiction.md) | palliative, evasiveness, legible, compound, zealotry, prognosis, metabolize, paternalism, condescension | 48 |
-| 07 | [The Understory](./07-the-understory.md) | desolation, canopy, confound, opportunistic, wasteland, catalogue, reconstitute, mawkish | 56 |
-| 08 | [Fault Lines](./08-fault-lines.md) | propagation, presage, facade, deformation, attrition, entrenchment, contentious, illuminating, inertia | 65 |
-| 09 | [The Weight of Small Things](./09-the-weight-of-small-things.md) | cutlery, sheepishly, brisk, inventory | 69 |
-| 10 | [Cassandra's Complaint](./10-cassandras-complaint.md) | deferral, flurry, queasy, prophecy, unheeded, retroactive, actionable | 76 |
+| 03 | [Between Languages](./03-between-languages.md) | dislocation, rueful, modulate, residual, utterance, fragmentation, multitude, disquiet, irrevocably | 25 |
+| 04 | [The Retrospective](./04-the-retrospective.md) | vertiginous, apprenticeship, crucible, coherence, uncharacteristic, modesty | 31 |
+| 05 | [The Last Correction](./05-the-last-correction.md) | fastidiousness, insular, infelicity, exemplary, obsolescence, testament, armor | 38 |
+| 06 | [A Necessary Fiction](./06-a-necessary-fiction.md) | palliative, evasiveness, legible, compound, zealotry, prognosis, metabolize, paternalism, condescension | 47 |
+| 07 | [The Understory](./07-the-understory.md) | desolation, canopy, confound, opportunistic, wasteland, catalogue, reconstitute, mawkish | 55 |
+| 08 | [Fault Lines](./08-fault-lines.md) | propagation, presage, facade, deformation, attrition, entrenchment, contentious, illuminating, inertia | 64 |
+| 09 | [The Weight of Small Things](./09-the-weight-of-small-things.md) | cutlery, sheepishly, brisk, inventory | 68 |
+| 10 | [Cassandra's Complaint](./10-cassandras-complaint.md) | deferral, flurry, queasy, prophecy, unheeded, retroactive, actionable | 75 |
 
-**76 words taught across 10 stories.**
+**75 words taught across 10 stories.**
 
 ## Glossary
 
@@ -33,7 +33,6 @@ checklist to maintain by hand.
 | apprenticeship | a period of learning and developing | [The Retrospective](./04-the-retrospective.md) |
 | armor | protection against criticism, harm, or difficulty | [The Last Correction](./05-the-last-correction.md) |
 | attrition | a gradual reduction or wearing away of something over time | [Fault Lines](./08-fault-lines.md) |
-| bleed | to spread gradually and unintentionally into | [Between Languages](./03-between-languages.md) |
 | brisk | quick and energetic in manner | [The Weight of Small Things](./09-the-weight-of-small-things.md) |
 | calibrated | carefully adjusted to produce a precise, intended effect | [The Eulogy](./01-the-eulogy.md) |
 | canopy | the upper layer of branches and leaves in a forest | [The Understory](./07-the-understory.md) |

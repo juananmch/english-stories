@@ -5,7 +5,7 @@ topic: friendship and time
 grammar: [past simple, past perfect, present perfect for experience, relative clauses]
 characters: [Rachel, Daniel, Sophie]
 word_count: 369
-new_words: 9
+new_words: 5
 ---
 
 # The Reunion
@@ -62,12 +62,7 @@ by something closer to gratitude.
 
 - **reunion** — an event where people who have not seen each other for a
   while meet again
-- **graduate** — to finish a course of study successfully
-- **charm** — the quality of being pleasant or attractive
 - **scan** — to look quickly over something or somewhere
-- **strike** (somebody) — to make somebody suddenly notice or think of
-  something
-- **surface** — to appear or come into view
 - **comforting** — making you feel less worried or sad
 - **distant** — far away, or feeling far away in memory
 - **gratitude** — a feeling of being thankful

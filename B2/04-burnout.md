@@ -5,7 +5,7 @@ topic: work and wellbeing
 grammar: [passive voice, participle clauses, past perfect, first conditional]
 characters: [Henry, Isabel]
 word_count: 499
-new_words: 8
+new_words: 7
 ---
 
 # Burnout
@@ -75,7 +75,6 @@ far he had drifted than any conversation with a doctor ever could.
 - **detachment** — a feeling of being distant or disconnected from something
 - **irritability** — the state of being easily annoyed
 - **workload** — the amount of work a person is expected to do
-- **abandon** — to stop doing or using something completely
 
 ## Questions
 

@@ -5,7 +5,7 @@ topic: identity and belonging
 grammar: [unrestricted]
 characters: [Nathaniel, Beatrice]
 word_count: 546
-new_words: 10
+new_words: 9
 ---
 
 # Between Languages
@@ -73,8 +73,6 @@ home, that he envied her more than he was entirely comfortable admitting.
 - **modulate** — to adjust the tone or level of something, especially speech
 - **residual** — remaining after most of something has gone or been used
 - **utterance** — something spoken; an act of speaking
-- **bleed** (figurative) — to spread gradually and unintentionally into
-  another area
 - **fragmentation** — the process of breaking into separate, disconnected
   parts
 - **multitude** — a large number of things, or (figuratively) many

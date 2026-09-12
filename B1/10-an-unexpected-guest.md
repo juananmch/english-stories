@@ -5,7 +5,7 @@ topic: family and forgiveness
 grammar: [past simple, past perfect, second conditional, reported speech]
 characters: [Grace, Sophie, Marcus]
 word_count: 383
-new_words: 9
+new_words: 7
 ---
 
 # An Unexpected Guest
@@ -66,11 +66,9 @@ She believed him.
 - **resolve** — to find a solution to a problem or argument
 - **hesitate** — to pause before doing or deciding something because you are
   unsure
-- **suspect** — to think something is likely, without being certain
 - **outcome** — the result of an action or situation
 - **tense** — feeling worried or nervous, unable to relax
 - **irritation** — a feeling of slight anger
-- **temporary** — lasting for only a limited time
 - **settled** — comfortable and established in a new place or situation
 
 ## Questions

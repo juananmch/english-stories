@@ -5,7 +5,7 @@ topic: career and change
 grammar: [past simple, present perfect for experience, first conditional, modals of possibility]
 characters: [Sophie, Marcus]
 word_count: 370
-new_words: 7
+new_words: 5
 ---
 
 # A Difficult Decision
@@ -61,11 +61,9 @@ with Marcus, she felt grateful she had taken that chance.
 
 ## New Words
 
-- **quit** — to stop doing a job or an activity
 - **weigh** — to think carefully about the good and bad points of something
 - **expense** — money that has to be spent on something
 - **pressured** — made to feel that you must do something
-- **miserable** — very unhappy
 - **acceptance** — being told officially that you can join something
 - **qualified** — having passed the training needed for a job
 

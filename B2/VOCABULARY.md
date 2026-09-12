@@ -9,24 +9,23 @@ checklist to maintain by hand.
 
 | # | Story | New words | Cumulative |
 |---|-------|-----------|------------|
-| 01 | [The Inheritance](./01-the-inheritance.md) | jointly, generation, single-handedly, blindsided, resentful, circle back, oversight, buy out, negotiation, resurface | 10 |
-| 02 | [A Change of Heart](./02-a-change-of-heart.md) | entitled, unsettle, converted, preserve, considerably, thoroughly | 16 |
-| 03 | [The Whistleblower](./03-the-whistleblower.md) | falsify, inspection, flag, whistleblower, mortgage, reassure, documentation, regulatory body, bureaucratic, anonymity, penalty | 27 |
-| 04 | [Burnout](./04-burnout.md) | accumulation, snap at, urgency, reckoning, detachment, irritability, workload, abandon | 35 |
-| 05 | [The Negotiation](./05-the-negotiation.md) | acquire, clause, asset, derail, fixate, merger, dismantle, valuation, adversarial, binding | 45 |
-| 06 | [Estranged](./06-estranged.md) | stroke, estrangement, stem from, stubbornness, unsteady, tentatively, haltingly, illusion, assign blame | 54 |
-| 07 | [The Investment](./07-the-investment.md) | flatter, projection, restructuring, catastrophic, diligence | 59 |
-| 08 | [A Public Apology](./08-a-public-apology.md) | unremarkable, offhand, unbeknownst, leak, dismay, selectively, grudgingly, wary | 67 |
-| 09 | [The Mentor](./09-the-mentor.md) | mentor, dependency, redirect, reconsideration, input, deliberately, instinctively, proposal, afterthought | 76 |
-| 10 | [Rebuilding Trust](./10-rebuilding-trust.md) | mounting, betrayal, joint account, tremble, transparency, visibility, concealment, spare | 84 |
+| 01 | [The Inheritance](./01-the-inheritance.md) | jointly, single-handedly, blindsided, resentful, circle back, oversight, buy out, negotiation, resurface | 9 |
+| 02 | [A Change of Heart](./02-a-change-of-heart.md) | entitled, unsettle, converted, preserve, considerably, thoroughly | 15 |
+| 03 | [The Whistleblower](./03-the-whistleblower.md) | falsify, inspection, whistleblower, mortgage, reassure, documentation, regulatory body, bureaucratic, anonymity, penalty | 25 |
+| 04 | [Burnout](./04-burnout.md) | accumulation, snap at, urgency, reckoning, detachment, irritability, workload | 32 |
+| 05 | [The Negotiation](./05-the-negotiation.md) | acquire, clause, asset, derail, fixate, merger, dismantle, valuation, adversarial, binding | 42 |
+| 06 | [Estranged](./06-estranged.md) | estrangement, stem from, stubbornness, unsteady, tentatively, haltingly, illusion, assign blame | 50 |
+| 07 | [The Investment](./07-the-investment.md) | flatter, projection, restructuring, catastrophic, diligence | 55 |
+| 08 | [A Public Apology](./08-a-public-apology.md) | unremarkable, offhand, unbeknownst, leak, dismay, selectively, grudgingly, wary | 63 |
+| 09 | [The Mentor](./09-the-mentor.md) | mentor, dependency, redirect, reconsideration, input, deliberately, instinctively, proposal, afterthought | 72 |
+| 10 | [Rebuilding Trust](./10-rebuilding-trust.md) | mounting, betrayal, joint account, tremble, transparency, visibility, concealment | 79 |
 
-**84 words taught across 10 stories.**
+**79 words taught across 10 stories.**
 
 ## Glossary
 
 | Word | Meaning | Taught in |
 |------|---------|-----------|
-| abandon | to stop doing or using something completely | [Burnout](./04-burnout.md) |
 | accumulation | a gradual increase through repeated addition | [Burnout](./04-burnout.md) |
 | acquire | to obtain or take possession of something, often a company | [The Negotiation](./05-the-negotiation.md) |
 | adversarial | involving opposition or conflict between two sides | [The Negotiation](./05-the-negotiation.md) |
@@ -57,9 +56,7 @@ checklist to maintain by hand.
 | estrangement | a state in which people who were once close no longer | [Estranged](./06-estranged.md) |
 | falsify | to change information dishonestly to make it seem true | [The Whistleblower](./03-the-whistleblower.md) |
 | fixate | to focus attention on one thing, often too intensely | [The Negotiation](./05-the-negotiation.md) |
-| flag | to mark or point out something as needing attention | [The Whistleblower](./03-the-whistleblower.md) |
 | flatter | to make someone feel good by praising them, sometimes | [The Investment](./07-the-investment.md) |
-| generation | a group of people born and living around the same time | [The Inheritance](./01-the-inheritance.md) |
 | grudgingly | done reluctantly, without genuine willingness | [A Public Apology](./08-a-public-apology.md) |
 | haltingly | hesitantly, with pauses, as if uncertain | [Estranged](./06-estranged.md) |
 | illusion | a false belief or impression | [Estranged](./06-estranged.md) |
@@ -92,9 +89,7 @@ checklist to maintain by hand.
 | selectively | choosing only certain parts, not the whole | [A Public Apology](./08-a-public-apology.md) |
 | single-handedly | done by one person without any help | [The Inheritance](./01-the-inheritance.md) |
 | snap at | to speak suddenly and angrily to someone | [Burnout](./04-burnout.md) |
-| spare | to protect someone from an unpleasant experience | [Rebuilding Trust](./10-rebuilding-trust.md) |
 | stem from | to be caused by or originate from | [Estranged](./06-estranged.md) |
-| stroke | a sudden medical event caused by blocked blood flow to the | [Estranged](./06-estranged.md) |
 | stubbornness | refusal to change one's mind or behavior | [Estranged](./06-estranged.md) |
 | tentatively | cautiously, without full confidence | [Estranged](./06-estranged.md) |
 | thoroughly | completely and carefully | [A Change of Heart](./02-a-change-of-heart.md) |

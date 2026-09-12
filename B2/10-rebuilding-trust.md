@@ -5,7 +5,7 @@ topic: relationships and repair
 grammar: [third conditional, mixed conditionals, past perfect, wish / if only]
 characters: [Thomas, Nora, Felix]
 word_count: 451
-new_words: 8
+new_words: 7
 ---
 
 # Rebuilding Trust
@@ -71,7 +71,6 @@ someone opens the wrong letter."
 - **transparency** — openness and honesty about information
 - **visibility** — the state of being clearly seen or known
 - **concealment** — the act of hiding something
-- **spare** (someone) — to protect someone from an unpleasant experience
 
 ## Questions
 

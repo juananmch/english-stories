@@ -5,7 +5,7 @@ topic: work and ambition
 grammar: [past simple, past perfect, passive voice, relative clauses]
 characters: [Daniel, Rachel]
 word_count: 367
-new_words: 12
+new_words: 9
 ---
 
 # The Promotion
@@ -63,13 +63,10 @@ about the position she hadn't gotten.
 
 - **hesitation** — a pause caused by feeling unsure
 - **panel** — a group of people chosen to make a decision or judge something
-- **brilliant** — excellent
-- **deserve** — to have earned something through your actions or qualities
 - **casual** — relaxed and informal
 - **second-guess** — to doubt or question a decision after making it
 - **feedback** — comments about how well or badly someone has done something
 - **consistently** — in the same way, again and again
-- **struggle** — to have a lot of difficulty doing something
 - **discomfort** — a feeling of being uncomfortable or uneasy
 - **resentment** — a feeling of anger about something unfair
 - **leadership** — the ability or act of leading a group of people

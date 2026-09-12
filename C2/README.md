@@ -14,7 +14,7 @@ Near-native fluency, subtle stylistic and cultural nuance, and sophisticated voc
 |---|-------|-------|-----|-------|
 | 01 | [The Eulogy](./01-the-eulogy.md) | 558 | 9 | grief and honesty |
 | 02 | [A Question of Style](./02-a-question-of-style.md) | 582 | 7 | art and honesty |
-| 03 | [Between Languages](./03-between-languages.md) | 546 | 10 | identity and belonging |
+| 03 | [Between Languages](./03-between-languages.md) | 546 | 9 | identity and belonging |
 | 04 | [The Retrospective](./04-the-retrospective.md) | 556 | 6 | art and self-perception |
 | 05 | [The Last Correction](./05-the-last-correction.md) | 576 | 7 | obsolescence and craft |
 | 06 | [A Necessary Fiction](./06-a-necessary-fiction.md) | 567 | 9 | medicine and truth |

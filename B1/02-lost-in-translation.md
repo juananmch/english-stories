@@ -5,7 +5,7 @@ topic: travel and misunderstanding
 grammar: [past simple, past continuous, reported speech, relative clauses]
 characters: [Rachel, Owen]
 word_count: 392
-new_words: 9
+new_words: 7
 ---
 
 # Lost in Translation
@@ -68,8 +68,6 @@ lost had been, in its own strange way, one of the best parts of the trip.
 - **panicked** — feeling sudden strong fear or worry
 - **confusion** — a state of not understanding what is happening
 - **annoyed** — slightly angry
-- **insist** — to say firmly that something must happen
-- **despite** — without being affected by; even though
 
 ## Questions
 

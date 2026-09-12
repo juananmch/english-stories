@@ -5,7 +5,7 @@ topic: health and perspective
 grammar: [past simple, past perfect, passive voice, modals of possibility]
 characters: [Owen, Grace]
 word_count: 357
-new_words: 7
+new_words: 4
 ---
 
 # A Health Scare
@@ -63,11 +63,8 @@ eventually.
 ## New Words
 
 - **gradually** — slowly, over a period of time
-- **series** — a number of things of the same kind, one after another
 - **strain** — an injury caused by using a muscle too much
 - **oddly** — in a strange or unusual way
-- **relief** — a feeling of comfort after worry has ended
-- **rush** — to do something too quickly
 - **take for granted** — to fail to appreciate something because it is always
   present
 
