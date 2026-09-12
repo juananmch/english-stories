@@ -256,23 +256,35 @@ def load_names() -> set:
     return _read_wordfile(os.path.join(WORDLIST_DIR, "names.txt"))
 
 
-def load_frequency(path: str | None = None) -> dict:
-    """SUBTLEX-US frequency rank of each surface form, keyed lowercase.
+def load_frequency_rows(path: str | None = None) -> list:
+    """The vendored SUBTLEX-US table as (rank, word, count) rows, in rank order.
 
-    The vendored file is 'rank<TAB>word<TAB>count' with '#' comment lines.
-    Surface forms, not lemmas: 'walk' and 'walked' have separate ranks.
+    The file is 'rank<TAB>word<TAB>count' with '#' comment lines. Words keep
+    the capitalization the corpus favors ('I', 'Mr', 'Jack'), which is the only
+    hint the table gives that an entry is a name or an interjection.
     """
     path = path or FREQUENCY_PATH
     if not os.path.exists(path):
-        return {}
-    ranks = {}
+        return []
+    rows = []
     with open(path, encoding="utf-8") as fh:
         for line in fh:
             line = line.split("#", 1)[0].strip()
             if not line:
                 continue
-            rank, word, _count = line.split("\t")
-            ranks.setdefault(word.lower(), int(rank))
+            rank, word, count = line.split("\t")
+            rows.append((int(rank), word, int(count)))
+    return rows
+
+
+def load_frequency(path: str | None = None) -> dict:
+    """SUBTLEX-US frequency rank of each surface form, keyed lowercase.
+
+    Surface forms, not lemmas: 'walk' and 'walked' have separate ranks.
+    """
+    ranks = {}
+    for rank, word, _count in load_frequency_rows(path):
+        ranks.setdefault(word.lower(), rank)
     return ranks
 
 

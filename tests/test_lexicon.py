@@ -59,6 +59,10 @@ class FrequencyTest(unittest.TestCase):
         ranks = lx.load_frequency(self.tmp.name)
         self.assertEqual(ranks, {"you": 1, "i": 2, "the": 3, "what": 12})
 
+    def test_rows_keep_the_dominant_capitalization(self):
+        rows = lx.load_frequency_rows(self.tmp.name)
+        self.assertEqual(rows, [(1, "you", 2134713), (2, "I", 2038529), (3, "the", 1501908), (12, "What", 558254)])
+
     def test_missing_file_gives_an_empty_table(self):
         self.assertEqual(lx.load_frequency(self.tmp.name + ".missing"), {})
 
