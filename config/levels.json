@@ -3,11 +3,20 @@
 
   "order": ["A1", "A2", "B1", "B2", "C1", "C2"],
 
+  "_warning_note": "Checks listed here are reported and counted but do not fail validation. A new check starts here until its thresholds have been checked against the corpus; removing it from the list makes it enforced.",
+  "warning_checks": ["band", "sentence-length", "new-word-floor"],
+
+  "_core_band_note": "The 'band' check measures the share of prose words (registered names excluded) whose lemma is outside the most frequent core_band surface forms of data/subtlex-us.tsv. Each level's lexical_band is that share's target, in percent. sentence_length is the target mean words per sentence; new_word_floor the minimum glossary size.",
+  "core_band": 2000,
+
   "levels": {
     "A1": {
       "name": "Beginner",
       "word_count": { "min": 150, "max": 400 },
       "new_word_budget": 10,
+      "lexical_band": { "max": 5 },
+      "sentence_length": { "min": 6, "max": 11 },
+      "new_word_floor": 3,
       "_grammar_note": "Entries must not contain commas: front matter lists are comma-separated.",
       "grammar_allowed": [
         "present simple",
@@ -64,6 +73,9 @@
       "name": "Elementary",
       "word_count": { "min": 250, "max": 500 },
       "new_word_budget": 12,
+      "lexical_band": { "max": 8 },
+      "sentence_length": { "min": 8, "max": 13 },
+      "new_word_floor": 3,
       "grammar_allowed": [
         "all A1 structures",
         "past simple",
@@ -105,6 +117,9 @@
       "name": "Intermediate",
       "word_count": { "min": 350, "max": 700 },
       "new_word_budget": 15,
+      "lexical_band": { "min": 8, "max": 13 },
+      "sentence_length": { "min": 11, "max": 16 },
+      "new_word_floor": 3,
       "grammar_allowed": [
         "all A2 structures",
         "past perfect",
@@ -129,6 +144,9 @@
       "name": "Upper Intermediate",
       "word_count": { "min": 450, "max": 900 },
       "new_word_budget": 18,
+      "lexical_band": { "min": 12, "max": 18 },
+      "sentence_length": { "min": 14, "max": 20 },
+      "new_word_floor": 3,
       "grammar_allowed": [
         "all B1 structures",
         "third conditional",
@@ -145,6 +163,9 @@
       "name": "Advanced",
       "word_count": { "min": 500, "max": 1000 },
       "new_word_budget": 20,
+      "lexical_band": { "min": 16, "max": 24 },
+      "sentence_length": { "min": 18, "max": 26 },
+      "new_word_floor": 3,
       "grammar_allowed": ["all B2 structures", "inversion", "subjunctive", "nuanced modality", "complex discourse markers"],
       "grammar_banned": []
     },
@@ -153,6 +174,9 @@
       "name": "Proficiency",
       "word_count": { "min": 500, "max": 1000 },
       "new_word_budget": 20,
+      "lexical_band": { "min": 20 },
+      "sentence_length": { "min": 20, "max": 30 },
+      "new_word_floor": 3,
       "grammar_allowed": ["unrestricted"],
       "grammar_banned": []
     }

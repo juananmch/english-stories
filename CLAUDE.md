@@ -76,6 +76,14 @@ prose length, declared and banned grammar, US English spelling, and
 front-matter consistency. `SPECIFICATIONS.md` explains each one and why it
 exists.
 
+Three checks are currently **warnings** — reported and counted, but they do not
+fail the run: the lexical band (share of prose outside the 2,000 most frequent
+words of `data/subtlex-us.tsv`), mean sentence length, and a floor on new words
+per story. Their thresholds in `config/levels.json` were set a priori, not
+fitted to the existing stories, and stay warnings until the audit in
+`docs/PLAN.md` has checked them against real stories. Do not tune a threshold
+to make a warning go away.
+
 ## Conventions
 
 - **US English** everywhere, spelling and vocabulary. The British→US map lives

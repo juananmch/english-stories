@@ -24,7 +24,9 @@ A1/ … C2/          one directory per level
   VOCABULARY.md    generated log of every word taught at the level
 config/levels.json word ranges, new-word budgets, grammar inventory, US spelling map
 wordlists/         the vocabulary a reader is assumed to know at each level
-tools/             validator and index builder
+data/              SUBTLEX-US frequency ranks (vendored, with attribution)
+tools/             validator, index builder and site generator
+tests/             tests for the tools themselves
 ```
 
 Generated files carry a "do not edit by hand" header. Edit the stories and run
@@ -80,8 +82,9 @@ validator rejects any British form listed there.
 
 ## 6. Level control — the core of the system
 
-Level is controlled on **two axes**, because CEFR level is driven as much by
-grammar as by vocabulary.
+Level is controlled on **two axes** that are enforced — vocabulary and grammar —
+and measured on two more that are, for now, reported as warnings: lexical
+texture and sentence length.
 
 ### Vocabulary
 
@@ -105,6 +108,40 @@ and the validator checks both directions: the declared structures must exist
 in the level's inventory (inherited from all lower levels), and the prose must
 not contain a banned structure. This is what keeps past perfect out of A2 and
 present perfect out of A1.
+
+### Lexical texture (warning)
+
+The vocabulary ceiling bounds a story from above but says nothing about what
+the prose is mostly made of: a B1 story can pass it while being written
+entirely in A2 words with a few B1 words sprinkled on top. The `band` check
+measures that directly — the share of prose words, registered names excluded,
+whose dictionary form is outside the 2,000 most frequent words of American
+English (`data/subtlex-us.tsv`, from SUBTLEX-US). Each level has a target range
+for that share (`lexical_band` in the config): a ceiling at A1 and A2, a floor
+and ceiling from B1 to C1, a floor only at C2.
+
+Frequency is a proxy for level, not the same thing. Concrete everyday nouns —
+food, shopping — are rare in film dialogue and common in beginner stories, so an
+A1 story about cooking can sit above its target while being perfectly A1. That
+is why this is a warning: the thresholds were set from CEFR expectations, not
+fitted to the stories, and the audit in `docs/PLAN.md` decides what they become.
+
+### Sentence length (warning)
+
+Mean words per sentence, against a per-level range (`sentence_length`). This
+is the axis that in practice most separates the levels, and until now it was
+unbounded in both directions — the highest levels had drifted to means of
+40–60 words, which is overwriting rather than proficiency. Sentences are split
+with the same quote- and abbreviation-aware rule the site's review decks use.
+
+### Warnings
+
+`warning_checks` in the config lists the checks that are reported and counted
+but never fail validation. A new check is born there and is promoted to an
+error by removing it from the list, once its thresholds have been checked
+against real stories. The `new-word-floor` check (a glossary smaller than
+`new_word_floor`) is also a warning: a story teaching one word is not broken,
+but it is a sign that vocabulary targeting drifted.
 
 ## 7. No repeated vocabulary
 

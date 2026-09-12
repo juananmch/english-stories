@@ -16,6 +16,16 @@ Checks, per story:
   grammar      no banned structure for the level; declared grammar is allowed
   spelling     no British spellings or non-US vocabulary
   metadata     front matter is present, complete and consistent with the body
+  band         share of prose outside the core frequency band is in the level's
+               target range (registered names excluded)
+  sentence-length
+               mean words per sentence is inside the level's range
+  new-word-floor
+               the glossary teaches at least the level's minimum
+
+Checks named in the config's "warning_checks" are reported and counted but do
+not fail the run. That is how a new check is introduced: as a warning, until
+its thresholds have been checked against the corpus.
 """
 
 from __future__ import annotations
@@ -37,13 +47,42 @@ ALWAYS_ALLOWED = {
 
 
 class Finding:
-    def __init__(self, story: str, check: str, message: str):
+    def __init__(self, story: str, check: str, message: str, severity: str = "error"):
         self.story = story
         self.check = check
         self.message = message
+        self.severity = severity
 
     def __str__(self) -> str:
-        return f"  [{self.check}] {self.message}"
+        prefix = "warning: " if self.severity == "warning" else ""
+        return f"  [{self.check}] {prefix}{self.message}"
+
+
+def describe_range(bounds: dict, unit: str = "") -> str:
+    low, high = bounds.get("min"), bounds.get("max")
+    if low is not None and high is not None:
+        return f"{low}–{high}{unit}"
+    if low is not None:
+        return f"at least {low}{unit}"
+    return f"at most {high}{unit}"
+
+
+def in_core_band(token: str, core_band: set) -> bool:
+    """Whether a prose token counts as core vocabulary.
+
+    A token is core if any dictionary form of it is. SUBTLEX-US splits words on
+    apostrophes, so "o'clock" has no rank of its own there; a token with an
+    apostrophe that does not resolve as a whole is judged by its pieces.
+    """
+    if lx.lemma(token, core_band) in core_band:
+        return True
+    pieces = [p for p in token.lower().split("'") if p]
+    return len(pieces) > 1 and all(lx.lemma(p, core_band) in core_band for p in pieces)
+
+
+def outside_range(value: float, bounds: dict) -> bool:
+    low, high = bounds.get("min"), bounds.get("max")
+    return (low is not None and value < low) or (high is not None and value > high)
 
 
 def build_banned_patterns(level_cfg: dict):
@@ -66,6 +105,14 @@ def check_level(level: str, config: dict, verbose: bool = False):
     names = lx.load_names()
     banned = build_banned_patterns(level_cfg)
     us_map = {k: v for k, v in config["us_english"].items() if not k.startswith("_")}
+    warning_checks = set(config.get("warning_checks", []))
+
+    # The core band: the most frequent surface forms of the language, against
+    # which the lexical-band check measures how much of the prose is "hard".
+    core_band = set()
+    if "core_band" in config:
+        ranks = lx.load_frequency()
+        core_band = {word for word, rank in ranks.items() if rank <= config["core_band"]}
 
     # A level inherits every structure from the levels below it, so "all A1
     # structures" in the config does not have to be expanded by hand.
@@ -106,7 +153,8 @@ def check_level(level: str, config: dict, verbose: bool = False):
         declared = {lx.glossary_key(w, vocab): w for w, _ in glossary}
 
         def add(check, message):
-            findings.append(Finding(rel, check, message))
+            severity = "warning" if check in warning_checks else "error"
+            findings.append(Finding(rel, check, message, severity))
 
         # --- metadata ---
         if not meta:
@@ -145,6 +193,40 @@ def check_level(level: str, config: dict, verbose: bool = False):
         budget = level_cfg["new_word_budget"]
         if len(glossary) > budget:
             add("budget", f"glossary declares {len(glossary)} words, budget is {budget}")
+        floor = level_cfg.get("new_word_floor")
+        if floor is not None and 0 < len(glossary) < floor:
+            add("new-word-floor", f"glossary declares {len(glossary)} words, fewer than the floor of {floor}")
+
+        # --- lexical band ---
+        # How much of the prose is outside the most frequent words of the
+        # language. This is the texture of the story rather than its glossary:
+        # a level is not made of the words it teaches but of the words it is
+        # written in. Names are left out, since a cast is not vocabulary.
+        band_bounds = level_cfg.get("lexical_band")
+        if band_bounds and core_band:
+            counted = outside = 0
+            for token in lx.tokenize(prose):
+                low = token.lower()
+                if low in names or lx.lemma(token, names) in names:
+                    continue
+                counted += 1
+                if not in_core_band(token, core_band):
+                    outside += 1
+            if counted:
+                share = 100.0 * outside / counted
+                if outside_range(share, band_bounds):
+                    add("band", f"{share:.1f}% of words are outside the top {config['core_band']} "
+                                f"(target {describe_range(band_bounds, '%')})")
+
+        # --- sentence length ---
+        length_bounds = level_cfg.get("sentence_length")
+        if length_bounds:
+            sentences = lx.sentences(prose)
+            if sentences:
+                mean = sum(lx.count_words(s) for s in sentences) / len(sentences)
+                if outside_range(mean, length_bounds):
+                    add("sentence-length", f"mean sentence length is {mean:.1f} words "
+                                           f"(target {describe_range(length_bounds)})")
 
         # --- glossary entries must be earned ---
         prose_lemmas = {lx.lemma(t, vocab) for t in lx.tokenize(prose)}
@@ -247,15 +329,27 @@ def main() -> int:
         total_findings.extend(findings)
 
     print()
-    if total_findings:
-        checks = {}
-        for finding in total_findings:
-            checks[finding.check] = checks.get(finding.check, 0) + 1
-        summary = ", ".join(f"{k}: {v}" for k, v in sorted(checks.items()))
-        print(f"FAILED — {len(total_findings)} findings across {total_stories} stories ({summary})")
+    errors = [f for f in total_findings if f.severity != "warning"]
+    warnings = [f for f in total_findings if f.severity == "warning"]
+    stories = plural(total_stories, "story", "stories")
+    warned = f"{plural(len(warnings), 'warning')} ({by_check(warnings)})" if warnings else ""
+    if errors:
+        print(f"FAILED — {plural(len(errors), 'finding')} across {stories} ({by_check(errors)})"
+              + (f", {warned}" if warned else ""))
         return 1
-    print(f"PASSED — {total_stories} stories, no findings")
+    print(f"PASSED — {stories}, {warned or 'no findings'}")
     return 0
+
+
+def plural(count: int, singular: str, plural_form: str | None = None) -> str:
+    return f"{count} {singular if count == 1 else plural_form or singular + 's'}"
+
+
+def by_check(findings: list) -> str:
+    counts = {}
+    for finding in findings:
+        counts[finding.check] = counts.get(finding.check, 0) + 1
+    return ", ".join(f"{k}: {v}" for k, v in sorted(counts.items()))
 
 
 if __name__ == "__main__":
