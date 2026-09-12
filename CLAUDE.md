@@ -59,10 +59,15 @@ path rather than importing it. See `tests/test_site.py`.
   `tools/build.py --fix-meta`.
 - **New characters must be registered** in `wordlists/names.txt`, or the
   validator reports the name as above level.
-- **B1, B2 and C1 wordlists are starter lists, not real level inventories.**
+- **B2 and C1 wordlists are starter lists, not real level inventories.**
   Expand the relevant one *before* writing stories at that level, otherwise the
   validator will report dozens of legitimate words as above level and the loop
-  gets slow and noisy. A1 and A2 are complete.
+  gets slow and noisy. B1 was expanded from the frequency band in the audit
+  (`docs/PLAN.md`, workstream 3); A1 is complete. A2 is close but the audit
+  found it short of a real A2 inventory — see `docs/SESSION_LOG.md`.
+- **Expanding a wordlist is done with `tools/audit.py`, then by hand.** The
+  tool proposes headwords from `data/subtlex-us.tsv`; a person decides.
+  Frequency is a proxy for level, not the level itself.
 
 ## What the validator checks
 

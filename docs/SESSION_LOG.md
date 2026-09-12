@@ -122,8 +122,69 @@ session to recover context.
 - Correction to the part 1 entry above: `test_lexicon.py` has 13 tests
   carrying 72 assertions, not "30 tests".
 
-**Pending next:** workstream 3 at B1 — vendor a SUBTLEX-US lemma-rank slice
-(with Brysbaert & New 2009 attribution), lemmatize and curate, expand B1,
-validate, fix B1 stories; then the lexical-band and sentence-length warnings
-with the a priori thresholds from `docs/PLAN.md`. Include the 33-entry
-surface-form list above in the B1 curation pass.
+### Workstream 3, B1 — frequency data, warning checks, wordlist expansion (same day, later)
+
+- Vendored `data/subtlex-us.tsv`: the 20,000 most frequent SUBTLEX-US surface
+  forms with rank and count, via the ISC repackaging, Brysbaert & New (2009)
+  attribution in the header. 20k rather than the planned 15k so C1's ~8k
+  target fits without a second vendoring round; ~340KB.
+- Moved sentence splitting from `site.py` into `lexicon.sentences()` so the
+  validator can use it. Generated site byte-identical after the move.
+- Findings now carry a severity. `config/levels.json` gains `warning_checks`
+  — checks reported and counted but never a failure — plus `core_band`
+  (2,000) and per-level `lexical_band`, `sentence_length`, `new_word_floor`
+  with the a priori thresholds from `docs/PLAN.md`. Promotion to error is a
+  config edit: remove the check from the list.
+- **Blast radius on the corpus: 37 warnings** — `band` 17, `sentence-length`
+  20, `new-word-floor` 0. The shape confirms the diagnosis: 7 of 10 B1
+  stories are *below* the 8% band floor (A2 texture with B1 words sprinkled
+  on top), all 10 C2 stories exceed the sentence-length ceiling (means of
+  31–64 words), C1 has 5 over. At A1/A2 the four over-ceiling stories are
+  the food and shopping ones (`rice`, `onions`, `supermarket`, `cashier`):
+  genuine A1 words that are rare in film dialogue — the "frequency is not
+  level" caveat showing up in data, and a point to weigh before the band
+  check is ever enforced at A1.
+- `o'clock` (34 uses) was counted outside the band because SUBTLEX splits on
+  apostrophes; apostrophe tokens are now judged by their pieces. That alone
+  removed four false A1 warnings.
+- `tools/audit.py` proposes headwords for a level from the frequency table:
+  plain inflections fold onto their base (`parents` → `parent`), later
+  inflections of an accepted headword are absorbed, derivations of known
+  words and capitalized unknowns are set aside, contraction fragments
+  dropped. Words taught by lower-level stories count as known (88 of the
+  first proposals were A1/A2-taught words like `together` and `weekend`).
+  Getting the fold rule right took three passes: `-er`/`-est` and the
+  irregular map reached real words that are not the base (`power` → `pow`,
+  `bit` → `bite`), so only `-s/-es/-ies/-ed/-ing` may fold, with the
+  lemmatizer's one-syllable-CVC rule and a no-plural-of-`-ss` rule.
+- The audit found five irregular forms missing from the lemmatizer
+  (`fought`, `beaten`, `mistaken`, `bound`, `yourselves`); added those and
+  ~30 more common irregular pasts and participles.
+- **B1 expanded by 892 headwords** from the 4,000 most frequent surface
+  forms, curated by hand: rejected 171 of 1,065 (fragments, fillers,
+  profanity, insults, British spellings, archaic forms, legal/police/
+  military/fantasy jargon, B2+ words such as `sacred`, `commission`,
+  `facility`, `custody`, `surveillance`). B1 cumulative wordlist 1,931 →
+  2,821; a reader starts B1 knowing ~2,970 words including those taught at
+  A1/A2, against the ~3,000 target.
+- The expansion made **25 glossary entries redundant** (19 at B1, 5 at B2,
+  1 at C2); dropped per the no-grandfathering decision, words left in the
+  prose. No story fell below the new-word floor. Validator green.
+- **Finding for the user to decide:** 294 of the 892 accepted words sit
+  inside the top 2,000 surface forms and many are A2 by CEFR labelling
+  (`such`, `sir`, `guy`, `die`, `dead`, `kill`, `king`, `poor`, `human`,
+  `police`, `war`, `power`, `learn`-class words). A2's cumulative list is
+  1,423 against a real A2 inventory of ~2,000, so "A1 and A2 are complete"
+  was true of A1 only. Moving those words down to A2 is collision-free — no
+  A1/A2 story uses any of them, or it would have glossed it and the audit
+  would have excluded it — but it is a level decision, so they stay in B1
+  until the user says otherwise.
+- Also for the A2 revisit: `CLAUDE.md` updated to say so.
+- Suite: 102 tests. Validator: 60 stories, 37 warnings, no findings.
+
+**Pending next:** workstream 3 at B2 — `python3 tools/audit.py --level B2
+--sizes` to pick the cutoff for a ~5,000 target, curate, expand, drop the
+glossary entries it makes redundant, validate. Then C1 (~8,000). The B1
+band warnings (7 stories thin) are content work — rewriting prose with the
+now-available vocabulary — and belong with the "fix B1 stories" step once
+the thresholds have been looked at; they are warnings, not failures.
