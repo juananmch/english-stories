@@ -55,5 +55,38 @@ session to recover context.
 - Also confirmed the plan's sentence-length concern with real specimens: C2
   sentences of 74–92 words surfaced as cloze prompts.
 
-**Pending next:** workstream 2 — test suite for `lexicon.py` lemmatization and
-the `validate.py` vocabulary checks, before touching any wordlist.
+### Workstream 2, part 1 — lemmatizer tests and fixes (same day, later)
+
+- `tests/test_lexicon.py`: 30 tests pinning the lemmatizer contract —
+  surface-form-wins, inflections, derivations, irregulars, possessives, and
+  every resolved ambiguity with its counter-case.
+- Writing the characterization tests exposed how `lemma()` works: `candidates()`
+  emits every matching suffix rule's stem in rule order and `lemma()` takes the
+  first that is a known word. So rule order decides ties between two real
+  words. A scan of the corpus for tokens with 2+ known candidates found 15,
+  **8 resolving to the wrong word**: `caring`/`cared` → `car`,
+  `noted`/`notes`/`noting` → `not`, `used` → `us`, `ones` → `on`,
+  `normally` → `norm`, `informally` → `inform`, `professionally` → `profession`.
+- Three ordering fixes (commit `8fc6428`): silent-e base before bare stem after
+  a vowel suffix when the stem is CVC; `-s` before `-es`; `-ly` before `-ally`.
+  All 15 ambiguities now resolve correctly. Validator still passes.
+- One prospective fix (commit `1494a1a`): a one-syllable CVC stem is never
+  offered as the base of a vowel-suffixed word, since such a base would have
+  doubled its consonant (`hop` → `hopping`). This closes the
+  `forest` → `for` / `scared` → `scar` / `caring` → `car`-when-`care`-unknown
+  class of silent false negative *before* the wordlists grow enough to trigger
+  it. Verified to change no lemma in today's corpus.
+- **Known limitation, not fixable in the tool:** when a legitimate word is
+  absent from the vocabulary and a shorter word it strips down to is present,
+  it still collapses (`evening` → `even`, `department` → `depart`). The
+  only real guard is wordlist completeness — every legitimate word present as
+  its own headword. This is an argument *for* the audit, and the audit's
+  curation pass should watch for it.
+- `lives` → `life` remains: verb vs. plural noun is undecidable without
+  part-of-speech tagging; both are A1 so it cannot affect a level judgment.
+- Pushed workstream 1 after the `gh` token gained the `workflow` scope.
+
+**Pending next:** workstream 2, part 2 — tests for the `validate.py` vocabulary
+checks (`ceiling`, `known`, `reteach`, `teach-late`, `glossary`, `budget`) using
+a temporary repo tree with `lx.ROOT` / `lx.WORDLIST_DIR` pointed at it; no
+refactor of `check_level` needed. Then push and start workstream 3 at B1.
