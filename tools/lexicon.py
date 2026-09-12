@@ -95,12 +95,17 @@ IRREGULAR_LEMMAS = {
 CONTRACTION_TAILS = {"s", "t", "re", "ve", "ll", "d", "m"}
 
 
+# Every matching rule contributes a candidate, in this order, and lemma() takes
+# the first one that is a known word — so the order decides ties between two
+# real words. "-ly" sits before "-ally" so normally -> normal, not norm; "-s"
+# sits before "-es" so notes -> note, not not.
 SUFFIX_RULES = (
     ("ies", "y"),
     ("ied", "y"),
     ("iest", "y"),
     ("ier", "y"),
     ("ily", "y"),
+    ("ly", ""),
     ("ally", ""),  # basically -> basic, dramatically -> dramatic
     ("ably", "able"),  # reasonably -> reasonable, comfortably -> comfortable
     ("ibly", "ible"),
@@ -113,14 +118,32 @@ SUFFIX_RULES = (
     ("ches", "ch"),
     ("xes", "x"),
     ("zes", "z"),
-    ("es", ""),
     ("s", ""),
+    ("es", ""),
     ("ing", ""),
     ("ed", ""),
     ("est", ""),
     ("er", ""),
-    ("ly", ""),
 )
+
+# Suffixes that begin with a vowel drop a base's silent e: care -> caring.
+VOWEL_SUFFIXES = {"ing", "ed", "est", "er", "ation"}
+VOWELS = "aeiou"
+
+
+def _dropped_silent_e(stem: str) -> bool:
+    """True when a vowel suffix was more likely added to stem+e than to stem.
+
+    A one-syllable base ending consonant-vowel-consonant doubles the last letter
+    instead (hop -> hopping), so a stem ending in a *single* consonant after a
+    vowel points to a dropped e: hoping -> hope, caring -> care, noted -> note.
+    """
+    return (
+        len(stem) >= 2
+        and stem[-1] not in VOWELS + "wxy"
+        and stem[-2] in VOWELS
+        and (len(stem) == 2 or stem[-3] not in VOWELS)
+    )
 
 
 def candidates(word: str) -> list:
@@ -152,10 +175,13 @@ def candidates(word: str) -> list:
         stem = w[: -len(suffix)] + replacement
         if not stem:
             continue
-        out.append(stem)
         # silent e: making -> make, hoped -> hope, arrived -> arrive
-        if not replacement:
-            out.append(stem + "e")
+        if not replacement and suffix in VOWEL_SUFFIXES and _dropped_silent_e(stem):
+            out.extend((stem + "e", stem))
+        elif not replacement:
+            out.extend((stem, stem + "e"))
+        else:
+            out.append(stem)
         # doubled consonant: stopped -> stop, running -> run, planned -> plan
         if len(stem) > 2 and stem[-1] == stem[-2] and stem[-1] not in "aeiou":
             out.append(stem[:-1])
