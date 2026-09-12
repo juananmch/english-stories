@@ -13,6 +13,7 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CONFIG_PATH = os.path.join(ROOT, "config", "levels.json")
 WORDLIST_DIR = os.path.join(ROOT, "wordlists")
+FREQUENCY_PATH = os.path.join(ROOT, "data", "subtlex-us.tsv")
 
 # Past participles used to build the banned-grammar patterns. Regular -ed forms
 # are matched by the trailing alternative, so this only needs the irregulars.
@@ -253,6 +254,26 @@ def load_cumulative_wordlist(level: str, order: list) -> set:
 
 def load_names() -> set:
     return _read_wordfile(os.path.join(WORDLIST_DIR, "names.txt"))
+
+
+def load_frequency(path: str | None = None) -> dict:
+    """SUBTLEX-US frequency rank of each surface form, keyed lowercase.
+
+    The vendored file is 'rank<TAB>word<TAB>count' with '#' comment lines.
+    Surface forms, not lemmas: 'walk' and 'walked' have separate ranks.
+    """
+    path = path or FREQUENCY_PATH
+    if not os.path.exists(path):
+        return {}
+    ranks = {}
+    with open(path, encoding="utf-8") as fh:
+        for line in fh:
+            line = line.split("#", 1)[0].strip()
+            if not line:
+                continue
+            rank, word, _count = line.split("\t")
+            ranks.setdefault(word.lower(), int(rank))
+    return ranks
 
 
 def glossary_key(word: str, vocab: set) -> str:

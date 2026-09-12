@@ -1,11 +1,40 @@
 import os
 import sys
+import tempfile
 import unittest
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 
 import lexicon as lx  # noqa: E402
+
+
+class FrequencyTest(unittest.TestCase):
+    SAMPLE = (
+        "# SUBTLEX-US, top N surface forms. Attribution in the header.\n"
+        "# rank\tword\tcount\n"
+        "1\tyou\t2134713\n"
+        "2\tI\t2038529\n"
+        "3\tthe\t1501908\n"
+        "\n"
+        "12\tWhat\t558254\n"
+    )
+
+    def setUp(self):
+        self.tmp = tempfile.NamedTemporaryFile("w", suffix=".tsv", delete=False, encoding="utf-8")
+        self.tmp.write(self.SAMPLE)
+        self.tmp.close()
+        self.addCleanup(os.unlink, self.tmp.name)
+
+    def test_ranks_are_keyed_by_lowercase_surface_form(self):
+        ranks = lx.load_frequency(self.tmp.name)
+        self.assertEqual(ranks, {"you": 1, "i": 2, "the": 3, "what": 12})
+
+    def test_missing_file_gives_an_empty_table(self):
+        self.assertEqual(lx.load_frequency(self.tmp.name + ".missing"), {})
+
+    def test_default_path_is_the_vendored_file(self):
+        self.assertEqual(os.path.relpath(lx.FREQUENCY_PATH, lx.ROOT), os.path.join("data", "subtlex-us.tsv"))
 
 
 def lem(word, *vocab):
