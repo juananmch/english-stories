@@ -314,40 +314,17 @@ def render_prose(prose: str, glossary: list, vocab: set) -> str:
     return "\n".join(out)
 
 
-def paragraphs(prose: str) -> list:
-    out = []
-    for block in re.split(r"\n\s*\n", prose.strip()):
-        text = " ".join(line.strip() for line in block.splitlines() if line.strip())
-        if text:
-            out.append(text)
-    return out
-
-
-# A sentence ends at . ! or ? (plus any closing quote or bracket) only when the
-# next sentence visibly starts — a capital or an opening quote — or the paragraph
-# ends. That keeps `"Welcome!" she said.` together, since `she` is lowercase.
-SENTENCE_END_RE = re.compile(r"[.!?][\"')\]]*(?=\s+[\"(\[A-Z]|\s*$)")
-TITLE_ABBREVIATIONS = ("Mr.", "Mrs.", "Ms.", "Dr.")
-
-
-def _ends_sentence(text: str, match) -> bool:
-    if text[: match.end()].endswith(TITLE_ABBREVIATIONS):
-        return False
-    # An odd number of quotes so far means the terminator is inside a quotation
-    # that keeps going — "We have a backup. It takes a minute." is one unit.
-    return text.count('"', 0, match.end()) % 2 == 0
+paragraphs = lx.paragraphs
 
 
 def sentence_bounds(text: str, start: int, end: int) -> tuple:
     """Start and end of the sentence containing text[start:end]."""
     s, e = 0, len(text)
-    for match in SENTENCE_END_RE.finditer(text):
-        if not _ends_sentence(text, match):
-            continue
-        if match.end() <= start:
-            s = match.end()
-        elif match.start() >= end:
-            e = match.end()
+    for boundary in lx.sentence_ends(text):
+        if boundary <= start:
+            s = boundary
+        elif boundary >= end:
+            e = boundary
             break
     while s < start and text[s].isspace():
         s += 1

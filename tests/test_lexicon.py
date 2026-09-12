@@ -9,6 +9,35 @@ sys.path.insert(0, os.path.join(ROOT, "tools"))
 import lexicon as lx  # noqa: E402
 
 
+class SentenceTest(unittest.TestCase):
+    def test_splits_on_terminators_followed_by_a_capital(self):
+        self.assertEqual(lx.sentences("Laura sat down. She was tired! Was it late? Yes."),
+                         ["Laura sat down.", "She was tired!", "Was it late?", "Yes."])
+
+    def test_dialogue_with_a_lowercase_attribution_stays_whole(self):
+        self.assertEqual(lx.sentences('"Welcome!" she said. He smiled.'),
+                         ['"Welcome!" she said.', "He smiled."])
+
+    def test_a_quotation_spanning_sentences_stays_whole(self):
+        self.assertEqual(lx.sentences('"We have a backup. It takes a minute." Elena nodded.'),
+                         ['"We have a backup. It takes a minute."', "Elena nodded."])
+
+    def test_title_abbreviations_do_not_end_a_sentence(self):
+        self.assertEqual(lx.sentences("She met Mr. Reyes at noon. Dr. Osei was late."),
+                         ["She met Mr. Reyes at noon.", "Dr. Osei was late."])
+
+    def test_paragraph_breaks_and_wrapped_lines(self):
+        prose = "Laura sat\ndown. She waited\n\n\"Then what?\"\n\nNothing"
+        self.assertEqual(lx.sentences(prose),
+                         ["Laura sat down.", "She waited", '"Then what?"', "Nothing"])
+
+    def test_ellipsis_is_one_terminator(self):
+        self.assertEqual(lx.sentences("He waited... Then he left."), ["He waited...", "Then he left."])
+
+    def test_empty_prose(self):
+        self.assertEqual(lx.sentences(""), [])
+
+
 class FrequencyTest(unittest.TestCase):
     SAMPLE = (
         "# SUBTLEX-US, top N surface forms. Attribution in the header.\n"

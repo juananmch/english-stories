@@ -358,6 +358,50 @@ def count_words(text: str) -> int:
     return len(tokenize(text))
 
 
+def paragraphs(prose: str) -> list:
+    """Blank-line-separated blocks, each with its wrapped lines joined."""
+    out = []
+    for block in re.split(r"\n\s*\n", prose.strip()):
+        text = " ".join(line.strip() for line in block.splitlines() if line.strip())
+        if text:
+            out.append(text)
+    return out
+
+
+# A sentence ends at . ! or ? (plus any closing quote or bracket) only when the
+# next sentence visibly starts — a capital or an opening quote — or the paragraph
+# ends. That keeps `"Welcome!" she said.` together, since `she` is lowercase.
+SENTENCE_END_RE = re.compile(r"[.!?][\"')\]]*(?=\s+[\"(\[A-Z]|\s*$)")
+TITLE_ABBREVIATIONS = ("Mr.", "Mrs.", "Ms.", "Dr.")
+
+
+def _ends_sentence(text: str, match) -> bool:
+    if text[: match.end()].endswith(TITLE_ABBREVIATIONS):
+        return False
+    # An odd number of quotes so far means the terminator is inside a quotation
+    # that keeps going — "We have a backup. It takes a minute." is one unit.
+    return text.count('"', 0, match.end()) % 2 == 0
+
+
+def sentence_ends(text: str) -> list:
+    """Offsets just past each sentence terminator in a single paragraph."""
+    return [m.end() for m in SENTENCE_END_RE.finditer(text) if _ends_sentence(text, m)]
+
+
+def sentences(prose: str) -> list:
+    """Sentences of the prose, paragraph by paragraph. A paragraph without a
+    terminator is one sentence."""
+    out = []
+    for text in paragraphs(prose):
+        start = 0
+        for end in sentence_ends(text) + [len(text)]:
+            piece = text[start:end].strip()
+            if piece:
+                out.append(piece)
+            start = end
+    return out
+
+
 def story_files(level: str):
     """Story markdown files for a level, in reading order."""
     level_dir = os.path.join(ROOT, level)
